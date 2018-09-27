@@ -1,0 +1,53 @@
+.section-container {
+  position: relative;
+}
+
+.section-background {
+  background: url("../images/flowers2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blur {
+  filter: blur(3px);
+}
+
+.darken {
+  background-color: rgba(81, 40, 136, 0.55);
+}
+
+.background-cover-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -9;
+}
+
+.section-content {
+  padding: 1.5em;
+}
+
+.section-container h1 {
+  position: relative;
+  margin-bottom: 1em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.slanted-section-decorator {
+  height: 100px;
+  overflow: hidden;
+}
+.slanted-section-decorator:after {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  transform: skewY(-3deg);
+  background-color: purple;
+  content: "";
+  z-index: -1000;
+}
