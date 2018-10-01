@@ -1,20 +1,22 @@
 import React from "react";
-import { StaticQuery, Link, graphql } from "gatsby";
+import { StaticQuery, graphql } from "gatsby";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 
 import "./social_buttons.css";
 
-library.add(fab);
+library.add(fab, fas);
 
 const buttonStyle = {
   borderRadius: "100%",
   position: "relative",
   display: "inline-block",
-  marginRight: "0.75em",
+  marginRight: "0.75rem",
   width: 32,
   height: 32,
+  cursor: "pointer",
 };
 
 const iconStyle = {

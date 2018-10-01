@@ -2,11 +2,10 @@ import React from "react";
 import { StaticQuery, Link, graphql } from "gatsby";
 import IWLogo from "../images/logo.png"
 
-
 const SiteLogo = () => (
   <StaticQuery
     query={graphql`
-      query SiteTitleQuery {
+      query SiteTitleQuery2 {
         site {
           siteMetadata {
             title,
@@ -17,7 +16,7 @@ const SiteLogo = () => (
     `}
     render = {({ site: { siteMetadata: { title, subTitle }}}) => (
       <Link to="/" className="link" >
-        <div className="header-flex">
+        <div className="flex-row purple">
           <img src={IWLogo} className="header-logo" alt="Infinity Wellness Logo"/>
           <div className="logo-text">
               <h1 className="site-title">

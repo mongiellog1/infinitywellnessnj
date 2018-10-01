@@ -18,6 +18,14 @@
   background-color: white;
 }
 
+.purple-bg {
+  background-color: rgb(81, 40, 136);
+}
+
+.white {
+  color: white;
+}
+
 .purple {
   color:  rgb(81, 40, 136);
 }
@@ -66,12 +74,14 @@
   margin: 0;
 }
 
-.header-flex {
+.flex-row {
   display: flex;
   align-items: center;
-  color: #512888;
 }
 
+.space-between {
+  justify-content: space-between;
+}
 
 @media screen and (min-width: 667px) {
   .subcontainer {
@@ -96,4 +106,35 @@
   .mobile-hidden: {
     display:initial;
   }
+}
+
+/* Footer css */
+.footer {
+  padding: 1em;
+  background: linear-gradient(#dbdbff, #15ad25ad);
+}
+.footer-about-card {
+  display: flex;
+  justify-content: space-between;
+  /* box-shadow: 0px 2px 12px -5px black; */
+  margin-bottom: 2em;
+}
+.footer-about-card > img {
+  height: 200px;
+  margin-right: 0.55em;
+}
+
+/* Drawer */
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 70vw;
+  background-color: purple;
+  transition: 250ms ease-in;
+}
+
+.drawer.closed {
+  left: -70vw;
 }

@@ -10,7 +10,7 @@ const IndexPage = () => (
     <div className="section-container">
       <div className="section-background blur background-cover-parent" />
       <div className="background-cover-parent darken" />
-      <div className="section-content" style={{ paddingTop: "6em", color: "white" }}>
+      <div className="section-content white" style={{ paddingTop: "6em" }}>
         <h1>Start Connecting Your Dots.</h1>
         {/* <p>Everyone has a voice that guides them, but not everyone knows how to listen.  Whether it's finding life purpose, living in good health, or strengthening your relationships, there is an answer of great truth within you that is waiting to be heard.</p>
         <p>Everything shows up for a reason and has a message to learn from.  Let your pain be a doorway to the life you've been searching for.</p> */}
@@ -55,8 +55,8 @@ const IndexPage = () => (
     </div>
 
     <div className="section-container">
-      <div className="section-content" style={{ backgroundColor: "#ddd"}}>
-        <h1 style={{ marginBottom: "0.5rem" }}>A Seasoned Professional.</h1>
+      <div className="section-content purple-bg white" >
+        <h1 style={{ paddingTop: "0.5rem" }}>A Seasoned Professional.</h1>
         <p>Gina has many years of experience in alternative health.  With over 1000+ degrees, 1M+ certifications, and a lightyear of professional client experience, there is nothing that she can't handle.  The very nature of her work is so powerful and far-reaching that there is no client
         that she cannot work with and get amazing results.</p>
         <div>
