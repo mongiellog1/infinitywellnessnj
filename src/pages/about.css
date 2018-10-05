@@ -1,0 +1,20 @@
+.bio {
+  content: "";
+  clear: both;
+}
+
+.bio__portrait {
+  float: right;
+  box-sizing: border-box;
+  padding: 0.75rem;
+  width: 10rem;
+  margin: 0;
+}
+
+.training ul {
+  margin-left: 2em;
+}
+
+.training li {
+  list-style-type: disc;
+}

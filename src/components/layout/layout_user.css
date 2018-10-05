@@ -1,0 +1,287 @@
+html {
+  font-size: 14px;
+}
+
+a[href^="/"] {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: #42d82f33;
+  border: 1px solid #42d82f33;
+}
+
+button:hover {
+  background-color: #42d82f77;
+}
+
+button:hover, button:active {
+  transition: 200ms;
+}
+
+button:active, button:focus {
+  background: linear-gradient(#2FD8C4cc, #2FD8C4ee);
+  outline: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+.container {
+  padding: 2rem;
+  padding-top: 0;
+  position: relative;
+}
+
+.container--pad-top, .section--pad-top {
+  padding-top: 2rem;
+}
+
+.section {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.divider {
+  height: 5px;
+  width: 20%;
+  margin-bottom: 3rem;
+}
+
+.purple0 {
+  color: #5c3865;
+}
+
+.purple1 {
+  color: #7b6b7f;
+}
+.purple2 {
+  color: #2f1934;
+}
+
+.big-lines {
+  line-height: 26px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.background-cover-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button-cta-1 {
+  background: linear-gradient(#70eeff, #45E9FF);
+  background: linear-gradient(#25d195, #009F6B);
+  border: none;
+  border-radius: 5px;
+}
+
+.mobile-hidden {
+  display: none;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.purple-bg {
+  background-color: rgb(81, 40, 136);
+}
+
+.green {
+  color: #59e45ffa;
+}
+
+.shadow {
+  text-shadow: 2px 6px 6px rgba(0,0,0,0.152);
+}
+
+.bg-green {
+  background-color: #59e45ffa;
+}
+
+.white {
+  color: white;
+}
+
+.purple {
+  color:  rgb(81, 40, 136);
+}
+
+/* header */
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  margin-bottom: 0;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-box-shadow: 0px -3px 21px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px -3px 21px 3px rgba(0,0,0,0.5);
+  box-shadow: 0px -3px 21px 3px rgba(0,0,0,0.5);
+}
+.header-logo {
+  height: 4rem;
+  width: 4rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+}
+
+.site-title, .logo__subtitle {
+  margin: 0;
+}
+
+.site-title {
+  font-size: 16px;
+  letter-spacing: 0.8px;
+}
+
+.logo__subtitle {
+  font-size: 8px;
+  letter-spacing: 0.2px;
+}
+
+.sm-img {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 667px) {
+  .subcontainer {
+    margin: 0 auto;
+    max-width: 960;
+    padding: 1.45rem 1.0875rem;
+  }
+  .header-logo {
+    height: 3em;
+    width: 3em;
+    margin-right: 0.75em;
+  }
+
+  .site-title {
+    font-size: inherit;
+  }
+
+  .logo__subtitle {
+    font-size: 12px;
+  }
+
+  .mobile-hidden: {
+    display:initial;
+  }
+}
+
+/* Footer css */
+.footer {
+  padding: 1em;
+  background: linear-gradient(#dbdbff, #15ad25ad);
+}
+.footer-about-card {
+  display: flex;
+  justify-content: space-between;
+  /* box-shadow: 0px 2px 12px -5px black; */
+  margin-bottom: 2em;
+}
+.footer-about-card > img {
+  height: 200px;
+  margin-right: 0.55em;
+}
+
+/* Drawer */
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 70vw;
+  background-color: rgb(81, 40, 136);
+  transition: 250ms ease-in;
+}
+
+.drawer.closed {
+  left: -70vw;
+}
+
+.hero-text {
+  font-size: 24px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.slanted-section-decorator {
+  height: 70px;
+  overflow: hidden;
+}
+
+.slanted-section-decorator:after {
+  position: absolute;
+  top: -70px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  transform: skewY(-3deg);
+  content: "";
+  z-index: -1000;
+}
+.slanted-section-decorator--purple:after {
+  background-color: rgb(81, 40, 136);
+}
+.slanted-section-decorator--gold:after {
+  background-color: gold;
+}
+
+/* CTA buttons */
+.contact-cta-button {
+  font-size: 18px;
+  padding: 0.55em;
+  cursor: pointer;
+  background-color: rgba(81, 40, 136, 0.2);
+  border: 1px solid rgba(81, 40, 136, 0.2);
+}
+
+.contact-cta-button:hover {
+  background-color: rgba(81, 40, 136, 0.3);
+}
+
+.contact-cta-button:hover, .contact-cta-button:active {
+  transition: 200ms;
+}
+
+.contact-cta-button:active, .contact-cta-button:focus {
+  background: linear-gradient(rgba(81, 40, 136, 0.45), rgba(81, 40, 136, 0.5));
+  outline: none;
+}

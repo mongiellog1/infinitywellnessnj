@@ -1,7 +1,7 @@
 import React from "react";
 import { FacebookButtonRound, InstagramButtonRound, YoutubeButtonRound } from "./social_buttons";
 import SiteLogo from "./site_logo";
-import gina from "../images/gina2.jpg";
+import gina from "../../images/gina2.jpg";
 import Form from "./footer_form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

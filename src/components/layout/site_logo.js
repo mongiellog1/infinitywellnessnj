@@ -1,6 +1,6 @@
 import React from "react";
 import { StaticQuery, Link, graphql } from "gatsby";
-import IWLogo from "../images/logo.png"
+import IWLogo from "../../images/logo.png"
 
 const SiteLogo = () => (
   <StaticQuery
@@ -27,7 +27,7 @@ const SiteLogo = () => (
                   {title.split(" ")[1].toUpperCase()}
                 </div>
               </h1>
-            <h4 className="subtitle mobile-hidden">
+            <h4 className="logo__subtitle mobile-hidden">
               {subTitle}
             </h4>
           </div>

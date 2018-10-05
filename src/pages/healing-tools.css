@@ -1,0 +1,23 @@
+.mfr-symptoms {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 16px;
+}
+
+.mfr-symptoms__list {
+  box-sizing: border-box;
+  padding-left: 2rem;
+  width: 50%;
+  list-style-type: disc;
+  margin-bottom: 0;
+}
+
+.background--mfr-hero {
+  background-image: url("../images/rocks.jpg");
+  filter: sepia(90%) hue-rotate(60deg) blur(1px);
+}
+
+.background-cover--darken {
+  background: rgba(0,0,0,0.3);
+}

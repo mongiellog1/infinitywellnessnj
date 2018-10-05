@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "../components/layout/index"
 
 import "./index.css";
 
@@ -32,7 +32,7 @@ const IndexPage = () => (
     </div>
 
     <div className="section-container">
-      <div className="slanted-section-decorator"/>
+      <div className="slanted-section-decorator slanted-section-decorator--purple"/>
       <div className="section-content white-bg purple">
         <h1 className="">An Integrated Approach.</h1>
         <p>Gina uses MyoFascial Release, Healing Sound Therapy, Emotional Freedom Technique to create just the right balance of energy into a harmonious space of health and wellness.</p>
