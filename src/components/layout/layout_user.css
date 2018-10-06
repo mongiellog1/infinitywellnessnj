@@ -29,6 +29,22 @@ p {
   font-size: 16px;
 }
 
+.app-background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../images/tile_faerie_dots.png");
+  background-repeat: repeat;
+  z-index: -100000000
+}
+
+.app-container {
+   margin: 0 auto;
+   max-width: 960px;
+   padding-top: 80px;
+   background-color: white;
+}
+
 .container {
   padding: 2rem;
   padding-top: 0;
@@ -42,6 +58,12 @@ p {
 .section {
   position: relative;
   margin-bottom: 3rem;
+  z-index: 0;
+}
+
+.section h1 {
+  margin-bottom: 1em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .divider {
@@ -127,7 +149,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 100;
   margin-bottom: 0;
   background-color: white;
   padding: 0.5rem 1rem;
@@ -201,8 +223,20 @@ p {
 
 /* Footer css */
 .footer {
+  position: relative;
   padding: 1em;
+  background-color: white;
+  z-index: 0;
+}
+.footer::before {
+  position: absolute;
   background: linear-gradient(#dbdbff, #15ad25ad);
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
 }
 .footer-about-card {
   display: flex;
@@ -242,9 +276,14 @@ p {
   font-style: italic;
 }
 
+.z10 {
+  z-index: 10;
+}
+
 .slanted-section-decorator {
   height: 70px;
   overflow: hidden;
+  z-index: -1;
 }
 
 .slanted-section-decorator:after {
@@ -255,7 +294,7 @@ p {
   height: 100px;
   transform: skewY(-3deg);
   content: "";
-  z-index: -1000;
+  z-index: 0;
 }
 .slanted-section-decorator--purple:after {
   background-color: rgb(81, 40, 136);

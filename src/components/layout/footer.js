@@ -48,7 +48,6 @@ const Footer = () => (
         Here's an about section for Gina.  This just says a couple nice things, and wishes the reader a wealth of health and abundance.  Add something that will help the viewer feel comfortable and safe contacting you.
       </p>
     </div>
-
   </div>
 );
 

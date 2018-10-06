@@ -1,8 +1,8 @@
 import React from "react";
 
-const Events = () => (
-  <div>
-    <div id="fb-root"></div>
+const Events = ({ width, height }) => (
+  <div style={{ width: "20vw"}}>
+    <div style={{ width: "20vw" }} id="fb-root"></div>
     {
       (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];

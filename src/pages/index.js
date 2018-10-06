@@ -7,7 +7,7 @@ import "./index.css";
 
 const IndexPage = () => (
   <Layout>
-    <div className="section-container">
+    <div className="section z10">
       <div className="section-background blur background-cover-parent" />
       <div className="background-cover-parent darken" />
       <div className="section-content white" style={{ paddingTop: "6em" }}>
@@ -31,7 +31,7 @@ const IndexPage = () => (
       </div>
     </div>
 
-    <div className="section-container">
+    <div className="section">
       <div className="slanted-section-decorator slanted-section-decorator--purple"/>
       <div className="section-content white-bg purple">
         <h1 className="">An Integrated Approach.</h1>

@@ -32,16 +32,10 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header />
-        <div
-          style={{
-
-            margin: '0 auto',
-            maxWidth: 960,
-            paddingTop: 80,
-          }}
-        >
-          {children}
-        </div>
+        <div className="app-background" />
+          <div className="app-container" >
+            {children}
+          </div>
         <Footer />
       </>
     )}

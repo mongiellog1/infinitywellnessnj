@@ -4,7 +4,10 @@ import Events from "../components/events";
 
 const EventsPage = () => (
   <Layout>
-    <Events />
+    <h1>Come check out an event!</h1>
+    <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+      <Events />
+    </div>
   </Layout>
 );
 
