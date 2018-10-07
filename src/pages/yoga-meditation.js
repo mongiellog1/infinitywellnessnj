@@ -9,6 +9,7 @@ const YogaMeditation = () => (
   <Layout>
     <HeroSection
       title="Yoga & Meditation"
+      cssHeroType="yoga-meditation"
       subtitle="Finding our own common threads."
       paragraphs={["Use yoga and meditation to answer all your questions"]}
     />

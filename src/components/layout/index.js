@@ -7,6 +7,7 @@ import Header from './header'
 import Footer from './footer'
 import './layout_default.css'
 import './layout_user.css'
+import "typeface-alegreya";
 
 const Layout = ({ children }) => (
   <StaticQuery

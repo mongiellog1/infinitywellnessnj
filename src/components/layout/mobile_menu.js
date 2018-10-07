@@ -10,6 +10,8 @@ import Divider from '@material-ui/core/Divider';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import Collapse from '@material-ui/core/Collapse';
+import scrollToElement from "scroll-to-element";
+import logo from "../../images/logo.png";
 
 const StyledListItemText = withStyles({
   primary: {
@@ -31,14 +33,26 @@ class MobileMenu extends Component {
     this.setState({ [prop]: !this.state[prop] });
   }
 
+  smoothScroll = () => {
+    scrollToElement("#contact", { duration: 10 });
+  }
+
   render() {
 
     return (
       <>
         <img className="sm-img" src={hamburger} alt="hamburger menu" onClick={() => this.toggleDrawer("menuOpen")}/>
-        <Drawer open={this.state.menuOpen} onClose={() => this.toggleDrawer("menuOpen")}>
+        <Drawer onClick={() => this.toggleDrawer("menuOpen")} open={this.state.menuOpen} onClose={() => this.toggleDrawer("menuOpen")}>
           <div style={{ width: "100vw", maxWidth: 250 }}>
             <List component="nav">
+              <Link to="/">
+                <ListItem button>
+                  <StyledListItemText primary="Home" />
+                  {/* <div onClick={() => this.toggleDrawer("toolsOpen")} style={{ paddingLeft: "1rem", borderLeft: "1px solid #aaa"}}>
+                    {this.state.toolsOpen ? <ExpandLess /> : <ExpandMore />}
+                  </div> */}
+                </ListItem>
+              </Link>
               <ListItem button>
                 <StyledListItemText onClick={() => navigate("/healing-tools")} primary="Healing Tools" />
                 {/* <div onClick={() => this.toggleDrawer("toolsOpen")} style={{ paddingLeft: "1rem", borderLeft: "1px solid #aaa"}}>
@@ -82,11 +96,11 @@ class MobileMenu extends Component {
                   <StyledListItemText  primary="About" />
                 </ListItem>
               </Link>
-              <Link to="contact">
+              <a name="contact" onClick={this.smoothScroll}>
                 <ListItem button>
                   <StyledListItemText  primary="Contact" />
                 </ListItem>
-              </Link>
+              </a>
             </List>
           </div>
         </Drawer>

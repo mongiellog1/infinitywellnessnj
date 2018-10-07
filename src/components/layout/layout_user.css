@@ -1,3 +1,13 @@
+:root {
+  --purple: rgb(81, 40, 136);
+  --purple0: #5c3865;
+  --purple1: #7b6b7f;
+  --purple2: #2f1934;
+  --green: #009F6B;
+  --green--fade-1: #009f6bbf;
+  --green1: #59e45ffa;
+}
+
 html {
   font-size: 14px;
 }
@@ -29,6 +39,30 @@ p {
   font-size: 16px;
 }
 
+img {
+  margin: 0;
+}
+
+blockquote {
+  font-family: "Alegreya";
+  width: 100%;
+  font-weight: 300;
+  font-size: 24px;
+  background: url("../../images/quote.png") top left no-repeat;
+  background-size: 58px 47px;
+  min-height: 47px;
+  margin: 0.5rem;
+  padding: 2rem;
+  color: white;
+  line-height: 1.25em;
+  text-indent: 2.5rem;
+}
+
+.blockquote-wrapper {
+  padding: 1rem;
+  background-color: var(--green);
+}
+
 .app-background {
   position: fixed;
   width: 100vw;
@@ -41,7 +75,7 @@ p {
 .app-container {
    margin: 0 auto;
    max-width: 960px;
-   padding-top: 80px;
+   padding-top: 70px;
    background-color: white;
 }
 
@@ -49,6 +83,7 @@ p {
   padding: 2rem;
   padding-top: 0;
   position: relative;
+  z-index: 0;
 }
 
 .container--pad-top, .section--pad-top {
@@ -72,15 +107,33 @@ p {
   margin-bottom: 3rem;
 }
 
-.purple0 {
-  color: #5c3865;
-}
 
+.purple {
+  color: var(--purple);
+}
+.purple0 {
+  color: var(--purple0);
+}
 .purple1 {
-  color: #7b6b7f;
+  color: var(--purple1)
 }
 .purple2 {
-  color: #2f1934;
+  color: var(--purple2);
+}
+.green {
+  color: var(--green);
+}
+.white-bg {
+  background-color: white;
+}
+.purple-bg {
+  background-color: var(--purple);
+}
+.bg-green {
+  background-color: var(--green);
+}
+.white {
+  color: white;
 }
 
 .big-lines {
@@ -115,32 +168,20 @@ p {
   display: none;
 }
 
-.white-bg {
-  background-color: white;
-}
-
-.purple-bg {
-  background-color: rgb(81, 40, 136);
-}
-
-.green {
-  color: #59e45ffa;
-}
-
 .shadow {
   text-shadow: 2px 6px 6px rgba(0,0,0,0.152);
 }
 
-.bg-green {
-  background-color: #59e45ffa;
+.page-banner {
+  width: 100%;
+  height: 6rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.white {
-  color: white;
-}
-
-.purple {
-  color:  rgb(81, 40, 136);
+.page-banner--pay {
+  background-image: url("../../images/gina_flower2.jpg");
 }
 
 /* header */
@@ -285,7 +326,6 @@ p {
   overflow: hidden;
   z-index: -1;
 }
-
 .slanted-section-decorator:after {
   position: absolute;
   top: -70px;

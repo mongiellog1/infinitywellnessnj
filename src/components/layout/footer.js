@@ -16,14 +16,16 @@ const Footer = () => (
       </div>
     </h1>
 
-    <div style={{ textAlign: "center" }}>
-      <h2>Get in touch with Gina!</h2>
-      <div style={{ margin: "0 0 2em 0" }}>
-        <FontAwesomeIcon icon="phone" size="2x" style={{ marginRight: "1rem"}}/>
-        <span>(201) 396 - 0970</span>
+    <div id="contact">
+      <div style={{ textAlign: "center" }}>
+        <h2>Get in touch with Gina!</h2>
+        <div style={{ margin: "0 0 2em 0" }}>
+          <FontAwesomeIcon icon="phone" size="2x" style={{ marginRight: "1rem"}}/>
+          <span>(201) 396 - 0970</span>
+        </div>
       </div>
+      <Form />
     </div>
-    <Form />
 
     <div>
       <ul>
