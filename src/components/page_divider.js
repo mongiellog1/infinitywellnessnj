@@ -9,22 +9,23 @@ const styles = {
     justifyContent: "space-between",
     paddingBottom: "3rem"
   },
-  bar: {
+  lines: {
     width: "calc(50% - 5rem)",
-    height: "0.25rem",
+    height: 4,
   },
   img: {
     width: "3rem",
     height: "3rem"
-  }
+  },
 }
 
 const PageDivider = ({ showLines=true, showLogo=true }) => (
   <div style={styles.container}>
-    <div className={showLines ? "bg-green" : ""} style={styles.bar}/>
+    <div className={showLines ? "bg--green" : ""} style={styles.lines} />
     {showLogo && <img src={logo} style={styles.img} />}
-    <div className={showLines ? "bg-green" : ""} style={styles.bar}/>
+    <div className={showLines ? "bg--green" : ""} style={styles.lines} />
   </div>
 );
+
 
 export default PageDivider;

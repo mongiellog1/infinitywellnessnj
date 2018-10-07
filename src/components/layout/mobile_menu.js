@@ -53,6 +53,11 @@ class MobileMenu extends Component {
                   </div> */}
                 </ListItem>
               </Link>
+              <Link to="/pay">
+                <ListItem button>
+                  <StyledListItemText primary="Purchases" />
+                </ListItem>
+              </Link>
               <ListItem button>
                 <StyledListItemText onClick={() => navigate("/healing-tools")} primary="Healing Tools" />
                 {/* <div onClick={() => this.toggleDrawer("toolsOpen")} style={{ paddingLeft: "1rem", borderLeft: "1px solid #aaa"}}>

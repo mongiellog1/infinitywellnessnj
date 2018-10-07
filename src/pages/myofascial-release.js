@@ -29,7 +29,7 @@ export default () => (
         ]}
       />
 
-      <div className="divider purple-bg bg-green" />
+      <div className="divider bg--purple bg--green" />
 
       <article className="section purple2">
         <h2 className="purple shadow">Incredibly Versatile</h2>
@@ -55,7 +55,7 @@ export default () => (
         </div>
       </article>
 
-      <div className="divider purple-bg bg-green" />
+      <div className="divider bg--purple bg--green" />
 
       <Section
         title={<>Sounds Like Fantasy.<br/>Backed By Science.</>}

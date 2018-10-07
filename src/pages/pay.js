@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout/index";
 import PageDivider from "../components/page_divider";
-import Testimonial from "../components/testimonial";
+import { Testimonial1, Testimonial2 } from "../components/testimonial";
 import Banner from "../components/banner";
 
 const PayPage = () => (
@@ -10,12 +10,12 @@ const PayPage = () => (
     <div className="container container--pad-top">
       <div className="section">
         <h1 className="purple">Single Sessions</h1>
-        <div style={{ fontSize: "20px", paddingBottom: "1rem" }}>
-          <div>Myofasical Release</div>
-          <div>Emotional Freedom Techniques</div>
-          <div>Yoga & Meditation</div>
-          <div>Sound Healing & Gratitude</div>
-        </div>
+        <ul style={{ fontSize: "20px", listStyleType: "disc", marginLeft: "1.5rem" }}>
+          <li style={{ marginBottom: 0, lineHeight: "24px"}}>Myofasical Release</li>
+          <li style={{ marginBottom: 0, lineHeight: "24px"}}>Emotional Freedom Techniques</li>
+          <li style={{ marginBottom: 0, lineHeight: "24px"}}>Yoga & Meditation</li>
+          <li style={{ marginBottom: 0, lineHeight: "24px"}}>Sound Healing & Gratitude</li>
+        </ul>
         <h3>Any Single Session - <span className="green">$120</span></h3>
         <p></p>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -25,7 +25,10 @@ const PayPage = () => (
           <img alt="Purchase Single Myo Fascial Release (MFR) session" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
         </form>
       </div>
-      <PageDivider />
+    </div>
+    <Testimonial2 />
+    <div className="container container--pad-top">
+      {/* <PageDivider /> */}
       <div className="section">
         <h1 className="purple">Series Packages</h1>
         <h2>Basic Package</h2>
@@ -70,7 +73,7 @@ const PayPage = () => (
         </form>
       </div>
     </div>
-    <Testimonial />
+    <Testimonial1 />
   </Layout>
 );
 

@@ -7,7 +7,7 @@ import Layout from "../components/layout/index";
 
 const AboutPage = () => (
   <Layout>
-    <div className="">
+    <div className="container container--pad-top">
       <h1 className="title">Bio & Credentials</h1>
       <article className="bio">
         <h2 className="subtitle purple">About Gina </h2>

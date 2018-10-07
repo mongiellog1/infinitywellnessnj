@@ -33,7 +33,7 @@ const IndexPage = () => (
 
     <div className="section">
       <div className="slanted-section-decorator slanted-section-decorator--purple"/>
-      <div className="section-content white-bg purple">
+      <div className="section-content bg--white purple">
         <h1 className="">An Integrated Approach.</h1>
         <p>Gina uses MyoFascial Release, Healing Sound Therapy, Emotional Freedom Technique to create just the right balance of energy into a harmonious space of health and wellness.</p>
         <p>Fill this section with more things that might appeal to someone to have them realize that this is a revolutionary way of dealing with all things.  Not only can this work heal people from their stress and problems, but it can be used to connect to the deepest parts of ourselves
@@ -55,7 +55,7 @@ const IndexPage = () => (
     </div>
 
     <div className="section-container">
-      <div className="section-content purple-bg white" >
+      <div className="section-content bg--purple white" >
         <h1 style={{ paddingTop: "0.5rem" }}>A Seasoned Professional.</h1>
         <p>Gina has many years of experience in alternative health.  With over 1000+ degrees, 1M+ certifications, and a lightyear of professional client experience, there is nothing that she can't handle.  The very nature of her work is so powerful and far-reaching that there is no client
         that she cannot work with and get amazing results.</p>
