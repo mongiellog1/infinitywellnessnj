@@ -6,6 +6,7 @@
   --green: #009F6B;
   --green-fade-1: #009f6bbf;
   --green1: #59e45ffa;
+  --green-gray: #0c6a4b;
 }
 
 html {
@@ -35,6 +36,11 @@ button:active, button:focus {
   outline: none;
 }
 
+h1, h2 {
+  margin-bottom: 1em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 p {
   font-size: 16px;
 }
@@ -57,7 +63,7 @@ blockquote {
   line-height: 22px;
 }
 
-blockquote:after {
+blockquote:before {
   content: "";
   background: url("../../images/quote.png") top left no-repeat;
   background-size: 40px 30px;
@@ -66,6 +72,17 @@ blockquote:after {
   position: absolute;
   top: 0;
   left: 10px;
+}
+blockquote:after {
+  content: "";
+  background: url("../../images/quote.png") top left no-repeat;
+  background-size: 40px 30px;
+  transform: scaleX(-1);
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  bottom: 10px;
+  right: 40px;
 }
 
 input:focus, textarea:focus {
@@ -78,9 +95,16 @@ input:focus, textarea:focus {
   padding-bottom: 0.75rem;
   text-indent: 2rem;
 }
-.blockquote--small:after {
+.blockquote--small:before {
   background-size: 30px 20px;
   top: 10px;
+  width: 30px;
+  height: 21px;
+}
+.blockquote--small:after {
+  background-size: 30px 20px;
+  bottom: 0;
+  right: 60px;
   width: 30px;
   height: 21px;
 }
@@ -93,7 +117,7 @@ input:focus, textarea:focus {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-image: url("../../images/tile_faerie_dots.png");
+  /* background-image: url("../../images/tile_faerie_dots.png"); */
   background-repeat: repeat;
   z-index: -100000000
 }
@@ -122,11 +146,6 @@ input:focus, textarea:focus {
   z-index: 0;
 }
 
-h1 {
-  margin-bottom: 1em;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 .divider {
   height: 5px;
   width: 20%;
@@ -147,6 +166,9 @@ h1 {
 }
 .green {
   color: var(--green);
+}
+.green-gray {
+  color: var(--green-gray);
 }
 .white {
   color: white;
@@ -206,7 +228,7 @@ h1 {
 
 .page-banner {
   width: 100%;
-  height: 10rem;
+  height: 7rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -251,6 +273,12 @@ h1 {
 .site-title {
   font-size: 16px;
   letter-spacing: 0.8px;
+}
+
+.subtle-title {
+  color: #888;
+  font-style: italic;
+  font-weight: 300;
 }
 
 .logo__subtitle {
@@ -305,6 +333,11 @@ h1 {
   background-color: white;
   z-index: 0;
 }
+.footer__container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
 .footer::before {
   position: absolute;
   background: linear-gradient(#dbdbff, #15ad25ad);

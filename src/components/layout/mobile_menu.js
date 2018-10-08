@@ -82,17 +82,12 @@ class MobileMenu extends Component {
 
               <Link to="packages">
                 <ListItem button>
-                  <StyledListItemText  primary="Life Changing Packages" />
+                  <StyledListItemText  primary="Package Series" />
                 </ListItem>
               </Link>
               <Link to="mandalas">
                 <ListItem button>
                   <StyledListItemText  primary="Mandalas" />
-                </ListItem>
-              </Link>
-              <Link to="events">
-                <ListItem button>
-                  <StyledListItemText  primary="Events" />
                 </ListItem>
               </Link>
               <Divider />

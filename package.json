@@ -17,6 +17,7 @@
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
+    "react-image-gallery": "^0.8.11",
     "scroll-to-element": "^2.0.2",
     "typeface-alegreya": "0.0.54"
   },

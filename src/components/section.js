@@ -2,7 +2,7 @@ import React from "react";
 
 const Section = ({ title, subsections, classes }) => (
   <article className={`section purple ${classes}`}>
-    <h2 className="shadow">{title}</h2>
+    <h1 className="shadow">{title}</h1>
     {subsections.map((sub, i) => (
       <p key={`subsection-${i}`} className="purple1">
         {sub}
