@@ -8,7 +8,7 @@ export default () => (
   <Layout>
     <HeroSection
       cssHeroType="eft"
-      title="Emotional Freedom Technique"
+      title="Emotional Freedom Techniques"
       subtitle="Tapping into roots that exist for a reason."
       paragraphs={[`Whether we like it or not, there's parts of us that exist AND they have a huge on
       everything we do in life.`]}

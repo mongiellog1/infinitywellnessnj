@@ -7,7 +7,7 @@ const HealingTools = () => (
   <Layout>
     <div className="healing-tools-section">
       <article className="container container--pad-top purple bg--green1" style={{ zIndex: 2 }}>
-        <h1 className="title">Working With Me!</h1>
+        <h1 className="title">Work With Me!</h1>
         <p className="hero-text">When's the last time you did <i style={{ letterSpacing: "1.5px" }}>anything</i> that fixed <em>ALL</em> of your problems?</p>
         <p><span className="italic">*hint*</span> <b className="hero-text">Never!</b></p>
         <p style={{ marginBottom: "0.25rem"}}>Because:</p>
@@ -18,6 +18,7 @@ const HealingTools = () => (
       </article>
       <article className="container section">
         <div className="slanted-section-decorator slanted-section-decorator--gold"/>
+        <h1>Develop Tools</h1>
         <p>
           That's why I have chosen the tools that are the absolute most effective at dealing with life, consistenly, day-in and day-out, so that
           when something goes on you have the capabilities to handle it in a new way that provides insight and meaningful direction

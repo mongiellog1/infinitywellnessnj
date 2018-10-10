@@ -116,7 +116,7 @@ const PackagesPage = () => (
       </div>
       <Divider showLogo={false} />
       <div className="section ">
-        <h2 className="purple">Diving Mothering Series</h2>
+        <h2 className="purple">Divine Mothering Series</h2>
         <h4 style={{ color: "#555"}}>Inner Divine Mothering Series: Loving Our Inner Child(ren)</h4>
         <p>
           For the purposes of this conversation, we can think of Divine Mother as
