@@ -14,7 +14,7 @@ const Form = () => (
     <label>How Can I Help?</label>
     <textarea id="how_can_i_help" type="textarea" placeholder="How Can I Help?" rows="5" />
 
-    <input type="submit" value="Send Message to Gina" />
+    <input style={{ borderColor: "var(--purple)"}} type="submit" value="Send Message to Gina" />
   </form>
 );
 

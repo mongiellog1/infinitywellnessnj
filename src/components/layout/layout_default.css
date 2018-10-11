@@ -198,7 +198,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: helvetica, sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -216,12 +216,16 @@ h1, header {
   margin: 0 0 1.75rem 0;
   padding: 0;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+    font-family: georgia, serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.75em;
   line-height: 1.1;
+}
+.logo-text > h1{
+  font-family: georgia, serif;
 }
 h2 {
   margin: 0 0 1rem 0;

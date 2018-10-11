@@ -12,24 +12,10 @@ const IndexPage = () => (
       <div className="section-background blur background-cover-parent" />
       <div className="background-cover-parent darken" />
       <div className="section-content white" style={{ paddingTop: "6em" }}>
-        <h1 style={{fontSize: "3.5em"}}>Reclaim Your Wellness.</h1>
-        {/* <p>Everyone has a voice that guides them, but not everyone knows how to listen.  Whether it's finding life purpose, living in good health, or strengthening your relationships, there is an answer of great truth within you that is waiting to be heard.</p>
-        <p>Everything shows up for a reason and has a message to learn from.  Let your pain be a doorway to the life you've been searching for.</p> */}
-        <p style={{ fontSize: "22px" }}>Start living in a way that is true to your core.  A life where you know
+        <h1 style={{fontSize: "3.1em"}}>Reclaim Your Wellness.</h1>
+        <p style={{ fontSize: "20px" }}>Start living in a way that is true to your core.  A life where you know
           what you want and your actions follow in alignment.
         </p>
-        <div>
-          <Link to="/page-2/" style={{ marginRight: "1rem" }}>
-            <button className="button-cta-1">
-              Learn More
-            </button>
-          </Link>
-          <Link to="/page-2/">
-            <button className="button-cta-1">
-              Free Ebook
-            </button>
-          </Link>
-        </div>
       </div>
     </div>
 
@@ -49,7 +35,6 @@ const IndexPage = () => (
         choose and master our life.
       </p>
     </div>
-
     <div className="container">
       <Divider />
       <div className="section bg--white purple">
@@ -71,18 +56,7 @@ const IndexPage = () => (
           of ourselves.  The trick is to stop searching for the answers, and
           instead remove the blocks that are getting in your way.
         </p>
-        <div>
-          <Link to="/page-2/" style={{ marginRight: "1rem" }}>
-            <button className="button-cta-1">
-              Learn More
-            </button>
-          </Link>
-          <Link to="/page-2/">
-            <button className="button-cta-1">
-              Book Session
-            </button>
-          </Link>
-        </div>
+        <p>Check out how I create a healing space with my <Link to="/healing-tools">healing tools</Link></p>
       </div>
     </div>
     <div className="container container--pad-top container--pad-bottom-extra bg--purple white" >
@@ -92,21 +66,20 @@ const IndexPage = () => (
         that she cannot work with and get amazing results.
       </p>
       <p>The World Awaits You.</p>
-      <div>
-        <Link to="/page-2/" style={{ marginRight: "1rem" }}>
-          <button className="button-cta-1">
-            More on Gina
-          </button>
-        </Link>
-        <Link to="/page-2/">
-          <button className="button-cta-1">
-            Get in Touch
-          </button>
-        </Link>
-
-      </div>
     </div>
   </Layout>
 )
 
 export default IndexPage
+
+/*
+
+<div>
+  <Link to="/page-2/" style={{ marginRight: "1rem" }}>
+    <button className="button-cta-1">
+      Learn More
+    </button>
+  </Link>
+</div>
+
+*/
