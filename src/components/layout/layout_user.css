@@ -7,6 +7,10 @@
   --green-fade-1: #009f6bbf;
   --green1: #59e45ffa;
   --green-gray: #0c6a4b;
+  --light-green: #56bb96;
+  --light-green2: #94d5c0;
+  --light-purple: #7c5ea6;
+  --light-purple2: #644195;
 }
 
 html {
@@ -177,6 +181,18 @@ input:focus, textarea:focus {
 .green {
   color: var(--green);
 }
+.light-green {
+  color: var(--light-green);
+}
+.light-green2 {
+  color: var(--light-green2);
+}
+.light-purple {
+  color: var(--light-purple);
+}
+.light-purple2 {
+  color: var(--light-purple2);
+}
 .green-gray {
   color: var(--green-gray);
 }
@@ -195,6 +211,15 @@ input:focus, textarea:focus {
 }
 .bg--green1 {
   background-color: var(--green1);
+}
+.bg--light-green {
+  background-color: var(--light-green);
+}
+.bg--light-green2 {
+  background-color: var(--light-green2);
+}
+.bg--light-purple {
+  background-color: var(--light-purple);
 }
 .bg--green-fade {
   background-color: var(--green-fade-1);

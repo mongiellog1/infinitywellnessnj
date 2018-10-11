@@ -20,10 +20,10 @@ const Footer = () => (
 
       <div id="contact" style={{ paddingBottom: "1rem"}}>
         <div style={{ textAlign: "center" }}>
-          <h2 >Get in touch with Gina!</h2>
+          <h2 >Get in touch!</h2>
           <div style={{ margin: "0 0 2em 0" }}>
-            <FontAwesomeIcon icon="phone" size="2x" style={{ marginRight: "1rem"}}/>
-            <span>(201) 396 - 0970</span>
+            <FontAwesomeIcon icon="phone" size="2x" style={{ marginRight: "2rem"}}/>
+            <span style={{ fontSize: 20 }}>(201) 396 - 0970</span>
           </div>
         </div>
         <Form />
