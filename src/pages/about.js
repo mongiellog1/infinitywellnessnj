@@ -1,18 +1,27 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import GinaPortrait from "../images/gina2.jpg";
 import "./about.css";
+import Banner from "../components/banner";
 
 import Layout from "../components/layout/index";
 
 const AboutPage = () => (
   <Layout>
-    <div className="container container--pad-top">
-      <h1 className="title">Bio & Credentials</h1>
+    <Banner flag="about" />
+    <div className="container container--pad-top container--pad-small">
       <article className="bio">
-        <h2 className="subtitle purple">About Gina </h2>
+        <div>
+          <div className="bio-header">
+            <img className="bio__portrait" src={GinaPortrait} />
+            <div>
+              <h2 style={{ fontSize: 24, marginBottom: "0.5rem" }}>Gina Mongiello, LA, MT</h2>
+              <h4 style={{ fontStyle: "italic", fontWeight: "200" }}>Founder</h4>
+            </div>
+          </div>
 
-        <img className="bio__portrait" src="https://dummyimage.com/400x600/000/fff&text=portrait" />
+        </div>
+
         <div>
           <p>
             Here is text about gina as a person, that speaks about her journey and how she came to be a
