@@ -3,6 +3,8 @@ import Layout from "../components/layout/index";
 import HeroSection from "../components/hero_section";
 import Section from "../components/section";
 import ContactGinaCta from "../components/contact_gina_cta";
+import Divider from "../components/page_divider";
+
 import "./healing-tools.css";
 
 export default () => (
@@ -29,10 +31,10 @@ export default () => (
         ]}
       />
 
-      <div className="divider bg--purple bg--green" />
+      <Divider showLogo={false} />
 
       <article className="section purple2">
-        <h2 className="purple shadow">Incredibly Versatile</h2>
+        <h1 className="purple shadow">Incredibly Versatile</h1>
         <p>MFR has been known to help many who suffer with:</p>
         <div className="mfr-symptoms purple0">
           <ul className="mfr-symptoms__list ">
@@ -55,7 +57,7 @@ export default () => (
         </div>
       </article>
 
-      <div className="divider bg--purple bg--green" />
+      <Divider showLogo={false} />
 
       <Section
         title={<>Sounds Like Fantasy.<br/>Backed By Science.</>}

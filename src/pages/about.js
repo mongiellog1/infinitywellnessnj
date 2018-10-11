@@ -9,33 +9,36 @@ import Layout from "../components/layout/index";
 const AboutPage = () => (
   <Layout>
     <Banner flag="about" />
-    <div className="container container--pad-top container--pad-small">
-      <article className="bio">
-        <div>
-          <div className="bio-header">
-            <img className="bio__portrait" src={GinaPortrait} />
-            <div>
-              <h2 style={{ fontSize: 24, marginBottom: "0.5rem" }}>Gina Mongiello, LA, MT</h2>
-              <h4 style={{ fontStyle: "italic", fontWeight: "200" }}>Founder</h4>
+    <div className="container container--pad-top container">
+      <div className="section">
+        <h1 className="purple">Bio & Credentials</h1>
+        <article className="bio">
+          <div>
+            <div className="bio-header">
+              <img className="bio__portrait" src={GinaPortrait} />
+              <div>
+                <h2 style={{ fontSize: 24, marginBottom: "0.5rem" }}>Gina Mongiello, LA, MT</h2>
+                <h4 style={{ fontStyle: "italic", fontWeight: "200" }}>Founder</h4>
+              </div>
             </div>
+
           </div>
 
-        </div>
-
-        <div>
-          <p>
-            Here is text about gina as a person, that speaks about her journey and how she came to be a
-            holistic & alernative health practitioner.  It also speaks about what events she hosts frequently,
-            what trainings she goes to including sound healing workshops, and what her education is in the past.
-          </p>
-          <p>
-            This is a good section to sell herself as a compassionate earth citizen with a mission to heal herself and the world around herself
-            Let people know that no matter what walk of life they are from, they have the power to heal themselves through
-            listening and connecting with their inner nature.  Everyone has the keys to their own success.  This is a good opportunity
-            to talk about how you came across your techinques and what differentiates them from you!
-          </p>
-        </div>
-      </article>
+          <div>
+            <p>
+              Here is text about gina as a person, that speaks about her journey and how she came to be a
+              holistic & alernative health practitioner.  It also speaks about what events she hosts frequently,
+              what trainings she goes to including sound healing workshops, and what her education is in the past.
+            </p>
+            <p>
+              This is a good section to sell herself as a compassionate earth citizen with a mission to heal herself and the world around herself
+              Let people know that no matter what walk of life they are from, they have the power to heal themselves through
+              listening and connecting with their inner nature.  Everyone has the keys to their own success.  This is a good opportunity
+              to talk about how you came across your techinques and what differentiates them from you!
+            </p>
+          </div>
+        </article>
+      </div>
       <article className="training">
         <h2 className="subtitle purple">Training & Certifications</h2>
         <h4>Myofascial Release</h4>

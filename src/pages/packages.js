@@ -67,7 +67,7 @@ const PackagesPage = () => (
       />
       <Divider />
       <div className="section ">
-        <h2 className="purple">Basic Series: Beginners Special</h2>
+        <h1 className="purple">Basic Series: Beginners Special</h1>
         <p>
           This program is for those wanting to experience a deepening within themselves, to reveal what’s really going on with a current issue or feelings inside.
         </p>
@@ -83,7 +83,7 @@ const PackagesPage = () => (
       </div>
       <Divider showLogo={false} />
       <div className="section ">
-        <h2 className="purple">Transformation Series</h2>
+        <h1 className="purple">Transformation Series</h1>
         <h4 className="green">Release, Renew, Rebuild.</h4>
         <p>
           Experience Greater Health and Wellness; An Opportunity to Transform!
@@ -116,7 +116,7 @@ const PackagesPage = () => (
       </div>
       <Divider showLogo={false} />
       <div className="section ">
-        <h2 className="purple">Divine Mothering Series</h2>
+        <h1 className="purple">Divine Mothering Series</h1>
         <h4 style={{ color: "#555"}}>Inner Divine Mothering Series: Loving Our Inner Child(ren)</h4>
         <p>
           For the purposes of this conversation, we can think of Divine Mother as

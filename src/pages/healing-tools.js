@@ -6,7 +6,7 @@ import "./healing-tools.css";
 const HealingTools = () => (
   <Layout>
     <div className="healing-tools-section">
-      <article className="container container--pad-top light-purple bg--light-green2" style={{ zIndex: 2 }}>
+      <article className="container container--pad-top light-purple section--work-with-me" style={{ zIndex: 2 }}>
         <h1 className="title purple">Work With Me!</h1>
         <p className="hero-text">When's the last time you did <i style={{ letterSpacing: "1.5px" }}>anything</i> that fixed <em>ALL</em> of your problems?</p>
         <p><span className="italic">*hint*</span> <b className="hero-text light-purple2">Never!</b></p>

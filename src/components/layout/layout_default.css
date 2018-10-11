@@ -221,7 +221,7 @@ h1, header {
     font-family: georgia, serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.75em;
+  font-size: 1.75em;
   line-height: 1.1;
 }
 .logo-text > h1{
@@ -235,7 +235,7 @@ h2 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
+  font-size: 1.25em;
   line-height: 1.1;
 }
 h3 {

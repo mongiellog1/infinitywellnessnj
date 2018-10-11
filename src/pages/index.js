@@ -12,8 +12,8 @@ const IndexPage = () => (
       <div className="section-background blur background-cover-parent" />
       <div className="background-cover-parent darken" />
       <div className="section-content white" style={{ paddingTop: "6em" }}>
-        <h1 style={{fontSize: "3.1em"}}>Reclaim Your Wellness.</h1>
-        <p style={{ fontSize: "20px" }}>Start living in a way that is true to your core.  A life where you know
+        <h1 style={{fontSize: "2.5em"}}>Reclaim Your Wellness.</h1>
+        <p style={{ fontSize: "18px" }}>Start living in a way that is true to your core.  A life where you know
           what you want and your actions follow in alignment.
         </p>
       </div>

@@ -94,6 +94,11 @@ input:focus, textarea:focus {
   outline-color: var(--purple)
 }
 
+p:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 .blockquote--small {
   font-size: 18px;
   padding-top: 0.75rem;

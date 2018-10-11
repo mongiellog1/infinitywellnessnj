@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
-  font-size: 16px;
 }
 
 .mfr-symptoms__list {
@@ -13,13 +12,16 @@
   margin-bottom: 0;
 }
 
+.section--work-with-me {
+  background: linear-gradient(135deg, var(--green), var(--light-green));
+}
+
 .background--mfr-hero {
-  background-image: url("../images/rocks.jpg");
-  filter: sepia(90%) hue-rotate(60deg) blur(1px);
+  background: linear-gradient(135deg, var(--light-purple), var(--light-green));
 }
 
 .background--eft-hero {
-  background-color: purple;
+  background: linear-gradient(135deg, var(--light-purple), var(--purple));
 }
 
 .background--sound-healing-hero {

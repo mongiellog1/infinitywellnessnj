@@ -3,6 +3,8 @@ import Layout from "../components/layout/index";
 import HeroSection from "../components/hero_section";
 import Section from "../components/section";
 import ContactGinaCta from "../components/contact_gina_cta";
+import Divider from "../components/page_divider";
+
 import "./healing-tools.css";
 
 const SoundHealing = () => (
@@ -21,6 +23,7 @@ const SoundHealing = () => (
             Sound is a profound`
         ]}
       />
+      <Divider showLogo={false} />
     </div>
   </Layout>
 );
