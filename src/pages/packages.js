@@ -43,7 +43,7 @@ const TransformationSessionList = () => (
 const MotheringModules = () => (
   ["Inner Child(ren)/Inner Mother", "Mother As Eternal Nurturer", "Divine Mother Within Loves What Arises"]
     .map((title, idx) => (
-      <div>
+      <div key={`mothering-module-${idx}`}>
         <h4 style={{ textDecoration: "underline", margin: "1.5rem 0 0.5rem 0" }}>Module {idx + 1} - {title}</h4>
         <div>Four sessions (5.5 hours), followed by a VIP day (3.5 hours)</div>
         <div>Nine hours of session time in total</div>

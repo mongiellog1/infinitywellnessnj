@@ -9,25 +9,6 @@ import "./social_buttons.css";
 
 library.add(fab, fas);
 
-const buttonStyle = {
-  borderRadius: "100%",
-  position: "relative",
-  display: "inline-block",
-  marginRight: "0.75rem",
-  width: 32,
-  height: 32,
-  cursor: "pointer",
-};
-
-const iconStyle = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  color: "white",
-  fontSize: 16,
-};
-
 const buttonFactory = (style, iconType, address) => () => (
   <StaticQuery
     query={graphql`
@@ -45,8 +26,8 @@ const buttonFactory = (style, iconType, address) => () => (
     }
     render={ data  => (
       <a href={data.site.siteMetadata.socialMediaLinks[address]} >
-        <div className={iconType} style={{ ...buttonStyle,  ...style }}>
-          <FontAwesomeIcon icon={["fab", iconType]} style={iconStyle} />
+        <div className={`${iconType} social-button`} style={style}>
+          <FontAwesomeIcon icon={["fab", iconType]} className="social-icon" />
         </div>
       </a>
     )}

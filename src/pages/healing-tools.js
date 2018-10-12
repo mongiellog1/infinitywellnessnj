@@ -1,6 +1,8 @@
 import React from "react";
 import Layout from "../components/layout/index"
 import { Link } from "gatsby";
+import Button from "../components/Button";
+
 import "./healing-tools.css";
 
 const HealingTools = () => (
@@ -43,33 +45,33 @@ const HealingTools = () => (
           Below is an outline of the tools that I use, and the packages I offer to give you the best balance of insight, clarity, and depth into your life.
         </p>
 
-        <button>Work with Gina</button>
+        <Button text="Work with Gina" />
       </article>
       <article className="container">
         <h1 className="title purple">Healing Tools</h1>
         <div>
-          <Link to="myofascial-release"><button>Myofascial Release</button></Link>
+          <Link to="myofascial-release"><Button text="Myofascial Release" /></Link>
           <p>
             For deep body healing, resolving of chronic pains, releasing of tension.
           </p>
         </div>
 
         <div>
-          <Link to="emotional-freedom-techniques"><button>Emotional Freedom Technique (Tapping)</button></Link>
+          <Link to="emotional-freedom-techniques"><Button text="Emotional Freedom Technique (Tapping)"/></Link>
           <p>
             For letting go of the past, strengthening empowering beliefs, and opening up the doors for creativity, vitality, and overall wellness.
           </p>
         </div>
 
         <div>
-          <Link to="yoga-meditation"><button>Yoga & Meditation</button></Link>
+          <Link to="yoga-meditation"><Button text="Yoga & Meditation" /></Link>
           <p>
             Reconnecting with the rhythym of life, increasing your capacity to breathe in each moment and take all there is in life.
           </p>
         </div>
 
         <div>
-          <Link to="sound-therapy"><button>Sound Therapy & Gratitude</button></Link>
+          <Link to="sound-therapy"><Button text="Sound Therapy & Gratitude"/></Link>
           <p>
             For a pleasure beyond delight and taking a dive into the most serene places of your mind where your most harmonious self resides.
           </p>

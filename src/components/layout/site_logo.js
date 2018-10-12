@@ -16,7 +16,7 @@ const SiteLogo = () => (
     `}
     render = {({ site: { siteMetadata: { title, subTitle }}}) => (
       <Link to="/" className="link" >
-        <div className="flex-row purple">
+        <div className="flex--row purple">
           <img src={IWLogo} className="header-logo" alt="Infinity Wellness Logo"/>
           <div className="logo-text">
               <h1 className="site-title">
