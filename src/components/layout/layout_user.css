@@ -22,6 +22,10 @@ a[href^="/"] {
   text-decoration: none;
 }
 
+button, a, input, label, textarea, .hero__title--home-page {
+  font-family: georgia, serif;
+}
+
 button {
   position: relative;
   cursor: pointer;
@@ -65,7 +69,7 @@ h1, h2 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 0.8em;
   line-height: 22px;
 }
 
@@ -146,16 +150,14 @@ p:last-child {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  /* background-image: url("../../images/tile_faerie_dots.png"); */
-  /* background-repeat: repeat; */
   background-color: #eeeeee;
   z-index: -100000000
 }
 
 .app-container {
    margin: 0 auto;
-   max-width: 960px;
-   padding-top: 70px;
+   max-width: 1000px;
+   padding-top: 5.5rem;
    background-color: white;
 }
 
@@ -178,8 +180,14 @@ p:last-child {
   padding-bottom: 4rem;
 }
 
+.container--hero {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .section {
   position: relative;
+  overflow: hidden;
   padding-bottom: 3rem;
   z-index: 0;
 }
@@ -305,47 +313,36 @@ p:last-child {
 }
 
 /* header */
-.header-container {
+.header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+
   z-index: 100;
   margin-bottom: 0;
   background-color: white;
-  padding: 0.5rem 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 1rem;
+
   -webkit-box-shadow: 0px -3px 21px 3px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px -3px 21px 3px rgba(0,0,0,0.5);
   box-shadow: 0px -3px 21px 3px rgba(0,0,0,0.5);
 }
-.header-logo {
-  height: 4rem;
-  width: 4rem;
-  margin-right: 0.5rem;
-  margin-bottom: 0;
+
+.header__inner_container {
+  padding-right: 2rem;
+  max-width: 1172px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.site-logo {
+  height: 3.5rem;
 }
 
-.site-title, .logo__subtitle {
-  margin: 0;
-}
-
-.site-title {
-  font-size: 16px;
-  letter-spacing: 0.8px;
-}
-
-.subtle-title {
-  color: #888;
-  font-style: italic;
-  font-weight: 300;
-}
-
-.logo__subtitle {
-  font-size: 8px;
-  letter-spacing: 0.2px;
+.site-logo img {
+  height: 100%;
 }
 
 .sm-img {
@@ -367,29 +364,8 @@ p:last-child {
   justify-content: space-between;
 }
 
-@media screen and (min-width: 667px) {
-  .subcontainer {
-    margin: 0 auto;
-    max-width: 960;
-    padding: 1.45rem 1.0875rem;
-  }
-  .header-logo {
-    height: 3em;
-    width: 3em;
-    margin-right: 0.75em;
-  }
-
-  .site-title {
-    font-size: inherit;
-  }
-
-  .logo__subtitle {
-    font-size: 12px;
-  }
-
-  .mobile-hidden: {
-    display:initial;
-  }
+.logo-text > h1 {
+  font-size: 1.25rem;
 }
 
 /* Footer css */
@@ -398,10 +374,22 @@ p:last-child {
   padding: 1em;
   background-color: white;
   z-index: 0;
-}
-.footer__container {
   margin: 0 auto;
-  max-width: 1000px;
+}
+
+.footer-grid {
+  display: grid;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.grid-one {
+  grid-row: 1;
+}
+.grid-two {
+  grid-row: 2;
 }
 
 .footer::before {
@@ -498,4 +486,53 @@ p:last-child {
 .contact-cta-button:active, .contact-cta-button:focus {
   background: linear-gradient(rgba(81, 40, 136, 0.45), rgba(81, 40, 136, 0.5));
   outline: none;
+}
+
+@media screen and (min-width: 667px) {
+  html {
+    font-size: 20px;
+  }
+  .app-container {
+    padding-top: 5rem;
+  }
+
+  h1, header {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.45rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.1rem;
+  }
+  h6 {
+    font-size: 0.8rem;
+  }
+
+  .subcontainer {
+    margin: 0 auto;
+    max-width: 960;
+    padding: 1.45rem 1.0875rem;
+  }
+  .site-logo {
+    height: 4rem;
+  }
+
+  .site-title {
+    font-size: inherit;
+  }
+
+  .logo__subtitle {
+    font-size: 12px;
+  }
+
+  .mobile-hidden: {
+    display:initial;
+  }
 }

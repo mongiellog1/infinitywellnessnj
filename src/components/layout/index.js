@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
-import Footer from './footer'
 import './layout_default.css'
 import './layout_user.css'
+import Header from './header'
+import Footer from './footer'
 import "typeface-alegreya";
 
 const Layout = ({ children }) => (
@@ -36,8 +36,8 @@ const Layout = ({ children }) => (
         <div className="app-background" />
           <div className="app-container" >
             {children}
+            <Footer />
           </div>
-        <Footer />
       </>
     )}
   />

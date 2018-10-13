@@ -16,6 +16,11 @@
   background: linear-gradient(135deg, var(--green), var(--light-green));
 }
 
+.background--home-page-hero {
+  background: url("../images/flowers2.jpg ");
+  background-position: center;
+  background-size: cover;
+}
 .background--mfr-hero {
   background: linear-gradient(135deg, var(--light-purple), var(--light-green));
 }

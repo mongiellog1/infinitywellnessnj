@@ -9,7 +9,7 @@ const PayPage = () => (
     <Banner flag="pay" />
     <div className="container container--pad-top">
       <div className="section">
-        <h1 className="purple">Single Sessions</h1>
+        <h2 className="purple">Single Sessions</h2>
         <ul style={{ fontSize: "20px", listStyleType: "disc", marginLeft: "1.5rem" }}>
           <li style={{ marginBottom: 0, lineHeight: "24px"}}>Myofasical Release</li>
           <li style={{ marginBottom: 0, lineHeight: "24px"}}>Emotional Freedom Techniques</li>
@@ -30,8 +30,8 @@ const PayPage = () => (
     <div className="container container--pad-top">
       {/* <PageDivider /> */}
       <div className="section">
-        <h1 className="purple">Series Packages</h1>
-        <h2>Basic Package</h2>
+        <h2 className="purple">Series Packages</h2>
+        <h3>Basic Package</h3>
         <p>If you're just getting started but you know you are ready to start the road to mastery of your own life, this basic series
           will get you equipped to step out of old habits and usher in each day anew like never before.
           For more information <a href="/healing-tools">click here</a>
@@ -46,7 +46,7 @@ const PayPage = () => (
       </div>
       <PageDivider showLogo={false} />
       <div className="section">
-        <h2>Transformation Package</h2>
+        <h3>Transformation Package</h3>
         <p>Go deep with this 10 session package to totally and completely transform your current circumstances and get a refreshed, renewed, reinvigorated sense of life and possibility.
           For more information <a href="/healing-tools">click here</a>
         </p>
@@ -60,7 +60,7 @@ const PayPage = () => (
       </div>
       <PageDivider showLogo={false} />
       <div className="section">
-        <h2>Divine Mothering</h2>
+        <h3>Divine Mothering</h3>
         <p>Three months of coaching and mentorship through an amazing discovery of our own ability to become whole and complete.
           For more information on this revolutionary, life-changing package <a href="/healing-tools">click here</a>
         </p>

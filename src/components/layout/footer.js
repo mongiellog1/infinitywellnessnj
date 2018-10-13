@@ -7,16 +7,16 @@ import Form from "./footer_form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => (
-  <div id="contact" className="footer footer__container">
-
-    <div className="flex--row flex--space-between flex--wrap" style={{ marginBottom: "1rem" }}>
-      <SiteLogo />
-    </div>
-
-    <div className="flex--row social-buttons">
-      <FacebookButtonRound />
-      <InstagramButtonRound />
-      <YoutubeButtonRound />
+  <div id="contact" className="footer">
+    <div className="footer-grid">
+      <div className="grid__element grid-one">
+        <SiteLogo />
+      </div>
+      <div className="grid__element grid-two social-buttons">
+        <FacebookButtonRound />
+        <InstagramButtonRound />
+        <YoutubeButtonRound />
+      </div>
     </div>
 
     <div  style={{ paddingBottom: "1rem"}}>

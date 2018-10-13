@@ -3,13 +3,20 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout/index"
 import Divider from "../components/page_divider";
+import HeroSection from "../components/hero_section";
 
 import "./index.css";
 
 const IndexPage = () => (
   <Layout>
-    <div className="section z10">
-      <div className="section-background blur background-cover-parent" />
+    <HeroSection
+      title="Reclaim Your Wellness."
+      titleClass="home-page"
+      subtitle="Start living in a way that is true to your core.  A life where you know what you want and your actions follow in alignment."
+      cssHeroType="home-page"
+    />
+
+    {/* <div className="section z10">
       <div className="background-cover-parent darken" />
       <div className="section-content white" style={{ paddingTop: "6em" }}>
         <h1 style={{fontSize: "2.5em"}}>Reclaim Your Wellness.</h1>
@@ -17,11 +24,11 @@ const IndexPage = () => (
           what you want and your actions follow in alignment.
         </p>
       </div>
-    </div>
+    </div> */}
 
     <div className="section section-content purple" >
       <div className="slanted-section-decorator slanted-section-decorator--purple"/>
-      <h1>Wellness Is A State Of Mind</h1>
+      <h2>Wellness Is A State Of Mind</h2>
       <p>
         A lot of people feel victim to their circumstances, and often going around
         enjoying the good times, and feeling bad during the bad times, never realizing
@@ -38,7 +45,7 @@ const IndexPage = () => (
     <div className="container">
       <Divider />
       <div className="section bg--white purple">
-        <h1 className="">An Integrated Approach.</h1>
+        <h2 className="">An Integrated Approach.</h2>
         <p>
           I use MyoFascial Release, Sound Bathing, Emotional Freedom Techniques,
           and Yoga & Meditation to create just the right balance of energy into a
@@ -60,7 +67,7 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="container container--pad-top container--pad-bottom-extra bg--purple white" >
-      <h1>A Seasoned Professional.</h1>
+      <h2>A Seasoned Professional.</h2>
       <p>
         Gina has many years of experience in alternative health.  With over 1000+ degrees, 1M+ certifications, and a lightyear of professional client experience, there is nothing that she can't handle.  The very nature of her work is so powerful and far-reaching that there is no client
         that she cannot work with and get amazing results.

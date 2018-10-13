@@ -1,13 +1,13 @@
 import React from "react";
 
-export default ({ cssHeroType, title, subtitle, paragraphs=[], darken }) => (
-  <div className="container container--pad-top white" style={{ fontSize: 24 }}>
+export default ({ cssHeroType, title, titleClass, subtitle, paragraphs=[], darken }) => (
+  <div className="hero container container--hero container--pad-top white">
     <div className={`background--${cssHeroType}-hero background-cover-parent`} />
     {darken && <div className="background-cover-parent background-cover--darken" />}
-    <h1 style={{ textShadow: "2px 2px black"}} className="subtitle">{title}</h1>
-    <h2 style={{ textShadow: "2px 2px black", fontSize: 20 }}>
+    <h1 style={{ textShadow: "2px 2px black"}} className={titleClass ? `hero__title--${titleClass}` : ""}>{title}</h1>
+    <p style={{ fontSize: "1.2rem", textShadow: "2px 2px black"}}>
       {subtitle}
-    </h2>
+    </p>
     {paragraphs.map((paragraph, i) => <p key={`paragraph-${i}`}>{paragraph}</p>)}
   </div>
 );

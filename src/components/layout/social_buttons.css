@@ -1,36 +1,12 @@
 .instagram {
   background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
     radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
-
     radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
     radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
-
     radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
     radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
-
     radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
-
     linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-
-}
-
-
-
-.social-buttons__inner-wrapper a {
-  margin-right: 0.75rem;
-}
-
-.social-buttons__inner-wrapper a:last-child {
-  margin-right: 0;
-}
-
-@media screen and (min-width: 360px) {
-  .social-buttons {
-    width: auto;
-  }
-  .social-buttons__inner-wrapper {
-    width: auto;
-  }
 }
 
 .social-button {
@@ -50,4 +26,33 @@
   transform: translate(-50%, -50%);
   color: white;
   font-size: 16px;
+}
+
+.grid__element {
+  margin-right: auto;
+  margin-left: auto;
+}
+.grid-one {
+  margin-bottom: 2rem;
+}
+
+.social-buttons a:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.social-buttons__inner-wrapper a {
+  margin-right: 0.75rem;
+}
+
+.social-buttons__inner-wrapper a:last-child {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 667px) {
+  .grid-one {
+    margin: 0;
+  }
+  .grid-two {
+    grid-row: 1;
+  }
 }
