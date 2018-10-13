@@ -28,13 +28,16 @@ const PayPage = () => (
     </div>
     <Testimonial2 />
     <div className="container container--pad-top">
-      {/* <PageDivider /> */}
       <div className="section">
         <h2 className="purple">Series Packages</h2>
-        <h3>Basic Package</h3>
-        <p>If you're just getting started but you know you are ready to start the road to mastery of your own life, this basic series
-          will get you equipped to step out of old habits and usher in each day anew like never before.
-          For more information <a href="/healing-tools">click here</a>
+        <h3>Basic Series: Beginner Package</h3>
+        <p>
+          If you’re curious or just starting to see how underlying aspects are
+          driving your behavior, your unrest, and your life situations, and you’d
+          like to be the driver instead, then this basic series is for you.
+        </p>
+        <p>
+          For more information on the Basic Series Package <a href="/packages#basic-package">click here</a>
         </p>
         <h3>Price - <span className="green">$360</span></h3>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -47,8 +50,14 @@ const PayPage = () => (
       <PageDivider showLogo={false} />
       <div className="section">
         <h3>Transformation Package</h3>
-        <p>Go deep with this 10 session package to totally and completely transform your current circumstances and get a refreshed, renewed, reinvigorated sense of life and possibility.
-          For more information <a href="/healing-tools">click here</a>
+        <p>
+          Go deep with this 10 session package to transform your current
+          circumstances and get a refreshed, renewed, reinvigorated sense of
+          life and possibility.  The series will provide the door to step out
+          of old habits and usher in each day anew like never before.
+        </p>
+        <p>
+          For more information on the Transformation Package <a href="/packages#transformation-package">click here</a>
         </p>
         <h3>Price - <span className="green">$1080</span></h3>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -60,8 +69,15 @@ const PayPage = () => (
       </div>
       <PageDivider showLogo={false} />
       <div className="section">
-        <h3>Divine Mothering</h3>
-        <p>Three months of coaching and mentorship through an amazing discovery of our own ability to become whole and complete.
+        <h3>Divine Inner Mothering</h3>
+        <p>
+          Three months of coaching and mentorship through an amazing discovery of
+          your own ability to live whole and complete. In Divine Mothering we
+          shine light on and integrate with shadow aspects which automatically
+          increases consciousness. From here we live without fear, and have the
+          tools to see ourselves through any situation.
+        </p>
+        <p>
           For more information on this revolutionary, life-changing package <a href="/healing-tools">click here</a>
         </p>
         <h3>Price - <span className="green">$3240</span></h3>

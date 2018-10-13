@@ -101,17 +101,6 @@ blockquote:before {
   top: 0;
   left: 10px;
 }
-blockquote:after {
-  content: "";
-  background: url("../../images/quote.png") top left no-repeat;
-  background-size: 40px 30px;
-  transform: scaleX(-1);
-  width: 40px;
-  height: 30px;
-  position: absolute;
-  bottom: 10px;
-  right: 40px;
-}
 
 input:focus, textarea:focus {
   outline-color: var(--purple)
