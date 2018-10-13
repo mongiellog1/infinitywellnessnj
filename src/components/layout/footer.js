@@ -22,9 +22,9 @@ const Footer = () => (
     <div  style={{ paddingBottom: "1rem"}}>
       <div style={{ textAlign: "center" }}>
         <h2 >Get in touch!</h2>
-        <div style={{ margin: "0 0 2em 0" }}>
+        <div style={{ margin: "0 0 2rem 0" }}>
           <FontAwesomeIcon icon="phone" size="2x" style={{ marginRight: "2rem" }}/>
-          <span style={{ fontSize: 20 }}>(201) 396 - 0970</span>
+          <span style={{ fontSize: "1.2rem" }}>(201) 396 - 0970</span>
         </div>
       </div>
       <Form />

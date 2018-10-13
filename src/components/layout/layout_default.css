@@ -218,7 +218,7 @@ h1, header {
   color: inherit;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.75em;
+  font-size: 2.6667rem;
   line-height: 1.1;
 }
 h2 {
@@ -227,7 +227,7 @@ h2 {
   color: inherit;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.25em;
+  font-size: 1.555rem;
   line-height: 1.1;
 }
 h3 {
@@ -236,7 +236,7 @@ h3 {
   color: inherit;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.1rem;
+  font-size: 0.906rem;
   line-height: 1.1;
 }
 h4 {

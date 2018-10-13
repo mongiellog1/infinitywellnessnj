@@ -48,7 +48,7 @@
   margin-right: 0;
 }
 
-@media screen and (min-width: 667px) {
+@media screen and (min-width: 480px) {
   .grid-one {
     margin: 0;
   }
