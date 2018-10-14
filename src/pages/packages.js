@@ -28,18 +28,7 @@ const SessionName = ({ name }) => (
     }
   </div>
 )
-const TransformationSessionList = () => (
-  <ul>
-    {transformationSessions
-      .map((session, idx) => (<li key={`transformation session - ${idx}`}>
-        <div style={{ display: "flex" }}>
-          <div className="purple bold" style={{ whiteSpace: "nowrap", marginRight: "1rem"}}>SESSION {idx}:</div>
-          <SessionName name={session} />
-        </div>
-      </li>))
-    }
-  </ul>
-);
+
 const MotheringModules = () => (
   ["Inner Child(ren)/Inner Mother", "Mother As Eternal Nurturer", "Divine Mother Within Loves What Arises"]
     .map((title, idx) => (
@@ -58,33 +47,61 @@ const PackagesPage = () => (
       <Section
         title={"Packages"}
         classes="big-lines"
-        subsections={[`The quickest way transform your life is to pick a practice and stick
-          with it.  A daily practice of 5 minutes which lasts all y
-          ear round is more effective than a weekly practice of one hour only
-          committed to for 3 months. By choosing one of these packages and
-          committing to them, you are increasing your chances exponentially to realize
-          life-changing breakthroughs and the results you desire.`]}
+        subsections={[`The quickest way to transform your life is to commit to something beneficial and then see it through. By choosing one of these packages and committing to it, you are increasing your chances exponentially to realize life-changing breakthroughs and the results you desire.`]}
       />
       <Divider />
       <div className="section ">
-        <h1 className="purple">Basic Series: Beginner Package</h1>
+        <h2>Basic Series: Beginner Package</h2>
+        <h3 className="green">Taste Freedom!</h3>
+        <p className="light-green">Session Intervals: 6 session hours over three consecutive weeks (3 meetings)</p>
         <p>
           This program is for those wanting to experience a deepening within themselves, to reveal what’s really going on with a current issue or feelings inside.
         </p>
         <p>
-          Healing is a process and when we treat it as such we give ourselves the chance to heal, and to reveal how our current situation is showing up for our benefit. So common is the mindset today that booking one session with a practitioner will solve all that ails us. This is like dipping a toe in the water, but never jumping in to swim and play. It can even be a disempowering act. One session can be powerful, but it does not have the capability to foster a new relationship with our thoughts, feelings, and life’s many situations. This comes with practice, consistency, and a continual listening.
+          Healing is a process and when we treat it as such we give ourselves the chance to heal, and to reveal how our current situation is showing up for our benefit. So common is the mindset today that healing is a one time event, like a revolving door. This keeps us at a surface level.  It can even be a disempowering act. To see healing as a process will foster a new relationship with our thoughts, feelings, and life’s many situations.
         </p>
         <p>
-          This series goes deep in a short amount of time. And through December of 2018 it is being offered at a reduced rate to give incentive to those who are curious and interested in seeing what it is like to swim and play, and to, as a practice deepen their relationship with themselves and life’s events.
+          This series goes deep in a short amount of time, and because we meet for three consecutive weeks, two sessions each time, it is offered for less than the cost for six individual sessions. A great benefit being the intensity of the six sessions in a short period of time. It’s like a mini-intensive with powerful results.
         </p>
         <p>
           These six sessions offer insights, a shift in relationship with self and others, and most importantly will lay the groundwork for establishing a deep practice that can be continued for life.
         </p>
+        <div className="package-series-list">
+          <h3>Who this series is for:</h3>
+          <ul>
+            <li>You are a new client</li>
+            <li>You feel unfulfilled in life, job, or relationships</li>
+            <li>You experience physical or emotional pain</li>
+            <li>You are interested in deepening the mind/body connection</li>
+          </ul>
+        </div>
+        <div className="package-series-list">
+          <h3>Result:</h3>
+          <ul>
+            <li>Increased body/mind awareness</li>
+            <li>New perspective of current challenges</li>
+            <li>Less stress</li>
+            <li>Clarity on next steps</li>
+          </ul>
+        </div>
+        <div className="package-series-list">
+          <h3>You Receive:</h3>
+          <ul>
+            <li>(3) Myofascial release (MFR) sessions</li>
+            <li>(3) Emotional freedom techniques (EFT) sessions. <br/>MFR and EFT sessions are back to back, for three consecutive weeks</li>
+            <li>Home play techniques to increase wellness in between sessions</li>
+          </ul>
+        </div>
+
+        <p className="light-green">Start here if you are in the beginnings of wanting to grow your relationship with your inner self!</p>
       </div>
+
       <Divider showLogo={false} />
       <div className="section ">
-        <h1 className="purple">Transformation Series</h1>
-        <h4 className="green">Release, Renew, Rebuild.</h4>
+        <h2>Transformation Series</h2>
+        <h3 className="green">Release, Renew, Reset</h3>
+        <p className="light-green">Session Intervals:10 session hours over ten consecutive weeks (10 meetings)</p>
+
         <p>
           Experience Greater Health and Wellness; An Opportunity to Transform!
         </p>
@@ -97,28 +114,111 @@ const PackagesPage = () => (
           less, so as to keep the energy and intensity. This commitment in a set
           time frame is wonderfully beneficial for the client and helps the process take form.
         </p>
-        <TransformationSessionList />
+
+        <div className="package-series-list">
+          <h3>Who this series is for:</h3>
+          <ul>
+            <li>You are ready to explore a physical or emotional issue at a new level of depth</li>
+            <li>You are ready to commit to a new level of well being</li>
+            <li>You are interested in shifting a habitual pattern</li>
+            <li>You would like to know yourself on a deeper level</li>
+            <li>You would like to transform a relationship with yourself or others</li>
+          </ul>
+        </div>
+        <div className="package-series-list">
+          <h3>Result:</h3>
+          <ul>
+            <li>A transformation of the original issue</li>
+            <li>Expanded self awareness</li>
+            <li>Clear path of action for continued wellness</li>
+            <li>Greater depth, clarity, and intuition</li>
+          </ul>
+        </div>
+        <div className="package-series-list">
+          <h3>You Receive:</h3>
+          <ul>
+            <li>(2) Non-linear intuition sessions (in nature if time and circumstance allows)<span className="green">*</span> </li>
+            <li>(2) Myofascial release sessions</li>
+            <li>(2) Emotional freedom techniques sessions</li>
+            <li>(2) Diet and lifestyle sessions</li>
+            <li>(2) Yoga and meditation sessions</li>
+            <li>Homeplay techniques to increase wellness in between sessions</li>
+          </ul>
+        </div>
         <p>
-          <span className="green">*</span> It is easy with our modern lifestyle to forget that we are nature. Nature, our body included,
-          has a natural intelligence. It knows how to restore, how to regenerate, how to heal.
-          We begin the Transformation Series in nature, setting the stage for what’s to come.
-          We use journaling, imagery, metaphors, and simple nature practices to activate the
-          right brain, or often described as the intuitive, creative, non linear part ourselves.
+          <span className="green">*</span> We use journaling, imagery, metaphors,
+          and simple nature practices to activate the non-linear creative brain.
+          Like bookends, the first and last sessions of the Transformation Series
+          hold together all that's inside. The first session gives meaning and
+          intention for what’s to come and the last session helps us reflect
+          on all that has come, as well as it sets the tone for lasting wellness.
         </p>
-        <p>
-          <span className="green">**</span> For this last session, we return to nature for a second creative adventure.
-          Like book ends, the first and last sessions of the Transformation Series help bring to light some of our
-          unconscious patterns, grooves, and obstacles. Here we review, in an abstract, non-linear way the insights,
-          new appreciations, and shifts in perception we have experienced over the last nine sessions.
-          Again we use journaling, imagery, metaphors, and simple nature practices to help reveal the inner
-          journey experienced during this series and our next steps.
+        <p className="light-green">
+          Start here  if you are ready for major change, deep work, healing from childhood wounds, and all the benefits that come from taking full responsibility for your life's creations!
         </p>
       </div>
+
       <Divider showLogo={false} />
       <div className="section ">
-        <h1 className="purple">Divine Mothering Series</h1>
-        <h4 style={{ color: "#555"}}>Inner Divine Mothering Series: Loving Our Inner Child(ren)</h4>
-        <p>
+        <h2>Divine Inner Mothering Series: Loving Our Inner Child</h2>
+        <h3 className="green">Shadow and Light Unite</h3>
+        <p className="light-green">Session Intervals: 27 session hours over twelve consecutive weeks (15 meetings)</p>
+        <p>In this series, we connect with the parts of us that have been repressed, left behind, hurt and hidden. What uprises is our inner child, an innocent, sweet-hearted being who got lost in the ups and downs of life and life’s situations.</p>
+        <p>With our own hand at being divine mother, we nurture the inner child into a place of love and acceptance as we integrate all the fragmented pieces of our life back into the whole of who we are. Acting as a divine mother we care, love, provide, teach, nurture, and celebrate ourselves with infinite and powerful energy our whole lives through.</p>
+        <p>Our birth mothers and fathers provided this care when we were young, and acted as the physical manifestation of the unseen mother aspect. Whether our caregivers filled this role with mild, medium, or intense enthusiasm, likely there were parts of us that went unseen or unheard, or parts that felt frightened, hurt, misunderstood, or traumatized. There is so much that goes on inside a child’s mind and heart that is inexpressible with that child’s intelligence, vocabulary, and emotional maturity.</p>
+        <p>The many disowned parts of us that coalesce into our inner child are but hidden treasures within us, they are our emotional needs unmet, waiting to be met, by us, their Beloved Parent. To touch the child within, to hear and know these unmet needs, and to build a conscious relationship between the inner child and inner mother is a union like no other. It forms a bond that can help us in every situation. When our adult self and awareness unite with the pain of the child, without judgement, we automatically feel cared for, seen, heard, loved, and befriended.</p>
+        <p>We reveal what has long been buried to discover the teachings and integrate the lessons and gifts that only the inner child can so innocently illumine.</p>
+        <div className="package-series-list">
+          <h3>Who this series is for:</h3>
+          <ul>
+            <li>You are aware of self defeating habits and would like to shift them</li>
+            <li>You are interested in exploring shadow aspects for fuller integration of self</li>
+            <li>You feel grief, shame, anger, fear, or guilt</li>
+            <li>You would like to enjoy better relationships with yourself and others</li>
+            <li>You would like to open up to your inner gifts and talents</li>
+            <li>You would like to be free from the confines of your emotional state</li>
+            <li>You would like to increase your intuitive abilities</li>
+            <li>You feel called to heal childhood trauma</li>
+          </ul>
+        </div>
+        <div className="package-series-list">
+          <h3>Result:</h3>
+          <ul>
+            <li>Increased emotional awareness</li>
+            <li>Increased depth of clarity</li>
+            <li>Greater confidence</li>
+            <li>Greater peace with the people in your life</li>
+            <li>Greater knowing of your role as co-creator</li>
+            <li>Increased ability to address situations</li>
+            <li>Increased ability to choose what is in alignment with you, and to walk away lovingly from what is not</li>
+            <li>Increased ability for intimacy</li>
+            <li>Heart energy expansion</li>
+            <li>Embodiment of the divine feminine</li>
+          </ul>
+        </div>
+        <div className="package-series-list">
+          <h3>You Receive:</h3>
+          <p style={{ marginBottom: "0.25rem"}}>Three modules each consisting of:</p>
+          <ul>
+            <li>right brain intuition session</li>
+            <li>myofascial release session</li>
+            <li>emotional freedom techniques session</li>
+            <li>sound healing (tuning forks) session</li>
+            <li>VIP day, a 3.5 hour outing for your most innocent and playful aspect of your inner child</li>
+            <li>home play techniques to increase wellness in between sessions</li>
+          </ul>
+        </div>
+      </div>
+      <ContactGinaCta />
+    </div>
+  </Layout>
+);
+
+export default PackagesPage;
+
+
+
+{/* <p>
           For the purposes of this conversation, we can think of Divine Mother as
           the Earth, as God, as Mother Mary, as Nature, or as any other magnificent
           powerful nurturing force. Divine mother cares, loves, provides, teaches,
@@ -280,12 +380,4 @@ const PackagesPage = () => (
            growing bond in place. Imagine what it’d be like to feel the care of a
            nurturing, kind, compassionate, and loving mother always within. This
            can be developed, and once developed is always available.
-         </p>
-
-      </div>
-      <ContactGinaCta />
-    </div>
-  </Layout>
-);
-
-export default PackagesPage;
+         </p> */}
