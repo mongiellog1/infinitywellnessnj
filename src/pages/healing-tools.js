@@ -46,9 +46,7 @@ const HealingTools = () => (
         <p>
           Below is an outline of the tools that I use, and the packages I offer to give you the best balance of depth, insight, and clarity into your life.
         </p>
-        <span onClick={() => scrollToElement("#contact", { duration: "750" })}>
-          <Button text="Work with Gina" />
-        </span>
+        <Button text="Work with Gina" onClick={() => scrollToElement("#contact", { duration: "750" })} />
       </article>
       <article className="container">
         <h1 className="title">Healing Tools</h1>
