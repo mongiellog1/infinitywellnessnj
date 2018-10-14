@@ -7,7 +7,7 @@ import Banner from "../components/banner";
 const PayPage = () => (
   <Layout>
     <Banner flag="pay" />
-    <div className="container container--pad-top">
+    <div className="container">
       <div className="section">
         <h2 className="purple">Single Sessions</h2>
         <ul style={{ fontSize: "20px", listStyleType: "disc", marginLeft: "1.5rem" }}>
@@ -27,17 +27,17 @@ const PayPage = () => (
       </div>
     </div>
     <Testimonial2 />
-    <div className="container container--pad-top">
+    <div className="container">
       <div className="section">
-        <h2 className="purple">Series Packages</h2>
-        <h3>Basic Series: Beginner Package</h3>
+
+        <h2>Basic Series: Beginner Package</h2>
         <p>
           If you’re curious or just starting to see how underlying aspects are
           driving your behavior, your unrest, and your life situations, and you’d
           like to be the driver instead, then this basic series is for you.
         </p>
         <p>
-          For more information on the Basic Series Package <a href="/packages#basic-package">click here</a>
+          For more information on the Basic Series Package <a className="inline-anchor" href="/packages#basic-package">click here</a>
         </p>
         <h3>Price - <span className="green">$360</span></h3>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -49,7 +49,7 @@ const PayPage = () => (
       </div>
       <PageDivider showLogo={false} />
       <div className="section">
-        <h3>Transformation Package</h3>
+        <h2>Transformation Package</h2>
         <p>
           Go deep with this 10 session package to transform your current
           circumstances and get a refreshed, renewed, reinvigorated sense of
@@ -57,7 +57,7 @@ const PayPage = () => (
           of old habits and usher in each day anew like never before.
         </p>
         <p>
-          For more information on the Transformation Package <a href="/packages#transformation-package">click here</a>
+          For more information on the Transformation Package <a className="inline-anchor" href="/packages#transformation-package">click here</a>
         </p>
         <h3>Price - <span className="green">$1080</span></h3>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -69,7 +69,7 @@ const PayPage = () => (
       </div>
       <PageDivider showLogo={false} />
       <div className="section">
-        <h3>Divine Inner Mothering</h3>
+        <h2>Divine Inner Mothering</h2>
         <p>
           Three months of coaching and mentorship through an amazing discovery of
           your own ability to live whole and complete. In Divine Mothering we
@@ -78,7 +78,7 @@ const PayPage = () => (
           tools to see ourselves through any situation.
         </p>
         <p>
-          For more information on this revolutionary, life-changing package <a href="/healing-tools">click here</a>
+          For more information on this revolutionary, life-changing package <a className="inline-anchor" href="/healing-tools">click here</a>
         </p>
         <h3>Price - <span className="green">$3240</span></h3>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">

@@ -32,9 +32,9 @@ const IndexPage = () => (
       </p>
       <p>Welcome to wellness. A state of being, out of which, all things flow. Wellness is a state that we can tap into at any given time. Infinity Wellness is a phrase to help us remember that Wellness is of the Infinite Realm, and is not dependent upon current conditions or situations. When we live from this infinite well, happiness, that is not dependent on anything follows. </p>
     </div>
-    <div className="container">
+    <div className="container container--pad-bottom-extra">
       <Divider />
-      <div className="section bg--white">
+      <div className="section">
         <h2 className="">An Integrated Approach</h2>
         <p>
           I use MyoFascial Release, Emotional Freedom Techniques, Sound Baths, and Yoga & Meditation as a multi-pronged approach, creating a balanced harmonious space for health and wellness to rebirth itself and thrive.
@@ -48,22 +48,24 @@ const IndexPage = () => (
         <p>
           The realm of  intuitive, imaginative wellness can help us form beneficial and appropriate questions, and the appropriate questions will give us the best answers. Whether it be a question about life path, past trauma, career change, new business proposal, or personal achievements, things come together when we begin with the right question. The key is that we stop searching for questions and answers of the mind, and instead unblock and lift the floodgates to what is beyond the mind.
         </p>
-        <p>Check out how I create a healing space with my <Link to="/healing-tools">healing tools</Link></p>
+        <p>Check out how I create a healing space with my <Link className="inline-anchor" to="/healing-tools">healing tools</Link></p>
       </div>
       <Divider />
-      <h2>A Seasoned Professional</h2>
-      <p>
-        Feeling so unwell in my teen years is what began my search for health and wellness. Over the next fifteen years I accumulated a lot of information and experienced a lot of healing modalities. While all that I learned and experienced over this time period was an incredibly valuable and necessary part of what I use and offer today, the healing modalities I learned in my early thirties are what took me to the places I was looking to go.
-      </p>
-      <p>
-        These same modalities I used and still use for my own wellness are what I bring to clients. I found the tools that I could apply across all areas of life and in all situations with levels of effectiveness I did not find elsewhere. As new challenges appear in life, which they always do, these select modalities are the ones I continue to turn to for comfort, insight, and lasting change.
-      </p>
-      <p>
-        I have experienced and risen above a great many physical and emotional challenges in this lifetime, as well as helped many clients do the same. The very nature of coming together to heal is powerful and far-reaching, there is no issue too big or small, amazing results can be realized. Wellness Awaits Us All.
-      </p>
-      <p>
-        My education and training is as follows: I hold a BA in Psychology, MA in Environmental Studies/Environmental Education, multiple Yoga and Meditation certifications including that of being an ordained Yoga Minister, am a Licensed Massage Therapist, have hundreds of hours of Myofascial Release training, am trained and mentored in Emotional Freedom Techniques, trained as a detox specialist by Dr. Robert Morse, as well as trained in the raw food lifestyle from expert Viktoris Kulvinskas, and energy and herbal expert Margabandhu Martarano.
-      </p>
+      <div className="section">
+        <h2>A Seasoned Professional</h2>
+        <p>
+          Feeling so unwell in my teen years is what began my search for health and wellness. Over the next fifteen years I accumulated a lot of information and experienced a lot of healing modalities. While all that I learned and experienced over this time period was an incredibly valuable and necessary part of what I use and offer today, the healing modalities I learned in my early thirties are what took me to the places I was looking to go.
+        </p>
+        <p>
+          These same modalities I used and still use for my own wellness are what I bring to clients. I found the tools that I could apply across all areas of life and in all situations with levels of effectiveness I did not find elsewhere. As new challenges appear in life, which they always do, these select modalities are the ones I continue to turn to for comfort, insight, and lasting change.
+        </p>
+        <p>
+          I have experienced and risen above a great many physical and emotional challenges in this lifetime, as well as helped many clients do the same. The very nature of coming together to heal is powerful and far-reaching, there is no issue too big or small, amazing results can be realized. Wellness Awaits Us All.
+        </p>
+        <p>
+          My education and training is as follows: I hold a BA in Psychology, MA in Environmental Studies/Environmental Education, multiple Yoga and Meditation certifications including that of being an ordained Yoga Minister, am a Licensed Massage Therapist, have hundreds of hours of Myofascial Release training, am trained and mentored in Emotional Freedom Techniques, trained as a detox specialist by Dr. Robert Morse, as well as trained in the raw food lifestyle from expert Viktoris Kulvinskas, and energy and herbal expert Margabandhu Martarano.
+        </p>
+      </div>
     </div>
   </Layout>
 )

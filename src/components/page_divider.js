@@ -1,13 +1,14 @@
 import React from "react";
-import logo from "../images/logo.png";
+import logoFile from "../images/logo.png";
 
 const styles = {
   container: {
     width: "100%",
+    height: "3rem",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    paddingBottom: "3rem"
+    marginTop: "3rem"
   },
   lines: {
     width: "calc(50% - 5rem)",
@@ -19,13 +20,19 @@ const styles = {
   },
 }
 
-const PageDivider = ({ showLines=true, showLogo=true }) => (
-  <div style={styles.container}>
-    <div className={showLines ? "bg--green" : ""} style={styles.lines} />
-    {showLogo && <img src={logo} style={styles.img} />}
-    <div className={showLines ? "bg--green" : ""} style={styles.lines} />
-  </div>
-);
+const PageDivider = ({ showLines=true, showLogo=true }) => {
+  const linesClass = showLines ? "bg--green" : "";
+  const logoElement = showLogo && <img src={logoFile} style={styles.img} />;
+  const lineElement = <div className={linesClass} style={styles.lines} />
+
+  return (
+    <div style={styles.container}>
+      {lineElement}
+      {logoElement}
+      {lineElement}
+    </div>
+  );
+};
 
 
 export default PageDivider;
