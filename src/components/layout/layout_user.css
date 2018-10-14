@@ -1,4 +1,4 @@
-:root {
+  :root {
   --purple: rgb(81, 40, 136);
   --purple0: #5c3865;
   --purple1: #7b6b7f;
@@ -22,20 +22,32 @@ a[href^="/"] {
   text-decoration: none;
 }
 
-button, a, input, label, textarea, .hero__title--home-page {
+a, input, label, textarea, .hero__title--home-page {
   font-family: georgia, serif;
 }
 
 button {
   position: relative;
   cursor: pointer;
-  background-color: var(--light-green-11);
+  background-color: #42d82f99;
   border: 2px solid #42d82f33;
   padding: 0.5rem 1rem;
   overflow: hidden;
   border-radius: 10px;
   color: transparent;
-  font-weight: bold;
+  font-family: helvetica, sans-serif;
+}
+
+button span {
+  color: black;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 0.5rem 1rem;
 }
 
 button:before {
@@ -43,10 +55,11 @@ button:before {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #42d82f77;
+  background-color: var(--light-green2);
+  background-color: #42d82faa;
   top: 100%;
   left: 0;
-  transition: 150ms;
+  transition: 100ms;
 }
 
 button:hover:before {
@@ -109,6 +122,15 @@ input:focus, textarea:focus {
 p:last-child {
   padding-bottom: 0;
   margin-bottom: 0;
+}
+
+.inline-anchor {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--light-purple)
+}
+.inline-anchor:hover {
+  color: var(--purple)
 }
 
 .blockquote--small {

@@ -3,7 +3,6 @@
   justify-content: space-around;
   width: 100%;
 }
-
 .mfr-symptoms__list {
   box-sizing: border-box;
   padding-left: 2rem;
@@ -12,6 +11,26 @@
   margin-bottom: 0;
 }
 
+.healing-tools-section h1, .healing-tools-section h2 {
+  margin: 2.25rem 0 1.25rem 0;
+}
+.healing-tools-teaser {
+  padding-bottom: 1rem;
+}
+.healing-tools-teaser > p {
+  margin: 0.25rem 0;
+}
+.healing-tools-teaser > ul {
+  margin-top: 1rem;
+  margin-left: 3rem;
+  list-style-type:square;
+}
+.healing-tools-teaser > ul > li {
+  margin-bottom: 0.25rem;
+}
+.healing-tools-section button {
+  margin-left: 2rem;
+}
 .section--work-with-me {
   background: linear-gradient(135deg, var(--green), var(--light-green));
 }

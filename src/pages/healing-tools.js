@@ -1,93 +1,131 @@
 import React from "react";
 import Layout from "../components/layout/index"
 import { Link } from "gatsby";
-import Button from "../components/Button";
+import Button from "../components/button";
+import scrollToElement from "scroll-to-element";
 
 import "./healing-tools.css";
 
 const HealingTools = () => (
   <Layout>
     <div className="healing-tools-section">
-      <article className="container container--pad-top light-purple section--work-with-me" style={{ zIndex: 2 }}>
+      <article className="container container--pad-top light-purple section--work-with-me white" style={{ zIndex: 2 }}>
         <h1 className="title purple">Work With Me!</h1>
-        <p className="hero-text">When's the last time you did <i style={{ letterSpacing: "1.5px" }}>anything</i> that fixed <em>ALL</em> of your problems?</p>
-        <p><span className="italic">*hint*</span> <b className="hero-text light-purple2">Never!</b></p>
+        <p className="hero-text">When's the last time you did something that fixed <em className="light-purple2">ALL</em> of your problems?</p>
+        <p><span className="italic light-purple2">*hint*</span> <b className="hero-text ">Never!</b></p>
         <p style={{ marginBottom: "0.25rem"}}>Because:</p>
           <ul style={{ marginLeft: "2rem"}}>
-            <li>A) All of your problems will never be fixed and</li>
-            <li>B) there's no one-size-fits all cure to anything.</li>
+            <li>A) problems are really challenges and life will always provide us new challenges for growth</li>
+            <li>B) nothing needs fixing, we are already whole, all we need is a different lens with which to see!!</li>
           </ul>
       </article>
       <article className="container section">
         <div className="slanted-section-decorator slanted-section-decorator--gold"/>
-        <h1 className="light-green">Develop Tools</h1>
+        <h1 className="light-green">My Chosen Tools</h1>
         <p>
-          That's why I have chosen the tools that are the absolute most effective at dealing with life, consistenly, day-in and day-out, so that
-          when something goes on you have the capabilities to handle it in a new way that provides insight and meaningful direction
-          to guide you in your next steps.
-        </p>
-        <p>Life is painful, and it never stops!!</p>
-        <p>
-          Cavemen probably thought that discovering fire would put an end to all their troubles, but I bet
-          There was more things to deal with later on in life.  But, what did happen was they evolved, and new things became possible.
-          THIS, is the realm that i work in, where I lead you through the occurences of your life so you can
-          see and feel them for what they are, take the insight and produce a doorway through your own evolution.
+          I have chosen tools that are incredibly effective at dealing with life, consistently, day-in and day-out, so that when something comes up we have the capability to handle it in a way that provides insight and meaningful direction, guiding our next steps.
         </p>
         <p>
-          The beautiful thing is, that it never stops.  Some people realize this unconsciously, and so they never take any steps forward.
-          It's great, because they denounce themselves from having to do any work, but they are stuck forever in their own stagnant evolutionary phase.
+          Challenges and pain come and go in life, and will continue as such! Suffering along with them is optional!!
         </p>
         <p>
-          SO! If you are ready to see your life brand new and step out of your comfort zone into a place like none ever before where you can literally
-          be the master of your own journey and create the life you want, then you are my ideal client.
+          Cavemen and cavewomen probably thought that discovering fire would put an end to all their troubles. It’s the nature of the mind to think that any one external thing will solve all of our problems forever. This doesn’t happen, because it would halt our evolution, our expanding consciousness, and the realm of infinite possibility. Cave people surely soon realized there were more challenges to come.
         </p>
         <p>
-          Below is an outline of the tools that I use, and the packages I offer to give you the best balance of insight, clarity, and depth into your life.
+          What did happen though was the cavepeople evolved, and because they mastered fire, they became ready for their next challenge, their next opportunity for growth. THIS, is the realm that I work in, where new things become possible, where growth is inevitable, and challenges are opportunities. We evolve and grow in ways that benefit us and the collective.  New challenges will always come, but with them comes opportunity, expanded seeing and a blossoming of who you are.
         </p>
-
-        <Button text="Work with Gina" />
+        <p>
+          I lead you through the occurences of your life with new eyes so you can see and feel past events for the gifts they are, receive and integrate with the lesson or insight, and identify a doorway through your own evolution. Everything that comes to us, no matter how we judge it as good or bad, is truly here for our benefit.
+        </p>
+        <p>
+          The tools I offer help to transform coals into diamonds; grief into gold.
+        </p>
+        <p>
+          SO! If you are ready for diamonds and gold, ready to see your life as brand new and step out of your comfort zone into a place like never before, where you can literally be the master of your own journey and create the life you want, then I would LOVE to work with YOU!
+        </p>
+        <p>
+          Below is an outline of the tools that I use, and the packages I offer to give you the best balance of depth, insight, and clarity into your life.
+        </p>
+        <span onClick={() => scrollToElement("#contact", { duration: "750" })}>
+          <Button text="Work with Gina" />
+        </span>
       </article>
       <article className="container">
-        <h1 className="title purple">Healing Tools</h1>
-        <div>
-          <Link to="myofascial-release"><Button text="Myofascial Release" /></Link>
+        <h1 className="title">Healing Tools</h1>
+        <div className="healing-tools-teaser">
+          <h2>Myofascial Release</h2>
           <p>
             For deep body healing, resolving of chronic pains, releasing of tension.
           </p>
+          <ul>
+            <li>Deep bodymind healing</li>
+            <li>Resolution of chronic pains</li>
+            <li>Release of tension and strain</li>
+            <li>Subtle insights</li>
+            <li>New levels of awareness</li>
+            <li>Healing of past trauma </li>
+          </ul>
+          <Link to="myofascial-release"><Button text="Myofascial Release" /></Link>
         </div>
 
-        <div>
-          <Link to="emotional-freedom-techniques"><Button text="Emotional Freedom Technique (Tapping)"/></Link>
+        <div className="healing-tools-teaser">
+          <h2>Emotional Freedom Techniques</h2>
           <p>
             For letting go of the past, strengthening empowering beliefs, and opening up the doors for creativity, vitality, and overall wellness.
           </p>
+          <ul>
+            <li>An integration of the lessons from past events</li>
+            <li>Insight and release of detrimental feelings around past trauma</li>
+            <li>Releases negative mind scripts</li>
+            <li>Grows and strengthens love and acceptance for oneself</li>
+            <li>Opens up doors for creativity, vitality, and overall wellness</li>
+          </ul>
+          <Link to="emotional-freedom-techniques"><Button text="Emotional Freedom Techniques"/></Link>
         </div>
 
-        <div>
-          <Link to="yoga-meditation"><Button text="Yoga & Meditation" /></Link>
+        <div className="healing-tools-teaser">
+          <h2>Yoga & Meditation</h2>
           <p>
             Reconnecting with the rhythym of life, increasing your capacity to breathe in each moment and take all there is in life.
           </p>
+          <ul>
+            <li>Loosens the body</li>
+            <li>Calms the mind</li>
+            <li>Reconnect us with the rhythm of life</li>
+            <li>Helps us to discern suffering from pain, thereby ending suffering</li>
+            <li>Increases our capacity to breathe in each moment and receive all that is here in life</li>
+          </ul>
+          <Link to="yoga-meditation"><Button text="Yoga & Meditation" /></Link>
         </div>
 
-        <div>
-          <Link to="sound-therapy"><Button text="Sound Therapy & Gratitude"/></Link>
+        <div className="healing-tools-teaser">
+          <h2>Sound Healing & Gratitude</h2>
           <p>
             For a pleasure beyond delight and taking a dive into the most serene places of your mind where your most harmonious self resides.
           </p>
+          <ul>
+            <li>A pleasure beyond delight</li>
+            <li>Takes us into the most serene of places where our most harmonious self resides</li>
+            <li>It spikes nitric oxide levels which balances the autonomic nervous system and signals a natural release of anti-bacterial and anti-virals on a microcellular level</li>
+            <li>Gratitude is strongly linked to mental health and life satisfaction</li>
+
+          </ul>
+          <Link to="sound-therapy"><Button text="Sound Therapy & Gratitude"/></Link>
         </div>
       </article>
       <article className="container ">
         <h1 className="title purple">Business Programs</h1>
         <p>
-         &lt;My skills are very diverse and I have a broad range of experience that allows me
-          to work well with any number or type of people.&gt;
-          As a teacher for over 5 years at yoga life society and owrking with kids, adults and seniors, I have used my skills
-          in many settings to overcome borders between people.
-          For this reason, I offer other packages and custom-tailer services to businesses and other organizations to
-          do anything from increase productivity, to creating pleasant atmospheres to work in,
-          and giving employees a reason to enjoy work.
-          <Link to="/business-packages">Click here </Link> to see about my business packages.
+          My skills are diverse and I have a broad range of experiences that allow me to work well with multiple communities. I have been an environmental educator since 2005, and a yoga teacher since 2009. I have worked with and taught people ages two through 90+, worked in affluent and low-income neighborhoods, taught in rural and urban settings, corporate and park atmospheres, worked with those in recovery, and have worked with all ranges of special needs including autistic, behaviorally challenged, and cerebral palsy populations. I have used my skills in many settings to reach and inspire those present.
+        </p>
+        <p>
+          Because of my ability and effectiveness to reach and help a large range of people and communities,
+          I offer packages and custom-tailor services to businesses and other organizations to do
+          anything from increasing productivity, to resolving conflict, to creating pleasant work
+          atmospheres, to giving employees a reason to enjoy work.
+        </p>
+        <p>
+          <a  className="inline-anchor" href="#" onClick={() => scrollToElement("#contact", { duration: "750" })}>Connect with me</a> to customize your program.
         </p>
       </article>
     </div>

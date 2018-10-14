@@ -67,7 +67,7 @@ const PackagesPage = () => (
       />
       <Divider />
       <div className="section ">
-        <h1 className="purple">Basic Series: Beginners Special</h1>
+        <h1 className="purple">Basic Series: Beginner Package</h1>
         <p>
           This program is for those wanting to experience a deepening within themselves, to reveal what’s really going on with a current issue or feelings inside.
         </p>
