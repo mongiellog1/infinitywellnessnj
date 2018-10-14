@@ -13,7 +13,7 @@ export default () => (
       subtitle="The Energy Elevator"
       paragraphs={[`Tapping into roots that exist for a reason.`]}
     />
-    <div className="container container--pad-top">
+    <div className="container">
       <Section
         title="Tap into your dreams"
         subsections={[

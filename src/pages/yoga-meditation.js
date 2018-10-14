@@ -15,9 +15,9 @@ const YogaMeditation = () => (
       subtitle="The Great Liberator"
       paragraphs={["Finding the common thread."]}
     />
-    <div className="container container--pad-top">
+    <div className="container">
       <Section
-        title="Here's a title."
+        title="Yoga & Meditation."
         subsections={[
           "Yoga & yoga meditation have been around for thousands of years. While body postures and stretches have become synonymous with the word yoga in the west, there is far more to yoga than the physical aspects. Yoga is a spiritual journey that leads us to the deepest most profound aspects of Self, which, when realized, shifts our entire vision of life and life’s situations. ",
 

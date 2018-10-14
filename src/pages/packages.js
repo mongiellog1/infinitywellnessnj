@@ -54,7 +54,7 @@ const MotheringModules = () => (
 const PackagesPage = () => (
   <Layout>
     <Banner flag="packages" />
-    <div className="container container--pad-top">
+    <div className="container">
       <Section
         title={"Packages"}
         classes="big-lines"
