@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import GinaPortrait from "../images/gina2.jpg";
 import "./about.css";
 import Banner from "../components/banner";
@@ -15,7 +14,7 @@ const AboutPage = () => (
         <article className="bio">
           <div>
             <div className="bio-header">
-              <img className="bio__portrait" src={GinaPortrait} />
+              <img className="bio__portrait" src={GinaPortrait} alt="Gina Mongiello" />
               <div>
                 <h2 style={{ fontSize: 24, marginBottom: "0.5rem" }}>Gina Mongiello, LA, MT</h2>
                 <h4 style={{ fontStyle: "italic", fontWeight: "200" }}>Founder</h4>

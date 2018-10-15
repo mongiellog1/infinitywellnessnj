@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   siteMetadata: {
     title: "Infinity Wellness",
@@ -22,6 +24,15 @@ module.exports = {
         icon: "src/images/logo--justin-porro.png",
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
+      },
+    },
     "gatsby-plugin-offline",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
   ],
 }

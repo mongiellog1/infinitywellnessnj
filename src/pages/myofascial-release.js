@@ -12,7 +12,7 @@ export default () => (
     <HeroSection
       cssHeroType="mfr"
       title="Myofascial Release"
-      subtitle="The Web Untangler"
+      subtitle="THE WEB UNTANGLER"
       paragraphs={["Create a new balance of space and harmony deep within your tissue"]}
     />
     <div className="container">

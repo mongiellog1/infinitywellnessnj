@@ -7,11 +7,8 @@ import { withStyles } from '@material-ui/core/styles';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
-import ExpandLess from '@material-ui/icons/ExpandLess';
-import ExpandMore from '@material-ui/icons/ExpandMore';
 import Collapse from '@material-ui/core/Collapse';
 import scrollToElement from "scroll-to-element";
-import logo from "../../images/logo.png";
 
 const StyledListItemText = withStyles({
   primary: {

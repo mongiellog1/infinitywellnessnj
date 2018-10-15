@@ -3,7 +3,6 @@ import Layout from "../components/layout/index";
 import ContactGinaCta from "../components/contact_gina_cta";
 import HeroSection from "../components/hero_section";
 import Section from "../components/section";
-import Divider from "../components/page_divider";
 
 import "./healing-tools.css";
 

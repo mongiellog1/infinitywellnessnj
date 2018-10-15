@@ -28,39 +28,28 @@ import vibrations_abound_thumb from "../images/mandalas/thumbnails/vibrations_ab
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 
-const Mandala = ({ src, name }) => (
-  <>
-    <img src={src} style={{ width: "100%" }} />
-    <h4>{name}</h4>
-  </>
-);
-
 const MandalaPage = () => (
   <Layout>
     <HeroSection
       cssHeroType="mandalas-page"
       title="Mandalas"
       subtitle="Unleash your inner creative."
-      paragraphs={[`Through the creation of mandalas, we create balance in our brain and allow our soul to come through,
-         creating beautiful expressions of our inner being.`]}
     />
-    <div className="container container--pad-top">
+    <div className="container">
       <Section
         title="Mandalas"
-        classes="big-lines"
         subsections={[
-          `I began making mandalas in January at a time when I was absolultely not expecting
-          to find something so powerful.  I was reading about Dr Carl Jung and he explains
-          how mandalas are like the gateway to the soul.  I started to draw them and, much to my surprise,
-          I began peacefully meditating while creating each one.  It is so simple to draw,
-          and there is no such thing as a mistake.  There is no expected outcome which I love, and
-          lets me be as creative and free as I want.  Due to the nature of symmetry, each piece
-          comes out magnificent and totally revealing of where I was during each one.  In a way,
-          they communicate a deep message that brings insights into even the farthest corners of my existence.
-          It truly is my inner nature coming to light.`
+          `We communicate with hidden aspects of the self through the creation of
+          mandalas. Gazing at mandalas shifts our energy and opens us up to a
+          dialogue between the conscious and unconscious mind. The language of
+          our non-linear intuitive mind is symbols, shapes, and colors. All
+          imagery helps to balance out the overactive linear parts of our brain
+          and allows repressed parts expression. Imagery also invites the soul
+          to come through. Mandala’s are beautiful insights and expressions of
+          our inner being.`
         ]}
       />
-      <div style={{ padding: "2rem" }}>
+      <div style={{ padding: "2rem", maxWidth: "25rem" }}>
         <ImageGallery
           items={[
             { original: burstingly_interwoven, thumbnail: burstingly_interwoven_thumb },
@@ -81,3 +70,15 @@ const MandalaPage = () => (
 );
 
 export default MandalaPage;
+
+// export const pageQuery = graphql`
+//   query {
+//     imageOne: file(relativePath: { eq: "flowers1.jpg" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 600) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//   }
+// `

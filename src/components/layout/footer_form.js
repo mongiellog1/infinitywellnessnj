@@ -1,7 +1,7 @@
 import React from "react";
 
 const Form = () => (
-  <form onSubmit={(e) => {e.preventDefault(); e.stopPropagation(); console.log("Enter!!")}}>
+  <form className="footer-form" onSubmit={(e) => {e.preventDefault(); e.stopPropagation(); console.log("Enter!!")}}>
     <label>First Name</label>
     <input id="FirstName" name="FirstName" placeholder="First Name*" maxLength="255" type="text"></input>
 

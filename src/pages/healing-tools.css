@@ -35,32 +35,3 @@
 .section--work-with-me {
   background: linear-gradient(135deg, var(--green), var(--light-green));
 }
-
-.background--home-page-hero {
-  background: url("../images/flowers2.jpg ");
-  background-position: center;
-  background-size: cover;
-}
-.background--mfr-hero {
-  background: linear-gradient(135deg, var(--light-purple), var(--light-green));
-}
-
-.background--eft-hero {
-  background: linear-gradient(135deg, var(--light-purple), var(--purple));
-}
-
-.background--sound-healing-hero {
-  background: linear-gradient(135deg, rgba(141,255,112,1) 0%, rgba(66,201,73,1) 100%);
-}
-
-.background-cover--darken {
-  background: rgba(0,0,0,0.3);
-}
-
-.background--yoga-meditation-hero {
-  background: linear-gradient(135deg, rgba(255,93,90,1) 0%, rgba(81,40,136,1) 100%);
-}
-
-.background--mandalas-page-hero {
-  background: linear-gradient(135deg, rgba(255,93,90,1) 0%, rgba(81,40,136,1) 100%);
-}

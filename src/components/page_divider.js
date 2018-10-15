@@ -1,5 +1,5 @@
 import React from "react";
-import logoFile from "../images/logo.png";
+import logoFile from "../images/logo--justin-porro.png";
 
 const styles = {
   container: {
@@ -22,7 +22,7 @@ const styles = {
 
 const PageDivider = ({ showLines=true, showLogo=true }) => {
   const linesClass = showLines ? "bg--green" : "";
-  const logoElement = showLogo && <img src={logoFile} style={styles.img} />;
+  const logoElement = showLogo && <img src={logoFile} style={styles.img} alt="" />;
   const lineElement = <div className={linesClass} style={styles.lines} />
 
   return (

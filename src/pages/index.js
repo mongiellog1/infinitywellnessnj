@@ -1,20 +1,22 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout/index"
 import Divider from "../components/page_divider";
 import HeroSection from "../components/hero_section";
+import Img from "gatsby-image";
 
 import "./index.css";
 
-const IndexPage = () => (
+const IndexPage = ({ data}) => (
   <Layout>
     <HeroSection
       title="Reclaim Wellness."
       titleClass="home-page"
       subtitle="Start living in a way that is true to your core. A life where you know who you are and your actions follow in alignment."
-      cssHeroType="home-page"
+      background={<Img className="background-cover-parent" fluid={data.imageOne.childImageSharp.fluid} />}
     />
+
 
     <div className="section section-content" >
       <div className="slanted-section-decorator slanted-section-decorator--purple"/>
@@ -72,14 +74,14 @@ const IndexPage = () => (
 
 export default IndexPage
 
-/*
-
-<div>
-  <Link to="/page-2/" style={{ marginRight: "1rem" }}>
-    <button className="button-cta-1">
-      Learn More
-    </button>
-  </Link>
-</div>
-
-*/
+export const pageQuery = graphql`
+  query {
+    imageOne: file(relativePath: { eq: "flowers2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
