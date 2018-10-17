@@ -10,6 +10,7 @@
   width: 50%;
   list-style-type: disc;
   margin-bottom: 0;
+  text-transform: capitalize;
 }
 
 .healing-tools-section h1, .healing-tools-section h2 {

@@ -1,6 +1,4 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
 
 export default ({ background, cssHeroType, title, titleClass, subtitle, paragraphs=[], darken }) => (
   <div className="hero container container--hero container--pad-top white">

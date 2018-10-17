@@ -123,7 +123,7 @@ const HealingTools = () => (
           atmospheres, to giving employees a reason to enjoy work.
         </p>
         <p>
-          <a  className="inline-anchor" href="#" onClick={() => scrollToElement("#contact", { duration: "750" })}>Connect with me</a> to customize your program.
+          <span className="inline-anchor" onClick={() => scrollToElement("#contact", { duration: "750" })}>Connect with me</span> to customize your program.
         </p>
       </article>
     </div>

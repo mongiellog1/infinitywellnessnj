@@ -20,7 +20,7 @@ const tools = [
   "Myofascial Release",
   "Emotional Freedom Techniques",
   "Yoga & Meditation",
-  "Sound Healing"
+  "Sound Bathing & Gratitude"
 ];
 
 class MobileMenu extends Component {
@@ -45,9 +45,6 @@ class MobileMenu extends Component {
               <Link to="/">
                 <ListItem button>
                   <StyledListItemText primary="Home" />
-                  {/* <div onClick={() => this.toggleDrawer("toolsOpen")} style={{ paddingLeft: "1rem", borderLeft: "1px solid #aaa"}}>
-                    {this.state.toolsOpen ? <ExpandLess /> : <ExpandMore />}
-                  </div> */}
                 </ListItem>
               </Link>
               <Link to="/pay">
@@ -57,9 +54,6 @@ class MobileMenu extends Component {
               </Link>
               <ListItem button>
                 <StyledListItemText onClick={() => navigate("/healing-tools")} primary="Healing Tools" />
-                {/* <div onClick={() => this.toggleDrawer("toolsOpen")} style={{ paddingLeft: "1rem", borderLeft: "1px solid #aaa"}}>
-                  {this.state.toolsOpen ? <ExpandLess /> : <ExpandMore />}
-                </div> */}
               </ListItem>
 
               <Collapse in={this.state.toolsOpen} timeout="auto" unmountOnExit>
@@ -93,11 +87,11 @@ class MobileMenu extends Component {
                   <StyledListItemText  primary="About" />
                 </ListItem>
               </Link>
-              <a name="contact" onClick={this.smoothScroll}>
+              <div onClick={this.smoothScroll}>
                 <ListItem button>
                   <StyledListItemText  primary="Contact" />
                 </ListItem>
-              </a>
+              </div>
             </List>
           </div>
         </Drawer>

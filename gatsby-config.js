@@ -8,7 +8,8 @@ module.exports = {
       instagram: "https://www.instagram.com/ginamongiello/",
       facebook: "https://www.facebook.com/infinitywellnessnj/",
       youtube: "https://www.youtube.com/channel/UCtfOsb9dwrGnOaRvdJv52UA",
-    }
+    },
+    contactFormUrl: "https://ginas-form-server.herokuapp.com/api/emailForm",
   },
   plugins: [
     "gatsby-plugin-react-helmet",

@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/layout/index";
 import HeroSection from "../components/hero_section";
 import Section from "../components/section";
+import ContactGinaCta from "../components/contact_gina_cta";
 
 import burstingly_interwoven from "../images/mandalas/burstingly_interwoven.jpg";
 import divine_order from "../images/mandalas/divine_order.jpg";
@@ -49,36 +50,49 @@ const MandalaPage = () => (
           our inner being.`
         ]}
       />
-      <div style={{ padding: "2rem", maxWidth: "25rem" }}>
-        <ImageGallery
-          items={[
-            { original: burstingly_interwoven, thumbnail: burstingly_interwoven_thumb },
-            { original: divine_order, thumbnail: divine_order_thumb },
-            { original: gratitude, thumbnail: gratitude_thumb },
-            { original: grief_to_gold, thumbnail: grief_to_gold_thumb },
-            { original: infinity_wellness, thumbnail: infinity_wellness_thumb },
-            { original: inner_calling, thumbnail: inner_calling_thumb },
-            { original: love, thumbnail: love_thumb },
-            { original: soul_dance, thumbnail: soul_dance_thumb },
-            { original: unresolved_matter, thumbnail: unresolved_matter_thumb },
-            { original: vibrations_abound, thumbnail: vibrations_abound_thumb },
-          ]}
-        />
+      <div className="section">
+        <div className="mandala-gallery">
+          <ImageGallery
+            items={[
+              { original: burstingly_interwoven, thumbnail: burstingly_interwoven_thumb },
+              { original: divine_order, thumbnail: divine_order_thumb },
+              { original: gratitude, thumbnail: gratitude_thumb },
+              { original: grief_to_gold, thumbnail: grief_to_gold_thumb },
+              { original: infinity_wellness, thumbnail: infinity_wellness_thumb },
+              { original: inner_calling, thumbnail: inner_calling_thumb },
+              { original: love, thumbnail: love_thumb },
+              { original: soul_dance, thumbnail: soul_dance_thumb },
+              { original: unresolved_matter, thumbnail: unresolved_matter_thumb },
+              { original: vibrations_abound, thumbnail: vibrations_abound_thumb },
+            ]}
+          />
+        </div>
+        <h2>Pure, Simple Beauty</h2>
+        <p>
+          I began making mandalas while running a kids club at the nature center, as another way to help children express freely, but with some guidelines. A lot of children and adults feel afraid or uninterested in art and they don’t know how to start drawing without a guideline. Mandalas are the perfect thing, we start with a circle, and make symmetrical sections of the circle. When starting with this guideline everyone is inspired to create.
+        </p>
+        <p>
+          In the making of my first mandala I was not expecting to find something so powerful. I continued drawing them well beyond the club meeting and, much to my surprise, I noticed I was peacefully meditating while creating each one.
+        </p>
+        <p>
+          They are simple to draw, and there is no such thing as a mistake. There is no expected outcome which I love, and I can be as creative and free as I want. Due to the nature of symmetry, each piece comes out magnificent and totally revealing of where I was during each one. Each one communicates a deep message, bringing insights from the farthest corners of my existence. It truly is my inner nature coming to light.
+        </p>
+        <p>
+          At some point, I found Dr Carl Jung’s writings on mandalas. He explains how mandalas are like a gateway to the unseen and unspoken parts of the psyche. In fact, in the latter part of his career he would have clients make mandalas as therapy. He would analyze each one, and notice how the very act of creating them was part of the healing process, revealing things to be healed.
+        </p>
+        <p>
+          Tibetan buddhists make mandalas as a spiritual practice, native americans make mandalas with a medicine wheel, many ancient religions use labyrinths (mandalas) as a spiritual activity, and in fact humans see the world through a circular field of vision. Yes, we see in circles! We feel contained in circles. Circles give us a boundary, a here and a there. Community’s are circles. Much of our life is circular, and so this drawing of circles is a quite natural and beneficial process for us, therapeutic and meditative.
+        </p>
+        <p>
+          Mandalas, once made, can also have a therapeutic and meditative effect on us. Gazing at one can bring up harmony or discord. Both these uprisings can lead us into places within that we might not have seen otherwise. This new awareness leads us to choice, where there previously was none.
+        </p>
+        <p>
+          Connect with me now to setup a mandala workshop!
+        </p>
       </div>
+      <ContactGinaCta />
     </div>
   </Layout>
 );
 
 export default MandalaPage;
-
-// export const pageQuery = graphql`
-//   query {
-//     imageOne: file(relativePath: { eq: "flowers1.jpg" }) {
-//       childImageSharp {
-//         fluid(maxWidth: 600) {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//   }
-// `

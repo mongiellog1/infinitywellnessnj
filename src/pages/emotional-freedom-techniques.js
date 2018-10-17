@@ -10,7 +10,7 @@ export default () => (
     <HeroSection
       cssHeroType="eft"
       title="Emotional Freedom Techniques"
-      subtitle="The Energy Elevator"
+      subtitle="THE ENERGY ELEVATOR"
       paragraphs={[`Tapping into roots that exist for a reason.`]}
     />
     <div className="container">
@@ -26,13 +26,73 @@ export default () => (
       />
 
       <Divider showLogo={false} />
+      <article className="section purple2">
+        <h2 className="purple shadow">Open Your Energy Highways</h2>
+        <p style={{ marginBottom: "1rem" }}>EFT has helped many people with various problems, including:</p>
+        <div className="mfr-symptoms purple0">
+          <ul className="mfr-symptoms__list">
+            <li>Headaches</li>
+            <li>Back Pain</li>
+            <li>Stiff Neck and Shoulders</li>
+            <li>joint pains</li>
+            <li>chronic fatigue syndrome</li>
+            <li>ulcerative colitis</li>
+            <li>psoriasis</li>
+            <li>asthma</li>
+            <li>allergies</li>
+            <li>insomnia</li>
+            <li>arthritis</li>
+          </ul>
+          <ul className="mfr-symptoms__list">
+            <li>irritable bowel syndrome</li>
+            <li>eyesight</li>
+            <li>muscle tightness</li>
+            <li>bee stings</li>
+            <li>urination problems</li>
+            <li>morning sickness</li>
+            <li>PMS</li>
+            <li>sexual dysfunction</li>
+            <li>carpal tunnel syndrome</li>
+            <li>stomachaches</li>
+            <li>toothaches</li>
+            <li>and <i style={{paddingRight: 2}}>much</i> more</li>
+          </ul>
+        </div>
+        <p>
+          "[T]here's a very good reason why EFT works on such a wide variety of issues. The reason is that they all involve stress." -Dawson Church, PhD, The Genie in Your Genes, 2014.
+        </p>
+        <p>
+          Most individuals experience stress in one or more areas of their life. Relationships, work, health, spirituality, and finances are common life situations that contribute to stress. Regardless of the cause, stress has serious effects on the body and reducing it can lead to a healthier happier experience of life. When applying EFT to a stress that is triggered by a certain situation, it works to reduce or eliminate the stress around the situation. When we think about or physically return to an event or situation that caused us stress in the past without the accompanied stress, not only do we have a neutral feeling toward it, but the situation itself often changes.
+        </p>
+      </article>
 
+      <Divider showLogo={false} />
       <Section
+        title="Peer Reviewed Studies"
+        subsections={[
+          <>There have been many peer-reviewed studies done on EFT proving its
+          success with multiple issues including PTSD, phobias, pain, and more.
+          If interested in learning more about the clinical effects of EFT check
+          out the peer reviewed professional journal titled Energy Psychology Journal.
+          Or to read about the many firsthand accounts of EFT check out the
+          hundreds of case studies found at <a className="inline-anchor" href="https://eftuniverse.com/">EFTUniverse.com.</a></>
+        ]}
+      />
+      <div style={{marginTop: "2rem" }}>
+        <p>EFT Resources:</p>
+        <ul>
+          <li><a className="inline-anchor" href="http://optimal-eft.emofree.com/">For Beginners</a></li>
+          <li><a className="inline-anchor" href="http://www.bradyates.net/videos.html">Once You Know The Tappings Points</a></li>
+          <li><a className="inline-anchor" href="http://www.eftuniverse.com/">Good Information and Current Research in the Field</a></li>
+        </ul>
+      </div>
+      {/* <Section
+        title="Peer Reviewed Studies"
         subsections={[
           "Whether we like it or not, our past is a part of us that exists AND it has a huge impact on everything we do in life until it is seen, felt, and released.",
           `Everyone comes into this human existence whole. Somehow or other, the dust builds up along the way and starts obscuring the path that once was so clear in front of us. We start to feel unwhole. Confrontations come up, relationships break down, we lose sight of what is important to us while climbing towards our perceived goals. In short, we lose sight of our wholeness. EFT is a quick, open doorway back into our wholeness. With this simple technique we can put down the layers of confusion for long enough to see things for what they really are and get back to our wholeness and back to who we really are. `
         ]}
-      />
+      /> */}
 
       <ContactGinaCta />
     </div>

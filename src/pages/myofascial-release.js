@@ -58,7 +58,7 @@ export default () => (
       <Divider showLogo={false} />
 
       <Section
-        title={<>Sounds Like Fantasy.<br/>Backed By Science.</>}
+        title={<>Sounds Like Fantasy... Backed By Science!</>}
         subsections={[
           `Science has come to discover what John Barnes, PT has been teaching for 40 years!! `,
           '“[That]” symptoms, diagnostic labels, and diseases are a blockage of our bio-energy caused by a prolonged inflammatory response. Trauma and the resultant inflammatory response create Myofascial restrictions that ultimately create the symptoms of pain and disease',

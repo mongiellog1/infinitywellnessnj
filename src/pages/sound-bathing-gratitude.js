@@ -2,21 +2,21 @@ import React from "react";
 import Layout from "../components/layout/index";
 import HeroSection from "../components/hero_section";
 import Section from "../components/section";
-import Divider from "../components/page_divider";
-
+import ContactGinaCta from "../components/contact_gina_cta";
 import "./healing-tools.css";
+import { Quote1, Quote2 } from "../components/testimonial";
 
 const SoundHealing = () => (
   <Layout>
     <HeroSection
       title="Sound Bathing & Gratitude"
       cssHeroType="sound-healing"
-      subtitle="The Peace and Joy Igniter"
+      subtitle="THE PEACE AND JOY IGNITER"
       paragraphs={["Lay your head to rest while I play sounds that dance with your soul"]}
     />
     <div className="container">
       <Section
-        title="Calm your mind to the sound of angels."
+        title="The Sound of Angels."
         classes="big-lines"
         subsections={[
           `My sound healing training has come from Dr. John Beaulieu, a brilliant musician, sound healer, and naturopath. In 1974 while working at Bellevue Psychiatric Hospital in New York City, Dr. Beaulieu discovered that tuning forks could be used to tune the human nervous system. He began sounding them for his patients at Bellevue, and because they had such profound effects, Dr. Beaulieu began running scientific experiments on the tuning forks and their effects. After many decades of experience, success, and science, he teaches sound healing around the world and has composed music based on tuning forks as well as written books about human tuning.`,
@@ -27,11 +27,27 @@ const SoundHealing = () => (
           ~Dr. John Beaulieu</>
         ]}
       />
-      <Divider showLogo={false} />
-      <p>
-        Some say the world and everything in it is held together by sound. Sound healing is so simple yet so profound. I fall in love with it each and every time.
-      </p>
     </div>
+    <Quote1 />
+    <div className="container">
+      <Section
+        title="A Simple Magic"
+        subsections={[
+          `We have likely heard of gratitude journals, and the benefits of expressing
+          gratitude even when we are not feeling grateful. Isn’t it interesting how
+          it feels like hard labor to exercise this underused muscle of gratitude,
+          and all too often we put it off or rationalize that we’ll have gratitude
+          when something appears that is worthy of gratitude.`,
+          `The magic happens though when we move into a grateful place even though
+          our mind tells us we have no reason to be grateful. In this session we will
+          craft a gratitude practice and pair it with a tuning fork sound healing.`,
+          `Some say the world and everything in it is held together by sound.
+          Sound healing is so simple yet so profound. I fall in love with it each and every time.`
+        ]}
+      />
+      <ContactGinaCta />
+    </div>
+    <Quote2 />
   </Layout>
 );
 

@@ -26,6 +26,7 @@ const Footer = () => (
           <span style={{ fontSize: "1.2rem" }}>+1 <span style={{ margin: "0 0.35rem"}}>(201)</span> 396 - 0970</span>
         </div>
       </div>
+
       <Form />
     </div>
     <div>
