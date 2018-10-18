@@ -1,4 +1,4 @@
-  :root {
+:root {
   --purple: rgb(81, 40, 136);
   --purple0: #5c3865;
   --purple1: #7b6b7f;
@@ -19,11 +19,14 @@ html {
   font-size: 14px;
 }
 
-a[href^="/"] {
-  text-decoration: none;
+a {
+  &[href^="/"] {
+    text-decoration: none;
+  }
+  font-family: georgia, serif;
 }
 
-a, .hero__title--home-page {
+.hero__title--home-page {
   font-family: georgia, serif;
 }
 
@@ -38,43 +41,42 @@ a, .hero__title--home-page {
   color: transparent;
   font-family: helvetica, sans-serif;
   margin-top: 2rem;
-}
-
-.button span {
-  color: black;
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  padding: 0.5rem 1rem;
-}
-
-.button:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--light-green2);
-  background-color: #42d82faa;
-  top: 100%;
-  left: 0;
-  transition: 100ms;
-}
-
-.button:hover:before {
-  transition: 300ms;
-  top: 0;
-}
-
-.button:hover, .button:active {
-  transition: 200ms;
-}
-
-.button:active, .button:focus {
-  outline: none;
+  span {
+    color: black;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 0.5rem 1rem;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-green2);
+    background-color: #42d82faa;
+    top: 100%;
+    left: 0;
+    transition: 100ms;
+  }
+  &:hover {
+    &:before {
+      transition: 300ms;
+      top: 0;
+    }
+    transition: 200ms;
+  }
+  &:active {
+    transition: 200ms;
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
 }
 
 h1, h2 {
@@ -103,17 +105,16 @@ blockquote {
   color: white;
   text-indent: 2.5rem;
   line-height: 22px;
-}
-
-blockquote:before {
-  content: "";
-  background: url("../../images/quote.png") top left no-repeat;
-  background-size: 40px 30px;
-  width: 40px;
-  height: 30px;
-  position: absolute;
-  top: 0;
-  left: 10px;
+  &:before {
+    content: "";
+    background: url("../../images/quote.png") top left no-repeat;
+    background-size: 40px 30px;
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+  }
 }
 
 .inline {
@@ -130,10 +131,10 @@ blockquote:before {
   opacity: 0;
   padding: 0.25rem 1rem;
   margin: 1rem 0;
-}
-.form-message > p {
-  margin-right: 1.5rem;
-  margin-top: 0.2rem;
+  > p {
+    margin-right: 1.5rem;
+    margin-top: 0.2rem;
+  }
 }
 
 .form-message--error, .form-message--success {
@@ -142,10 +143,12 @@ blockquote:before {
   border-radius: 7px;
   box-shadow: 4px 3px 16px -8px black;
 }
+
 .form-message--error {
   background-color: #FFD2D2;
   color: #D8000C;
 }
+
 .form-message--success {
   background-color: #DFF2BF;
   color: #4F8A10;
@@ -161,24 +164,23 @@ blockquote:before {
 }
 
 .bad-form > p {
-  opacity: 1
+  opacity: 1;
 }
 
 input:focus, textarea:focus {
-  outline-color: var(--purple)
+  outline-color: var(--purple);
 }
 
 p {
   margin: 1rem 0 0.15rem 0;
-}
-
-p:last-child {
-  padding-bottom: 0;
-  margin-bottom: 0;
+  &:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 }
 
 li {
-  margin-bottom: 0.2rem
+  margin-bottom: 0.2rem;
 }
 
 .inline-anchor {
@@ -186,9 +188,9 @@ li {
   font-weight: bold;
   color: var(--green);
   cursor: pointer;
-}
-.inline-anchor:hover {
-  color: var(--purple)
+  &:hover {
+    color: var(--purple);
+  }
 }
 
 .blockquote--small {
@@ -196,19 +198,19 @@ li {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   text-indent: 2rem;
-}
-.blockquote--small:before {
-  background-size: 30px 20px;
-  top: 10px;
-  width: 30px;
-  height: 21px;
-}
-.blockquote--small:after {
-  background-size: 30px 20px;
-  bottom: 0;
-  right: 60px;
-  width: 30px;
-  height: 21px;
+  &:before {
+    background-size: 30px 20px;
+    top: 10px;
+    width: 30px;
+    height: 21px;
+  }
+  &:after {
+    background-size: 30px 20px;
+    bottom: 0;
+    right: 60px;
+    width: 30px;
+    height: 21px;
+  }
 }
 
 .blockquote-wrapper {
@@ -220,15 +222,15 @@ li {
   width: 100vw;
   height: 100vh;
   background-color: var(--gray-bg);
-  z-index: -100000000
+  z-index: -100000000;
 }
 
 .app-container {
-   margin: 0 auto;
-   max-width: 1000px;
-   padding-top: 5.5rem;
-   background-color: white;
-   overflow: hidden;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding-top: 5.5rem;
+  background-color: white;
+  overflow: hidden;
 }
 
 .container {
@@ -245,6 +247,7 @@ li {
 .container--pad-top, .section--pad-top {
   padding-top: 2rem;
 }
+
 .container--pad-bottom-extra, .section--pad-bottom-extra {
   padding-bottom: 6rem;
 }
@@ -270,33 +273,43 @@ li {
 .purple {
   color: var(--purple);
 }
+
 .purple0 {
   color: var(--purple0);
 }
+
 .purple1 {
-  color: var(--purple1)
+  color: var(--purple1);
 }
+
 .purple2 {
   color: var(--purple2);
 }
+
 .green {
   color: var(--green);
 }
+
 .light-green {
   color: var(--light-green);
 }
+
 .light-green2 {
   color: var(--light-green2);
 }
+
 .light-purple {
   color: var(--light-purple);
 }
+
 .light-purple2 {
   color: var(--light-purple2);
 }
+
 .green-gray {
   color: var(--green-gray);
 }
+
 .white {
   color: white;
 }
@@ -304,24 +317,31 @@ li {
 .bg--white {
   background-color: white;
 }
+
 .bg--purple {
   background-color: var(--purple);
 }
+
 .bg--green {
   background-color: var(--green);
 }
+
 .bg--green1 {
   background-color: var(--green1);
 }
+
 .bg--light-green {
   background-color: var(--light-green);
 }
+
 .bg--light-green2 {
   background-color: var(--light-green2);
 }
+
 .bg--light-purple {
   background-color: var(--light-purple);
 }
+
 .bg--green-fade {
   background-color: var(--green-fade-1);
 }
@@ -346,20 +366,25 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .background--mfr-hero {
   background: linear-gradient(135deg, var(--light-purple), var(--light-green));
 }
+
 .background--eft-hero {
   background: linear-gradient(135deg, #583785, rgb(191, 125, 254));
 }
+
 .background--sound-healing-hero {
-  background: linear-gradient(135deg, rgb(0, 141, 132) 0%, rgb(155, 213, 158) 100%);;
+  background: linear-gradient(135deg, rgb(0, 141, 132) 0%, rgb(155, 213, 158) 100%);
 }
+
 .background-cover--darken {
-  background: rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
+
 .background--yoga-meditation-hero {
-  background: linear-gradient(135deg, rgba(81,40,136,1) 0%, rgb(244, 202, 201) 100%);
+  background: linear-gradient(135deg, rgba(81, 40, 136, 1) 0%, rgb(244, 202, 201) 100%);
 }
 
 .background--mandalas-page-hero {
@@ -378,7 +403,7 @@ li {
 }
 
 .shadow {
-  text-shadow: 2px 6px 6px rgba(0,0,0,0.152);
+  text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.152);
 }
 
 .page-banner {
@@ -394,21 +419,24 @@ li {
 }
 
 .page-banner--packages {
-  background-image: url("../../images/flowers4_big.jpg")
-}
-.page-banner--about {
-  background-image: url("../../images/flowers7.jpg")
+  background-image: url("../../images/flowers4_big.jpg");
 }
 
-.package-series-list > h3 {
-  margin-bottom: 0.5rem;
+.page-banner--about {
+  background-image: url("../../images/flowers7.jpg");
 }
-.package-series-list > ul {
-  list-style-type: disc;
-  margin-left: 2rem;
-}
-.package-series-list > ul > li{
-  margin-bottom: 0.25rem;
+
+.package-series-list > {
+  h3 {
+    margin-bottom: 0.5rem;
+  }
+  ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    > li {
+      margin-bottom: 0.25rem;
+    }
+  }
 }
 
 .mandala-gallery {
@@ -418,20 +446,19 @@ li {
 }
 
 /* header */
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-
   z-index: 100;
   margin-bottom: 0;
   background-color: white;
-  padding: 1rem;
-
-  -webkit-box-shadow: 0px -3px 21px 3px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0px -3px 21px 3px rgba(0,0,0,0.5);
-  box-shadow: 0px -3px 21px 3px rgba(0,0,0,0.5);
+  padding: 0 1rem;
+  -webkit-box-shadow: 0px -3px 21px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px -3px 21px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px -3px 21px 3px rgba(0, 0, 0, 0.5);
 }
 
 .header__inner_container {
@@ -442,12 +469,13 @@ li {
   justify-content: space-between;
   margin: 0 auto;
 }
+
 .site-logo {
   height: 3.5rem;
-}
-
-.site-logo img {
-  height: 100%;
+  margin: 1rem 0;
+  img {
+    height: 100%;
+  }
 }
 
 .sm-img {
@@ -474,33 +502,33 @@ li {
 }
 
 /* Footer css */
+
 .footer {
   position: relative;
   padding: 1em;
   background-color: var(--gray-bg);
   z-index: 0;
   margin: 0 auto;
+  &::before {
+    position: absolute;
+    background: linear-gradient(#dbdbff, rgba(27, 127, 37, 0.68));
+    content: "";
+    top: 0;
+    left: -50vw;
+    width: 200vw;
+    height: 100%;
+    z-index: -10;
+  }
 }
 
-.footer::before {
-  position: absolute;
-  background: linear-gradient(#dbdbff, #15ad25ad);
-  content: "";
-  top: 0;
-  left: -50vw;
-  width: 200vw;
-  height: 100%;
-  z-index: -10;
-}
 .footer-about-card {
   display: flex;
   justify-content: space-between;
-  /* box-shadow: 0px 2px 12px -5px black; */
   margin-bottom: 2em;
-}
-.footer-about-card > img {
-  height: 200px;
-  margin-right: 0.55em;
+  > img {
+    height: 200px;
+    margin-right: 0.55em;
+  }
 }
 
 .footer-grid {
@@ -514,11 +542,13 @@ li {
 .grid-one {
   grid-row: 1;
 }
+
 .grid-two {
   grid-row: 2;
 }
 
 /* Drawer */
+
 .drawer {
   position: fixed;
   top: 0;
@@ -527,10 +557,9 @@ li {
   width: 70vw;
   background-color: rgb(81, 40, 136);
   transition: 250ms ease-in;
-}
-
-.drawer.closed {
-  left: -70vw;
+  &.closed {
+    left: -70vw;
+  }
 }
 
 .hero-text {
@@ -553,58 +582,130 @@ li {
   height: 70px;
   overflow: hidden;
   z-index: -1;
+  &:after {
+    position: absolute;
+    top: -70px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    transform: skewY(-3deg);
+    content: "";
+    z-index: 0;
+  }
 }
-.slanted-section-decorator:after {
-  position: absolute;
-  top: -70px;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  transform: skewY(-3deg);
-  content: "";
-  z-index: 0;
-}
+
 .slanted-section-decorator--purple:after {
   background-color: rgb(81, 40, 136);
 }
+
 .slanted-section-decorator--gold:after {
   background-color: gold;
 }
 
 /* CTA buttons */
+
 .contact-cta-button {
   font-size: 18px;
   padding: 0.55em;
   cursor: pointer;
   background-color: rgba(81, 40, 136, 0.2);
   border: 1px solid rgba(81, 40, 136, 0.3);
+  &:hover {
+    background-color: rgba(81, 40, 136, 0.3);
+    transition: 200ms;
+  }
+  &:active {
+    transition: 200ms;
+    background: linear-gradient(rgba(81, 40, 136, 0.45), rgba(81, 40, 136, 0.5));
+    outline: none;
+  }
+  &:focus {
+    background: linear-gradient(rgba(81, 40, 136, 0.45), rgba(81, 40, 136, 0.5));
+    outline: none;
+  }
 }
 
-.contact-cta-button:hover {
-  background-color: rgba(81, 40, 136, 0.3);
-}
-
-.contact-cta-button:hover, .contact-cta-button:active {
-  transition: 200ms;
-}
-
-.contact-cta-button:active, .contact-cta-button:focus {
-  background: linear-gradient(rgba(81, 40, 136, 0.45), rgba(81, 40, 136, 0.5));
-  outline: none;
+.desktop-menu {
+  font-size: 1rem;
+  margin: 0;
+  & a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  > li {
+    line-height: 5.5rem;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+    &:last-child, & > a {
+      padding: 0 1rem;
+    }
+    &:hover::after {
+      background-color: var(--purple);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 70%;
+      left: 15%;
+      top: 60%;
+      height: 3px;
+      background-color: #cfcfcf;
+      pointer-events: none;
+    }
+    > ul {
+      margin: 0;
+      position: absolute;
+      z-index: 1000000;
+      top: 100%;
+      left: 0;
+      display: none;
+      width: 200%;
+      background-color: white;
+      padding: 0 ;
+      box-shadow: 0px 0px 5px -5px black;
+      > li {
+        line-height: 1rem;
+        display: block;
+        margin: 0;
+        & > a {
+          padding: 1.5rem 0.7rem;
+        }
+        &:not(:last-child) {
+          border-bottom: 1px solid #ddd;
+        }
+      }
+    }
+    &:hover > ul {
+      display: block;
+    }
+  }
+  & li:hover {
+    transition: 200ms;
+    background-color: #ddd;
+    cursor: pointer;
+  }
+  & li::after, & li {
+    transition: 50ms;
+  }
 }
 
 @media screen and (min-width: 480px) {
   html {
     font-size: 15px;
   }
-
-  .mobile-hidden: {
-    display:initial;
-  }
 }
-@media screen and (min-width: 796px) {
+
+@media screen and (min-width: 900px) {
   .mandala-gallery {
     float: right;
+  }
+  .mobile-only {
+    display: none;
+  }
+  .mobile-hidden {
+    display: block;
   }
 }
 

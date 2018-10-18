@@ -10,8 +10,23 @@ module.exports = {
       youtube: "https://www.youtube.com/channel/UCtfOsb9dwrGnOaRvdJv52UA",
     },
     contactFormUrl: "https://ginas-form-server.herokuapp.com/api/emailForm",
+    internalRoutes: {
+      healingTools: "/healing-tools",
+      myofascialRelease: "/myofascial-release",
+      emotionalFreedomTechniques: "/emotional-freedom-techniques",
+      yogaMeditation: "/yoga-meditation",
+      soundBathingGratitude: "/sound-bathing-gratitude",
+      packages: "/packages",
+      basicPackage: "/packages#basic-package",
+      transformationPackage: "/packages#transformation-package",
+      innerDivineMotheringPackage: "/packages#inner-divine-mothering-package",
+      purchases: "/pay",
+      mandalas: "/mandalas",
+      about: "/about"
+    }
   },
   plugins: [
+    "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-plugin-manifest`,

@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import './layout_default.css'
-import './layout_user.css'
+import './layout_user.scss'
 import Header from './header'
 import Footer from './footer'
 import "typeface-alegreya";

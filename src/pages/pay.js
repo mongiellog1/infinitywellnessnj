@@ -12,7 +12,7 @@ const PayPage = () => (
       <div className="section">
         <h2 className="purple">Single Sessions</h2>
         <ul style={{ fontSize: "20px", listStyleType: "disc", marginLeft: "1.5rem" }}>
-          <li style={{ marginBottom: 0, lineHeight: "24px"}}>Myofasical Release</li>
+          <li style={{ marginBottom: 0, lineHeight: "24px"}}>Myofascial Release</li>
           <li style={{ marginBottom: 0, lineHeight: "24px"}}>Emotional Freedom Techniques</li>
           <li style={{ marginBottom: 0, lineHeight: "24px"}}>Yoga & Meditation</li>
           <li style={{ marginBottom: 0, lineHeight: "24px"}}>Sound Healing & Gratitude</li>

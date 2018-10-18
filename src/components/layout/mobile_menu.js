@@ -38,7 +38,7 @@ class MobileMenu extends Component {
 
     return (
       <>
-        <img className="sm-img" src={hamburger} alt="hamburger menu" onClick={() => this.toggleDrawer("menuOpen")}/>
+        <img className="sm-img mobile-only" src={hamburger} alt="hamburger menu" onClick={() => this.toggleDrawer("menuOpen")}/>
         <Drawer onClick={() => this.toggleDrawer("menuOpen")} open={this.state.menuOpen} onClose={() => this.toggleDrawer("menuOpen")}>
           <div style={{ width: "100vw", maxWidth: "18rem" }}>
             <List component="nav">
