@@ -129,18 +129,18 @@ class Form extends React.Component {
                 type="email"
               />
 
-              <label>How Can I Help?</label>
+              <label>How Can I Help You?</label>
               <textarea
                 id="how_can_i_help"
                 name="message"
                 value={message}
                 onChange={this.updateField}
                 type="textarea"
-                placeholder="How Can I Help?"
+                placeholder="How Can I Help You?"
                 rows="5"
               />
 
-              <input style={{ borderColor: "var(--purple)"}} type="submit" value="Send Message to Gina" />
+              <button className="button form__submit" type="submit" value="Send Message to Gina">Contact Gina<span>Contact Gina</span></button>
             </form>
           </div>
         )}
