@@ -16,7 +16,7 @@ const YogaMeditation = () => (
     />
     <div className="container">
       <Section
-        title="Equanimity of Mind is Yoga ~Bhagavad Gita"
+        title="Equanimity of Mind is Yoga ~ Bhagavad Gita"
         subsections={[
           `Yoga & meditation have been around for thousands of years. While
           body postures and stretches have become synonymous with the word yoga

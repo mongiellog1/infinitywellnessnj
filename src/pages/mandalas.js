@@ -87,7 +87,7 @@ const MandalaPage = () => (
           Mandalas, once made, can also have a therapeutic and meditative effect on us. Gazing at one can bring up harmony or discord. Both these uprisings can lead us into places within that we might not have seen otherwise. This new awareness leads us to choice, where there previously was none.
         </p>
         <p>
-          Connect with me now to setup a mandala workshop!
+          Connect with me now to setup a mandala workshop, or to purchase mandala cards!
         </p>
       </div>
       <ContactGinaCta />

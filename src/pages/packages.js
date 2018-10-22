@@ -6,11 +6,11 @@ import ContactCta from "../components/contact_gina_cta";
 import Section from "../components/section";
 import scrollToElement from "scroll-to-element";
 
-class PackagesPage extends React.Component{
+class PackagesPage extends React.Component {
   componentDidMount() {
     const { hash } = this.props.location;
     if (hash) {
-      scrollToElement(hash, { offset: -100, duration: 10 })
+      scrollToElement(hash, { duration: 100 } )
     }
   }
 
@@ -25,7 +25,8 @@ class PackagesPage extends React.Component{
           CTA={true}
         />
         <Divider />
-        <div id="basic-series" className="section ">
+        <div className="section page-anchor__container">
+          <div id="basic-package" className="page-anchor__anchor"/>
           <h2>Basic Series: Beginner Package</h2>
           <h3 className="green">Taste Freedom!</h3>
           <p className="light-green">Session Intervals: 6 session hours over three consecutive weeks (3 meetings)</p>
@@ -73,7 +74,8 @@ class PackagesPage extends React.Component{
         </div>
 
         <Divider showLogo={false} />
-        <div id="transformation-series" className="section">
+        <div className="section page-anchor__container">
+          <div id="transformation-package" className="page-anchor__anchor"/>
           <h2>Transformation Series</h2>
           <h3 className="green">Release, Reset, Renew!</h3>
           <p className="light-green">Session Intervals:10 session hours over ten consecutive weeks (10 meetings)</p>
@@ -136,7 +138,8 @@ class PackagesPage extends React.Component{
         </div>
 
         <Divider showLogo={false} />
-        <div id="divine-mothering-series" className="section ">
+        <div className="section page-anchor__container">
+          <div id="inner-divine-mothering-package" className="page-anchor__anchor"/>
           <h2>Divine Inner Mothering Series: Loving Our Inner Child</h2>
           <h3 className="green">Shadow and Light Unite!</h3>
           <p className="light-green">Session Intervals: 27 session hours over twelve consecutive weeks (15 meetings)</p>

@@ -41,6 +41,7 @@ const DesktopMenu = () => (
       innerDivineMotheringPackage,
     } } } }) => (
       <ul className="desktop-menu mobile-hidden">
+        <li><Link className="inline-anchor" to="/">Home</Link></li>
         <li>
           <Link className="inline-anchor" to={healingTools}>Healing Tools</Link>
           <ul>
@@ -61,7 +62,7 @@ const DesktopMenu = () => (
         <li><Link className="inline-anchor" to={mandalas}>Mandalas</Link></li>
         <li><Link className="inline-anchor" to={purchases}>Purchases</Link></li>
         <li><Link className="inline-anchor" to={about}>About</Link></li>
-        <li className="inline-anchor" onClick={() => scrollToElement("#contact", { offset: -50, duration: 500 } )}>Contact</li>
+        <li className="inline-anchor" onClick={() => scrollToElement("#contact", { offset: -50, duration: 500 } )}>Connect</li>
       </ul>
     )}
   />

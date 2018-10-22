@@ -89,7 +89,7 @@ class MobileMenu extends Component {
               </Link>
               <div onClick={this.smoothScroll}>
                 <ListItem button>
-                  <StyledListItemText  primary="Contact" />
+                  <StyledListItemText  primary="Connect" />
                 </ListItem>
               </div>
             </List>

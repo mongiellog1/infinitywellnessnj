@@ -23,7 +23,7 @@ const Footer = () => (
         <h2>Let's Connect.</h2>
         <div style={{ margin: "0 0 2rem 0" }}>
           <FontAwesomeIcon icon="phone" size="2x" style={{ marginRight: "2rem" }}/>
-          <span style={{ fontSize: "1.2rem" }}>+1 <span style={{ margin: "0 0.35rem"}}>(201)</span> 396 - 0970</span>
+          <span style={{ fontSize: "1.2rem" }}>+1 <span style={{ margin: "0 0.35rem"}}>(201)</span> 396 - 0909</span>
         </div>
       </div>
 

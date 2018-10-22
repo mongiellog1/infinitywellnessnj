@@ -33,7 +33,7 @@ class Form extends React.Component {
     Message
     ${message}`;
 
-    fetch("http://localhost:3000/api/emailForm", {
+    fetch("https://ginas-form-server.herokuapp.com/api/emailForm", {
       method: "POST",
       body: JSON.stringify({
         body,
@@ -88,7 +88,8 @@ class Form extends React.Component {
             <p>
               Whether you're in the middle of a personal struggle, curious about
               inner transformation and expansion, or stressing about a business
-              challenge, together we can create a solution that is just right for you.
+              challenge, together we can create a space that will bring insight,
+              clarity, wellness, and next steps.
             </p>
 
             <div className={`form-message ${messageFlag}` }>
@@ -129,18 +130,18 @@ class Form extends React.Component {
                 type="email"
               />
 
-              <label>How Can I Help You?</label>
+              <label>How Can I Help?</label>
               <textarea
                 id="how_can_i_help"
                 name="message"
                 value={message}
                 onChange={this.updateField}
                 type="textarea"
-                placeholder="How Can I Help You?"
+                placeholder="How Can I Help?"
                 rows="5"
               />
 
-              <button className="button form__submit" type="submit" value="Send Message to Gina">Contact Gina<span>Contact Gina</span></button>
+              <button className="button form__submit" type="submit" value="Send Message to Gina">Connect With Gina<span>Connect With Gina</span></button>
             </form>
           </div>
         )}
