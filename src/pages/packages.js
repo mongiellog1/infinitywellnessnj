@@ -17,7 +17,7 @@ class PackagesPage extends React.Component {
   render = () => (
     <Layout>
       <Banner flag="packages" />
-      <div className="container container--pad-bottom-extra">
+      <div className="container container--max-width">
         <Section
           title={"Packages"}
           classes="big-lines"

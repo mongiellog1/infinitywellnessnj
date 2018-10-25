@@ -30,9 +30,6 @@
 .healing-tools-teaser > ul > li {
   margin-bottom: 0.25rem;
 }
-.healing-tools-section button {
-  margin-left: 2rem;
-}
 .section--work-with-me {
   background: linear-gradient(135deg, var(--green), var(--light-green));
 }

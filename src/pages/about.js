@@ -8,7 +8,7 @@ import Layout from "../components/layout/index";
 const AboutPage = () => (
   <Layout>
     <Banner flag="about" />
-    <div className="container">
+    <div className="container container--max-width">
       <div className="section">
         <h1 className="purple">Bio & Credentials</h1>
         <article className="bio">

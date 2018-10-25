@@ -7,8 +7,8 @@ import Banner from "../components/banner";
 
 const PayPage = () => (
   <Layout>
-    <Banner flag="pay" />
-    <div className="container">
+    <Banner flag="purchases" />
+    <div className="container container--max-width">
       <div className="section">
         <h2 className="purple">Single Sessions</h2>
         <ul style={{ fontSize: "20px", listStyleType: "disc", marginLeft: "1.5rem" }}>
@@ -28,7 +28,7 @@ const PayPage = () => (
       </div>
     </div>
     <Testimonial2 />
-    <div className="container">
+    <div className="container container--max-width">
       <div className="section">
         <h2>Basic Series: Beginner Package</h2>
         <p>

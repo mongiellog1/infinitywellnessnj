@@ -6,7 +6,7 @@ import Form from "./footer_form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => (
-  <div id="contact" className="footer">
+  <div id="contact" className="footer container--max-width">
     <div className="footer-grid">
       <div className="grid__element grid-one">
         <SiteLogo />

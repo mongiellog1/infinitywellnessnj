@@ -14,7 +14,7 @@ const YogaMeditation = () => (
       subtitle="THE GREAT LIBERATOR"
       paragraphs={["Find the common thread."]}
     />
-    <div className="container">
+    <div className="container container--max-width">
       <Section
         title="Equanimity of Mind is Yoga ~ Bhagavad Gita"
         subsections={[

@@ -47,7 +47,7 @@ class MobileMenu extends Component {
                   <StyledListItemText primary="Home" />
                 </ListItem>
               </Link>
-              <Link to="/pay">
+              <Link to="/purchases">
                 <ListItem button>
                   <StyledListItemText primary="Purchases" />
                 </ListItem>

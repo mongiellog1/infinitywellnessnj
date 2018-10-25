@@ -20,7 +20,7 @@ module.exports = {
       basicPackage: "/packages#basic-package",
       transformationPackage: "/packages#transformation-package",
       innerDivineMotheringPackage: "/packages#inner-divine-mothering-package",
-      purchases: "/pay",
+      purchases: "/purchases",
       mandalas: "/mandalas",
       about: "/about"
     }

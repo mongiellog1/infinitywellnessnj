@@ -36,7 +36,7 @@ const MandalaPage = () => (
       title="Mandalas"
       subtitle="Unleash your inner creative."
     />
-    <div className="container">
+    <div className="container container--max-width">
       <Section
         title="Mandalas"
         subsections={[

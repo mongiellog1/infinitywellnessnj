@@ -36,8 +36,8 @@ const Layout = ({ children }) => (
         <div className="app-background" />
           <div className="app-container" >
             {children}
-            <Footer />
           </div>
+          <Footer />
       </>
     )}
   />

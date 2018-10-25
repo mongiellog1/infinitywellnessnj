@@ -118,7 +118,8 @@ blockquote {
   font-weight: 300;
   font-size: 20px;
   min-height: 47px;
-  margin: 0.5rem;
+  max-width: 1000px;
+  margin: 0.5rem auto;
   padding: 2rem;
   color: white;
   text-indent: 2.5rem;
@@ -244,9 +245,8 @@ li {
 }
 
 .app-container {
-  margin: 0 auto;
-  max-width: 1000px;
   padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
   background-color: white;
   overflow: hidden;
 }
@@ -259,21 +259,22 @@ li {
   padding: 0 2rem 2rem 2rem;
   position: relative;
   z-index: 0;
+  box-sizing: content-box;
 }
-
+.container--max-width {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.container--pad-bottom {
+  padding-bottom: 3rem;
+}
 .container--pad-small {
   padding: 0.75rem;
   padding-top: 0;
 }
-
 .container--pad-top, .section--pad-top {
   padding-top: 2rem;
 }
-
-.container--pad-bottom-extra, .section--pad-bottom-extra {
-  padding-bottom: 6rem;
-}
-
 .container--hero {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -282,7 +283,7 @@ li {
 .section {
   position: relative;
   overflow: hidden;
-  padding-top: 3rem;
+  padding-top: 2rem;
   z-index: 0;
 }
 
@@ -374,7 +375,7 @@ li {
   background-repeat: no-repeat;
 }
 
-.page-banner--pay {
+.page-banner--purchases {
   background-image: url("../../images/flowers2.jpg");
 }
 
@@ -541,7 +542,7 @@ li {
 .slanted-section-decorator {
   height: 70px;
   overflow: hidden;
-  z-index: -1;
+  position: relative;
   &:after {
     position: absolute;
     top: -70px;

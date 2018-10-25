@@ -14,7 +14,7 @@ const SoundHealing = () => (
       subtitle="THE PEACE AND JOY IGNITER"
       paragraphs={["Lay your head to rest while I play sounds that dance with your soul"]}
     />
-    <div className="container">
+    <div className="container container--max-width">
       <Section
         title="The Sound of Angels."
         classes="big-lines"
@@ -29,7 +29,7 @@ const SoundHealing = () => (
       />
     </div>
     <Quote1 />
-    <div className="container">
+    <div className="container container--max-width container--no">
       <Section
         title="A Simple Magic"
         subsections={[

@@ -16,25 +16,23 @@ const IndexPage = ({ data}) => (
       subtitle="Start living in a way that is true to your core. A life where you know who you are and your actions follow in alignment."
       background={<Img className="background-cover-parent" fluid={data.imageOne.childImageSharp.fluid} />}
     />
-
-
-    <div className="section section-content" >
-      <div className="slanted-section-decorator slanted-section-decorator--purple"/>
-      <h2>Wellness Is A State Of Mind</h2>
-      <p>
-        A lot of us feel victim to our circumstances. We enjoy the good times in
-        life, and feel bad or unwell during the bad times, never realizing that
-        we can choose to be well in all times. When we give our power away to
-        situations and life events, we find ourselves in the same old cycles,
-        perhaps with new faces and places, but the patterns of the past repeat,
-        and nothing much changes.
-      </p>
-      <p>
-        Instead of living in this cycle of powerlessness and wondering when our day will come we can choose goodness and growth in all situations regardless of the external circumstances! And with this choosing there are no more cycles, no more repeats. We consciously choose our response to life’s events and become the master of our life.
-      </p>
-      <p>Welcome to wellness. A state of being, out of which, all things flow. Wellness is a state that we can tap into at any given time. Infinity Wellness is a phrase to help us remember that Wellness is of the Infinite Realm, and is not dependent upon current conditions or situations. When we live from this infinite well, happiness, that is not dependent on anything follows. </p>
-    </div>
-    <div className="container container--pad-bottom-extra">
+    <div className="slanted-section-decorator slanted-section-decorator--purple"/>
+    <div className="container container--max-width">
+      <div className="section" >
+        <h2>Wellness Is A State Of Mind</h2>
+        <p>
+          A lot of us feel victim to our circumstances. We enjoy the good times in
+          life, and feel bad or unwell during the bad times, never realizing that
+          we can choose to be well in all times. When we give our power away to
+          situations and life events, we find ourselves in the same old cycles,
+          perhaps with new faces and places, but the patterns of the past repeat,
+          and nothing much changes.
+        </p>
+        <p>
+          Instead of living in this cycle of powerlessness and wondering when our day will come we can choose goodness and growth in all situations regardless of the external circumstances! And with this choosing there are no more cycles, no more repeats. We consciously choose our response to life’s events and become the master of our life.
+        </p>
+        <p>Welcome to wellness. A state of being, out of which, all things flow. Wellness is a state that we can tap into at any given time. Infinity Wellness is a phrase to help us remember that Wellness is of the Infinite Realm, and is not dependent upon current conditions or situations. When we live from this infinite well, happiness, that is not dependent on anything follows. </p>
+      </div>
       <Divider />
       <div className="section">
         <h2 className="">An Integrated Approach</h2>
