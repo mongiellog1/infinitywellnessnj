@@ -23,7 +23,6 @@ a {
   &[href^="/"] {
     text-decoration: none;
   }
-  // font-family: georgia, serif;
 }
 
 .page-anchor__container {
@@ -287,87 +286,25 @@ li {
   z-index: 0;
 }
 
-.divider {
-  height: 5px;
-  width: 20%;
-  margin-bottom: 3rem;
-}
-
-.purple {
-  color: var(--purple);
-}
-
-.purple0 {
-  color: var(--purple0);
-}
-
-.purple1 {
-  color: var(--purple1);
-}
-
-.purple2 {
-  color: var(--purple2);
-}
-
-.green {
-  color: var(--green);
-}
-
-.light-green {
-  color: var(--light-green);
-}
-
-.light-green2 {
-  color: var(--light-green2);
-}
-
-.light-purple {
-  color: var(--light-purple);
-}
-
-.light-purple2 {
-  color: var(--light-purple2);
-}
-
-.green-gray {
-  color: var(--green-gray);
-}
-
-.white {
-  color: white;
-}
-
-.bg--white {
-  background-color: white;
-}
-
-.bg--purple {
-  background-color: var(--purple);
-}
-
-.bg--green {
-  background-color: var(--green);
-}
-
-.bg--green1 {
-  background-color: var(--green1);
-}
-
-.bg--light-green {
-  background-color: var(--light-green);
-}
-
-.bg--light-green2 {
-  background-color: var(--light-green2);
-}
-
-.bg--light-purple {
-  background-color: var(--light-purple);
-}
-
-.bg--green-fade {
-  background-color: var(--green-fade-1);
-}
+.purple { color: var(--purple);}
+.purple0 { color: var(--purple0);}
+.purple1 { color: var(--purple1);}
+.purple2 { color: var(--purple2);}
+.green { color: var(--green);}
+.light-green { color: var(--light-green);}
+.light-green2 { color: var(--light-green2);}
+.light-purple { color: var(--light-purple);}
+.light-purple2 { color: var(--light-purple2);}
+.green-gray { color: var(--green-gray);}
+.white { color: white;}
+.bg--white { background-color: white;}
+.bg--purple { background-color: var(--purple);}
+.bg--green { background-color: var(--green);}
+.bg--green1 { background-color: var(--green1);}
+.bg--light-green { background-color: var(--light-green);}
+.bg--light-green2 { background-color: var(--light-green2);}
+.bg--light-purple { background-color: var(--light-purple);}
+.bg--green-fade { background-color: var(--green-fade-1);}
 
 .big-lines {
   line-height: 26px;

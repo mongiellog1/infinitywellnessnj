@@ -4,7 +4,6 @@
 }
 
 .bio__portrait {
-  /* float: left; */
   box-sizing: border-box;
   padding-right: 1rem;
   max-height: 10rem;

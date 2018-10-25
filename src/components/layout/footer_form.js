@@ -85,13 +85,6 @@ class Form extends React.Component {
         `}
         render={({ site }) => (
           <div className="form-container">
-            <p>
-              Whether you're in the middle of a personal struggle, curious about
-              inner transformation and expansion, or stressing about a business
-              challenge, together we can create a space that will bring insight,
-              clarity, wellness, and next steps.
-            </p>
-
             <div className={`form-message ${messageFlag}` }>
               <p>{fetchMessage}</p>
               <div onClick={closeMessage} className="form-message__close">X</div>
