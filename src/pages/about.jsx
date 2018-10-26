@@ -4,20 +4,20 @@ import "./about.css";
 import Banner from "../components/banner";
 import ContactGinaCta from "../components/contact_gina_cta";
 import Layout from "../components/layout/index";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const AboutPage = () => (
   <Layout>
     <Banner flag="about" />
     <div className="container container--max-width">
       <div className="section">
-        <h1 className="purple">Bio & Credentials</h1>
         <article className="bio">
           <div>
             <div className="bio-header">
               <img className="bio__portrait" src={GinaPortrait} alt="Gina Mongiello" />
               <div>
-                <h2 style={{ fontSize: 24, marginBottom: "0.5rem" }}>Gina Mongiello, LA, MT</h2>
-                <h4 style={{ fontStyle: "italic", fontWeight: "200" }}>Founder</h4>
+                <h2 style={{ fontSize: 24, marginBottom: "0.5rem" }}>Gina Mongiello, MA, LMT</h2>
+                <h4 style={{ fontStyle: "italic", fontWeight: "200" }}>Founder of Infinity Wellness</h4>
               </div>
             </div>
           </div>
@@ -45,7 +45,7 @@ const AboutPage = () => (
               Be. Feel. Love,
             </p>
             <p>
-              Gina, Founder of Infinity Wellness
+              Gina <FontAwesomeIcon icon={["fas", "heart"]} style={{ color: "red"}} />
             </p>
           </div>
         </article>

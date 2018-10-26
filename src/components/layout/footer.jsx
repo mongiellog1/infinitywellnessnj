@@ -3,7 +3,6 @@ import { Link } from "gatsby";
 import { FacebookButtonRound, InstagramButtonRound, YoutubeButtonRound } from "./social_buttons";
 import SiteLogo from "./site_logo";
 import Form from "./footer_form";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => (
   <div id="contact" className="footer container--max-width">
@@ -28,8 +27,7 @@ const Footer = () => (
           clarity, wellness, and next steps.
         </p>
         <div>
-          {/* <FontAwesomeIcon icon="phone" size="2x" style={{ marginRight: "2rem" }}/> */}
-          <span style={{ fontSize: "1.2rem" }}><span style={{ margin: "0 0.35rem"}}>201</span> 396 - 0909</span>
+          <span style={{ fontSize: "1.2rem" }}>201.396.0909</span>
         </div>
       </div>
 
