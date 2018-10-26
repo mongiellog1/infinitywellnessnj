@@ -7,7 +7,7 @@ import Banner from "../components/banner";
 
 const PayPage = () => (
   <Layout>
-    <Banner flag="purchases" />
+    <Banner flag="services" />
     <div className="container container--max-width">
       <div className="section">
         <h2 className="purple">Single Sessions</h2>

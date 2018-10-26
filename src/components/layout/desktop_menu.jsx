@@ -14,7 +14,7 @@ const DesktopMenu = () => (
               emotionalFreedomTechniques,
               yogaMeditation,
               soundBathingGratitude,
-              purchases,
+              services,
               mandalas,
               about,
               packages,
@@ -32,7 +32,7 @@ const DesktopMenu = () => (
       emotionalFreedomTechniques,
       yogaMeditation,
       soundBathingGratitude,
-      purchases,
+      services,
       mandalas,
       about,
       packages,
@@ -60,7 +60,7 @@ const DesktopMenu = () => (
           </ul>
         </li>
         <li><Link className="inline-anchor" to={mandalas}>Mandalas</Link></li>
-        <li><Link className="inline-anchor" to={purchases}>Purchases</Link></li>
+        <li><Link className="inline-anchor" to={services}>Services</Link></li>
         <li><Link className="inline-anchor" to={about}>About</Link></li>
         <li className="inline-anchor" onClick={() => scrollToElement("#contact", { offset: -50, duration: 500 } )}>Connect</li>
       </ul>
