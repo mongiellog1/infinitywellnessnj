@@ -54,7 +54,7 @@ const DesktopMenu = () => (
         <li>
           <Link className="inline-anchor" to={packages}>Packages</Link>
           <ul>
-            <li><Link className="inline-anchor" to={basicPackage}>Basic Package: Beginner Special</Link></li>
+            <li><Link className="inline-anchor" to={basicPackage}>Basic Series: Beginner Package</Link></li>
             <li><Link className="inline-anchor" to={transformationPackage}>Transformation Package</Link></li>
             <li><Link className="inline-anchor" to={innerDivineMotheringPackage}>Inner Divine Mothering Package</Link></li>
           </ul>

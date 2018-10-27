@@ -8,11 +8,12 @@ import Divider from "../components/page_divider";
 export default () => (
   <Layout>
     <HeroSection
-      cssHeroType="eft"
       title="Emotional Freedom Techniques"
       subtitle="THE ENERGY ELEVATOR"
       paragraphs={[`Tapping into roots that exist for a reason.`]}
-    />
+    >
+      <div className="background--eft-hero background-cover-parent" />
+    </HeroSection>
     <div className="container container--max-width">
       <Section
         title="Tap into your dreams"

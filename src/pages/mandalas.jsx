@@ -35,7 +35,9 @@ const MandalaPage = () => (
       cssHeroType="mandalas-page"
       title="Mandalas"
       subtitle="Unleash your inner creative."
-    />
+    >
+      <div className="background--mandalas-page-hero background-cover-parent" />
+    </HeroSection>
     <div className="container container--max-width">
       <Section
         title="Mandalas"

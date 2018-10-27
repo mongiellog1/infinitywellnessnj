@@ -76,7 +76,7 @@ class PackagesPage extends React.Component {
         <Divider showLogo={false} />
         <div className="section page-anchor__container">
           <div id="transformation-package" className="page-anchor__anchor"/>
-          <h2>Transformation Series</h2>
+          <h2>Transformation Package</h2>
           <h3 className="green">Release, Reset, Renew!</h3>
           <p className="light-green">Session Intervals:10 session hours over ten consecutive weeks (10 meetings)</p>
 
@@ -140,7 +140,7 @@ class PackagesPage extends React.Component {
         <Divider showLogo={false} />
         <div className="section page-anchor__container">
           <div id="inner-divine-mothering-package" className="page-anchor__anchor"/>
-          <h2>Divine Inner Mothering Series: Loving Our Inner Child</h2>
+          <h2>Divine Inner Mothering Package: Loving Our Inner Child</h2>
           <h3 className="green">Shadow and Light Unite!</h3>
           <p className="light-green">Session Intervals: 27 session hours over twelve consecutive weeks (15 meetings)</p>
           <p>In this series, we connect with the parts of us that have been repressed, left behind, hurt and hidden. What uprises is our inner child, an innocent, sweet-hearted being who got lost in the ups and downs of life and life’s situations.</p>

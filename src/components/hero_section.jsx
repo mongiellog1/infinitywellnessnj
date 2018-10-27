@@ -10,11 +10,9 @@ const HeroContent = ({ titleClass, title, subtitle, paragraphs }) => (
   </div>
 );
 
-export default ({ background, cssHeroType, title, titleClass, subtitle, paragraphs=[], darken=false, children }) => (
+export default ({ title, titleClass, subtitle, paragraphs=[], darken=false, children }) => (
   <div className="hero container container--hero container--pad-top white">
-    {background}
-    {cssHeroType && <div className={`background--${cssHeroType}-hero background-cover-parent`} />}
-    {darken && <div className="background-cover-parent background-cover--darken" />}
+    {children}
     <HeroContent
       title={title}
       titleClass={titleClass}
