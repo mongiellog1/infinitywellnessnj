@@ -21,15 +21,3 @@ export default ({ title, titleClass, subtitle, paragraphs=[], darken=false, chil
     />
   </div>
 );
-
-
-
-const HeroSection = (props) => (
-  <div className="hero container container--hero container--pad-top white">
-    {
-      React.children.map(props.children, (child) => (
-        React.cloneElement(child, props)
-      ))
-    }
-  </div>
-)

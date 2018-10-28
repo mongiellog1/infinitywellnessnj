@@ -85,3 +85,13 @@ export const pageQuery = graphql`
     }
   }
 `
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`;
