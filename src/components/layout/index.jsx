@@ -26,8 +26,8 @@ const Layout = ({ children }) => (
         <Helmet
           title={title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'Reclaim Wellness and transform your world. Ask about the beginner\'s special' },
+            { name: 'keywords', content: 'Health, Wellness, Emotional Freedom Techniques, EFT, MFR, Myofascial Release, Mandalas' },
           ]}
         >
           <html lang="en" />
