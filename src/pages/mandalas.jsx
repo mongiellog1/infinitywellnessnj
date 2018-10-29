@@ -5,6 +5,8 @@ import Section from "../components/section";
 import ContactGinaCta from "../components/contact_gina_cta";
 
 import MandalaGallery from "../components/mandala_gallery";
+import MandalaSlideshow from "../components/mandala_slideshow";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 const MandalaPage = () => (
   <Layout>
@@ -13,12 +15,9 @@ const MandalaPage = () => (
       title="Mandalas"
       subtitle="Unleash your inner creative."
     >
-      {/* <ImageGallery
-        items={[
-
-        ]}
-      /> */}
+      {/* <MandalaSlideshow /> */}
       <div className="background--mandalas-page-hero background-cover-parent" />
+      <div className="background-cover-parent bg-darken" />
     </HeroSection>
     <div className="container container--max-width">
       <Section

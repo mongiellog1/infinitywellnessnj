@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import ImageGallery from 'react-image-gallery';
-import "react-image-gallery/styles/css/image-gallery.css";
+// import "react-image-gallery/styles/css/image-gallery.css";
 
 const MandalaGallery = () => (
   <StaticQuery
@@ -39,8 +39,7 @@ const MandalaGallery = () => (
         }
       }
     `}
-    render={(props) => {
-      const b = props.burstingly_interwoven.childImageSharp.fluid;
+    render={(props) => {;
       const items = Object.keys(props).map((key) => ({
         original: props[key].childImageSharp.fluid.src,
         thumbnail: props[key].childImageSharp.fluid.src
