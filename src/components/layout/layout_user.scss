@@ -354,11 +354,6 @@ li {
   background-size: cover;
 }
 
-.background-cover-parent2 {
-  background-size: contain;
-  background-image: url("../../images/mandalas/landscape/divine_order.jpg");
-}
-
 .background--mfr-hero {
   background: linear-gradient(135deg, var(--light-purple), var(--light-green));
 }
@@ -379,12 +374,7 @@ li {
   background: linear-gradient(135deg, rgba(81, 40, 136, 1) 0%, rgb(244, 202, 201) 100%);
 }
 
-.background--mandalas-page-hero {
-  background: url("../../images/mandalas/landscape/divine_order.jpg") center center / cover no-repeat;
-}
-
 .bg-darken {
-  // background-color: rgba(0, 0, 0, 0.5);
   background: linear-gradient(135deg, rgb(25, 161, 110) 0%, rgb(165, 147, 194) 100%);
   opacity: 0.5;
 }
