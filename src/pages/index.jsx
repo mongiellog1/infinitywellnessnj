@@ -5,7 +5,7 @@ import Layout from "../components/layout/index"
 import Divider from "../components/page_divider";
 import HeroSection from "../components/hero_section";
 import Img from "gatsby-image";
-
+import { Testimonial3 } from "../components/testimonial";
 import "./index.css";
 
 const IndexPage = ({ data}) => (
@@ -20,7 +20,7 @@ const IndexPage = ({ data}) => (
 
     <div className="slanted-section-decorator slanted-section-decorator--purple"/>
     <div className="container container--max-width">
-      <div className="section" >
+      <div className="section">
         <h2>Wellness Is A State Of Mind</h2>
         <p>
           A lot of us feel victim to our circumstances. We enjoy the good times in
@@ -35,7 +35,9 @@ const IndexPage = ({ data}) => (
         </p>
         <p>Welcome to wellness. A state of being, out of which, all things flow. Wellness is a state that we can tap into at any given time. Infinity Wellness is a phrase to help us remember that Wellness is of the Infinite Realm, and is not dependent upon current conditions or situations. When we live from this infinite well, happiness, that is not dependent on anything follows. </p>
       </div>
-      <Divider />
+    </div>
+      <Testimonial3 />
+    <div className="container container--max-width">
       <div className="section">
         <h2 className="">Gina's Integrated Approach</h2>
         <p>
