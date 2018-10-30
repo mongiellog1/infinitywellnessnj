@@ -21,7 +21,7 @@ const HealingTools = () => (
       <div className="slanted-section-decorator slanted-section-decorator--green"/>
       <div className="container container--max-width">
         <article className="section">
-          <h1 className="light-green">My Chosen Tools</h1>
+          <h1 className="light-green">Gina's Chosen Tools</h1>
           <p>
             I have chosen tools that are incredibly effective at dealing with life,
             consistently, day-in and day-out, so that when something comes up we have

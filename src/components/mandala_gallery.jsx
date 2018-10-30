@@ -47,6 +47,7 @@ const MandalaGallery = () => (
       return (
         <ImageGallery
           items={items}
+          startIndex={3}
         />
       )
     }

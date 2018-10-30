@@ -373,11 +373,31 @@ li {
 .background--yoga-meditation-hero {
   background: linear-gradient(135deg, rgba(81, 40, 136, 1) 0%, rgb(244, 202, 201) 100%);
 }
+.background--mandala-hero {
+  background: linear-gradient(135deg, rgb(25, 161, 110) 0%, rgb(165, 147, 194) 100%);
+}
 
 .bg-darken {
   background: linear-gradient(135deg, rgb(25, 161, 110) 0%, rgb(165, 147, 194) 100%);
-  opacity: 0.5;
 }
+
+.hero {
+  height: 10vh;
+}
+
+.mandalas-banner {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  > * {
+    flex: 1;
+    display: none;
+    &:first-child {
+      display: inherit;
+    }
+  }
+}
+
 
 .button-cta-1 {
   background: linear-gradient(#70eeff, #45E9FF);
@@ -686,7 +706,20 @@ li {
   }
 }
 
+@media screen and (min-width: 667px) {
+  .mandalas-banner {
+    > *:nth-child(2) {
+      display: inherit;
+    }
+  }
+}
+
 @media screen and (min-width: 976px) {
+  .mandalas-banner {
+    > *:nth-child(3) {
+      display: inherit;
+    }
+  }
   .mandala-gallery {
     float: right;
   }
