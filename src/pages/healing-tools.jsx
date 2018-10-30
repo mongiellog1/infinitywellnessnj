@@ -12,18 +12,13 @@ const HealingTools = () => (
     <div className="healing-tools-section">
       <article className="container container--pad-top light-purple section--work-with-me white">
         <div className="container--max-width">
-          <h1 className="title purple">Work With Me!</h1>
-          <p className="hero-text">When's the last time you did something that fixed <em className="light-purple2">ALL</em> of your problems?</p>
-          <p><span className="italic light-purple2">*hint*</span> <b className="hero-text ">Never!</b></p>
-          <p style={{ marginBottom: "0.25rem"}}>Because:</p>
-          <ul style={{ marginLeft: "2rem"}}>
-            <li>A) problems are really challenges and life will always provide us new challenges for growth</li>
-            <li>B) nothing needs fixing, we are already whole, all we need is a different lens with which to see!!</li>
-          </ul>
+          <h1 className="title purple">Life Long Healing Tools</h1>
+          <p className="hero-text">Have you ever longed for tools that would never dull, and instead sharpen with use?</p>
+          <p style={{ marginBottom: "0.25rem"}}>If YES, then allow your journey to begin. These healing tools when used and practiced can be applied to all of life’s challenges.</p>
         </div>
       </article>
 
-      <div className="slanted-section-decorator slanted-section-decorator--gold"/>
+      <div className="slanted-section-decorator slanted-section-decorator--green"/>
       <div className="container container--max-width">
         <article className="section">
           <h1 className="light-green">My Chosen Tools</h1>

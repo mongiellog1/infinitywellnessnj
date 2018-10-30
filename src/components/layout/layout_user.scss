@@ -24,7 +24,9 @@ a {
     text-decoration: none;
   }
 }
-
+.hidden {
+  display: none;
+}
 .page-anchor__container {
   position: relative;
 }
@@ -35,8 +37,13 @@ a {
   height: 0px;
 }
 
-.hero__title--home-page {
-  font-family: georgia, serif;
+.hero-content__title {
+  text-shadow: 0px 3px 3px black;
+}
+
+.hero-content__subtitle {
+  font-size: 1.2rem;
+  text-shadow: 2px 2px black;
 }
 
 .button {
@@ -260,6 +267,7 @@ li {
   position: relative;
   z-index: 0;
   box-sizing: content-box;
+  overflow: hidden;
 }
 .container--max-width {
   max-width: 1000px;
@@ -316,7 +324,25 @@ li {
   text-decoration: none;
 }
 
-.background-cover-parent {
+.mandala-slideshow {
+  & * {
+    height: 100%;
+  }
+  & .image-gallery-slides {
+    text-align: center;
+  }
+  & .image-gallery-slide img {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  & .image-gallery-image {
+    height: 100%;
+  }
+}
+
+.background-cover-parent, .background-cover-parent2 {
   position: absolute !important;
   top: 0;
   left: 0;
@@ -348,8 +374,9 @@ li {
   background: linear-gradient(135deg, rgba(81, 40, 136, 1) 0%, rgb(244, 202, 201) 100%);
 }
 
-.background--mandalas-page-hero {
+.bg-darken {
   background: linear-gradient(135deg, rgb(25, 161, 110) 0%, rgb(165, 147, 194) 100%);
+  opacity: 0.5;
 }
 
 .button-cta-1 {
@@ -375,7 +402,7 @@ li {
   background-repeat: no-repeat;
 }
 
-.page-banner--purchases {
+.page-banner--services {
   background-image: url("../../images/flowers2.jpg");
 }
 
@@ -390,6 +417,7 @@ li {
 .package-series-list > {
   h3 {
     margin-bottom: 0.5rem;
+    margin-top: 1rem;
   }
   ul {
     list-style-type: disc;
@@ -559,8 +587,8 @@ li {
   background-color: rgb(81, 40, 136);
 }
 
-.slanted-section-decorator--gold:after {
-  background-color: gold;
+.slanted-section-decorator--green:after {
+  background-color: var(--light-green);
 }
 
 /* CTA buttons */

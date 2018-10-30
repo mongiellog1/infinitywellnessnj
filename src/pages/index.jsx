@@ -14,8 +14,10 @@ const IndexPage = ({ data}) => (
       title="Reclaim Wellness."
       titleClass="home-page"
       subtitle="Start living in a way that is true to your core. A life where you know who you are and your actions follow in alignment."
-      background={<Img className="background-cover-parent" fluid={data.imageOne.childImageSharp.fluid} />}
-    />
+    >
+      <Img className="background-cover-parent" fluid={data.imageOne.childImageSharp.fluid} />
+    </HeroSection>
+
     <div className="slanted-section-decorator slanted-section-decorator--purple"/>
     <div className="container container--max-width">
       <div className="section" >
@@ -35,7 +37,7 @@ const IndexPage = ({ data}) => (
       </div>
       <Divider />
       <div className="section">
-        <h2 className="">An Integrated Approach</h2>
+        <h2 className="">Gina's Integrated Approach</h2>
         <p>
           I use MyoFascial Release, Emotional Freedom Techniques, Sound Baths, and Yoga & Meditation as a multi-pronged approach, creating a balanced harmonious space for health and wellness to rebirth itself and thrive.
         </p>
@@ -83,3 +85,13 @@ export const pageQuery = graphql`
     }
   }
 `
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`;
