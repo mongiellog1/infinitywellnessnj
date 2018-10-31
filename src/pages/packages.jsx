@@ -4,15 +4,14 @@ import Banner from "../components/banner";
 import Divider from "../components/page_divider";
 import ContactCta from "../components/contact_gina_cta";
 import Section from "../components/section";
-import scrollToElement from "scroll-to-element";
 
 class PackagesPage extends React.Component {
-  componentDidMount() {
-    const { hash } = this.props.location;
-    if (hash) {
-      scrollToElement(hash, { duration: 100 } )
-    }
-  }
+  // componentDidMount() {
+  //   const { hash } = this.props.location;
+  //   if (hash) {
+  //     scrollToElement(hash, { duration: 100 } )
+  //   }
+  // }
 
   render = () => (
     <Layout>
@@ -71,7 +70,7 @@ class PackagesPage extends React.Component {
             </ul>
           </div>
 
-          <ContactCta />
+          <button className="button">Buy Now<span>Buy Now</span></button>
         </div>
 
         <Divider showLogo={false} />

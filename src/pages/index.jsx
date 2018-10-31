@@ -35,9 +35,7 @@ const IndexPage = ({ data}) => (
         </p>
         <p>Welcome to wellness. A state of being, out of which, all things flow. Wellness is a state that we can tap into at any given time. Infinity Wellness is a phrase to help us remember that Wellness is of the Infinite Realm, and is not dependent upon current conditions or situations. When we live from this infinite well, happiness, that is not dependent on anything follows. </p>
       </div>
-    </div>
-      <Testimonial3 />
-    <div className="container container--max-width">
+      <Divider />
       <div className="section">
         <h2 className="">Gina's Integrated Approach</h2>
         <p>
@@ -54,7 +52,9 @@ const IndexPage = ({ data}) => (
         </p>
         <p>Check out how I create a healing space with my <Link className="inline-anchor" to="/healing-tools">healing tools</Link></p>
       </div>
-      <Divider />
+    </div>
+      <Testimonial3 />
+    <div className="container container--max-width">
       <div className="section">
         <h2>A Seasoned Professional</h2>
         <p>

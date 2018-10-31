@@ -362,7 +362,7 @@ li {
   background: linear-gradient(135deg, #583785, rgb(191, 125, 254));
 }
 
-.background--sound-healing-hero {
+.background--sound-bathing-gratitude-hero {
   background: linear-gradient(135deg, rgb(0, 141, 132) 0%, rgb(155, 213, 158) 100%);
 }
 
@@ -381,9 +381,9 @@ li {
   background: linear-gradient(135deg, rgb(25, 161, 110) 0%, rgb(165, 147, 194) 100%);
 }
 
-.hero {
-  height: 10vh;
-}
+// .hero {
+//   height: 10vh;
+// }
 
 .mandalas-banner {
   height: 100%;
@@ -518,6 +518,7 @@ li {
   background-color: var(--gray-bg);
   z-index: 0;
   margin: 0 auto;
+  overflow: hidden;
   &::before {
     position: absolute;
     background: linear-gradient(#dbdbff, rgba(27, 127, 37, 0.68));
