@@ -14,6 +14,7 @@ export default () => (
     >
       <div className="background--eft-hero background-cover-parent" />
     </HeroSection>
+    <div className="slanted-section-decorator slanted-section-decorator--eft"/>
     <div className="container container--max-width">
       <Section
         title="Tap into your dreams"
@@ -28,7 +29,7 @@ export default () => (
 
       <Divider showLogo={false} />
 
-      <article className="section purple2">
+      <article className="section overflow-hidden purple2">
         <h2 className="purple shadow">Open Your Energy Highways</h2>
         <p style={{ marginBottom: "1rem" }}>EFT has helped many people with various problems, including:</p>
         <div className="mfr-symptoms purple0">

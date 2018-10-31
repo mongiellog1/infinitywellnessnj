@@ -1,22 +1,21 @@
 import React from "react";
 import { Link } from "gatsby";
 import Layout from "../components/layout/index";
-import Banner from "../components/banner";
 import Divider from "../components/page_divider";
 import Section from "../components/section";
+import HeroSection from "../components/hero_section";
 
 const PackagesPage = () => (
   <Layout>
-    <Banner flag="packages" />
+    <HeroSection
+      title="Packages"
+      subtitle="The quickest way to transform your life is to commit to something beneficial and then see it through. By choosing one of these packages and committing to it, you are increasing your chances exponentially to realize life-changing breakthroughs and the results you desire."
+    >
+      <div className="background-cover-parent background--packages-hero" />
+    </HeroSection>
+    <div className="slanted-section-decorator slanted-section-decorator--packages"/>
     <div className="container container--max-width">
-      <Section
-        title={"Packages"}
-        classes="big-lines"
-        subsections={[`The quickest way to transform your life is to commit to something beneficial and then see it through. By choosing one of these packages and committing to it, you are increasing your chances exponentially to realize life-changing breakthroughs and the results you desire.`]}
-        CTA={true}
-      />
-      <Divider />
-      <div className="section page-anchor__container">
+      <div className="section overflow-hidden page-anchor__container">
         <div id="basic-package" className="page-anchor__anchor"/>
         <h2>Basic Series: Beginner Package</h2>
         <h3 className="green">Taste Freedom!</h3>
@@ -66,7 +65,7 @@ const PackagesPage = () => (
       </div>
 
       <Divider showLogo={false} />
-      <div className="section page-anchor__container">
+      <div className="section overflow-hidden page-anchor__container">
         <div id="transformation-package" className="page-anchor__anchor"/>
         <h2>Transformation Package</h2>
         <h3 className="green">Release, Reset, Renew!</h3>
@@ -128,7 +127,7 @@ const PackagesPage = () => (
       </div>
 
       <Divider showLogo={false} />
-      <div className="section page-anchor__container">
+      <div className="section overflow-hidden page-anchor__container">
         <div id="inner-divine-mothering-package" className="page-anchor__anchor"/>
         <h2>Divine Inner Mothering Package: Loving Our Inner Child</h2>
         <h3 className="green">Shadow and Light Unite!</h3>

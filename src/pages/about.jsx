@@ -1,16 +1,21 @@
 import React from "react"
 import GinaPortrait from "../images/gina2.jpg";
 import "./about.css";
-import Banner from "../components/banner";
 import ContactGinaCta from "../components/contact_gina_cta";
 import Layout from "../components/layout/index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import HeroSection from "../components/hero_section";
 
 const AboutPage = () => (
   <Layout>
-    <Banner flag="about" />
+    <HeroSection
+      title="About"
+    >
+      <div className="background-cover-parent background--about-hero" />
+    </HeroSection>
+    <div className="slanted-section-decorator slanted-section-decorator--mfr"/>
     <div className="container container--max-width">
-      <div className="section">
+      <div className="section overflow-hidden">
         <article className="bio">
           <div>
             <div className="bio-header">

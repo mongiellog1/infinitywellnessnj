@@ -19,6 +19,7 @@ const MandalaPage = () => (
           <MandalaBanner />
       </div>
     </HeroSection>
+    <div className="slanted-section-decorator slanted-section-decorator--packages"/>
 
     <div className="container container--max-width">
       <Section
@@ -34,7 +35,7 @@ const MandalaPage = () => (
           our inner being.`
         ]}
       />
-      <div className="section">
+      <div className="section overflow-hidden">
         <div className="mandala-gallery">
           <MandalaGallery />
         </div>

@@ -16,6 +16,7 @@ const SoundHealing = () => (
     >
       <div className="background--sound-bathing-gratitude-hero background-cover-parent" />
     </HeroSection>
+    <div className="slanted-section-decorator slanted-section-decorator--sound-bathing-gratitude"/>
     <div className="container container--max-width">
       <Section
         title="The Sound of Angels."

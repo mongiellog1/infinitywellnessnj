@@ -1,7 +1,7 @@
 import React from "react";
 
 const QuoteFactory = ({ quote, author }, bgColor = "bg--green-fade") => () => (
-  <div className={`blockquote-wrapper ${bgColor}`}>
+  <div className={`blockquote-wrapper box-shadow ${bgColor}`}>
     <blockquote>
       <div>
         {quote}

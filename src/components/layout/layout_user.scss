@@ -8,6 +8,7 @@
   --green1: #59e45ffa;
   --green-gray: #0c6a4b;
   --light-green: #56bb96;
+  --light-green0x33: #56bb9633;
   --light-green-11: #56bb9611;
   --light-green2: #94d5c0;
   --light-purple: #7c5ea6;
@@ -49,14 +50,15 @@ a {
 .button {
   position: relative;
   cursor: pointer;
-  background-color: #42d82f99;
-  border: 2px solid #42d82f33;
+  background-color: var(--light-green0x33);
+  // border: 2px solid #42d82f33;
   padding: 0.5rem 1rem;
   overflow: hidden;
   border-radius: 10px;
   color: transparent;
   font-family: helvetica, sans-serif;
   margin-top: 2rem;
+  transition: box-shadow 100ms;
   span {
     color: black;
     position: absolute;
@@ -67,19 +69,24 @@ a {
     left: 0;
     z-index: 10;
     padding: 0.5rem 1rem;
+    transition: 100ms;
+    &:hover {
+      color: white;
+    }
   }
   &:before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: var(--light-green2);
-    background-color: #42d82faa;
+    // background-color: #42d82faa;
+    background-color: var(--green);
     top: 100%;
     left: 0;
     transition: 100ms;
   }
   &:hover {
+    box-shadow: 0 0 50px rgba(0,0,0,.085);
     &:before {
       transition: 300ms;
       top: 0;
@@ -290,9 +297,11 @@ li {
 
 .section {
   position: relative;
-  overflow: hidden;
   padding-top: 2rem;
   z-index: 0;
+}
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .purple { color: var(--purple);}
@@ -354,11 +363,11 @@ li {
   background-size: cover;
 }
 
-.background--mfr-hero {
+.background--mfr-hero, .background--about-hero {
   background: linear-gradient(135deg, var(--light-purple), var(--light-green));
 }
 
-.background--eft-hero {
+.background--eft-hero, .background--services-hero {
   background: linear-gradient(135deg, #583785, rgb(191, 125, 254));
 }
 
@@ -373,7 +382,7 @@ li {
 .background--yoga-meditation-hero {
   background: linear-gradient(135deg, rgba(81, 40, 136, 1) 0%, rgb(244, 202, 201) 100%);
 }
-.background--mandala-hero {
+.background--mandala-hero, .background--packages-hero {
   background: linear-gradient(135deg, rgb(25, 161, 110) 0%, rgb(165, 147, 194) 100%);
 }
 
@@ -408,6 +417,10 @@ li {
 
 .shadow {
   text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.152);
+}
+
+.box-shadow {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
 }
 
 .page-banner {
@@ -498,43 +511,12 @@ li {
   flex-wrap: wrap;
 }
 
-.flex--space-between {
-  justify-content: space-between;
-}
-
-.logo-text > h1 {
-  font-size: 1.25rem;
-}
-
-/* Footer css */
-
 .footer {
   position: relative;
   padding: 1em;
   background-color: var(--gray-bg);
   z-index: 0;
-  // margin: 0 auto;
-  // overflow: hidden;
   background: linear-gradient(#dbdbff, rgba(27, 127, 37, 0.68));
-  // &::before {
-    // position: absolute;
-  //   content: "";
-  //   top: 0;
-  //   left: -50vw;
-  //   width: 200vw;
-  //   height: 100%;
-  //   z-index: -10;
-  // }
-}
-
-.footer-about-card {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 2em;
-  > img {
-    height: 200px;
-    margin-right: 0.55em;
-  }
 }
 
 .footer-grid {
@@ -553,35 +535,8 @@ li {
   grid-row: 2;
 }
 
-/* Drawer */
-
-.drawer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 70vw;
-  background-color: rgb(81, 40, 136);
-  transition: 250ms ease-in;
-  &.closed {
-    left: -70vw;
-  }
-}
-
 .hero-text {
   font-size: 24px;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.z10 {
-  z-index: 10;
 }
 
 .slanted-section-decorator {
@@ -594,42 +549,36 @@ li {
     left: 0;
     width: 100%;
     height: 100px;
-    transform: skewY(-3deg);
+    transform: skewY(-1.2deg);
     content: "";
     z-index: 0;
   }
 }
 
 .slanted-section-decorator--purple:after {
-  background-color: rgb(81, 40, 136);
+  background-color: var(--purple);
 }
 
 .slanted-section-decorator--green:after {
   background-color: var(--light-green);
 }
+.slanted-section-decorator--mfr:after {
+  background: linear-gradient(172deg, var(--light-purple), var(--light-green));
+}
+.slanted-section-decorator--eft:after {
+  background: linear-gradient(172deg, #583785, #bf7dfe);
+}
+.slanted-section-decorator--yoga-meditation:after {
+  background: linear-gradient(172deg, #512888, #f4cac9);
+}
+.slanted-section-decorator--sound-bathing-gratitude:after {
+  background: linear-gradient(172deg, #008d84, #9bd59e);
+}
+.slanted-section-decorator--packages:after {
+  background: linear-gradient(172deg, #19a16e, #a593c2);
+}
 
 /* CTA buttons */
-
-.contact-cta-button {
-  font-size: 18px;
-  padding: 0.55em;
-  cursor: pointer;
-  background-color: rgba(81, 40, 136, 0.2);
-  border: 1px solid rgba(81, 40, 136, 0.3);
-  &:hover {
-    background-color: rgba(81, 40, 136, 0.3);
-    transition: 200ms;
-  }
-  &:active {
-    transition: 200ms;
-    background: linear-gradient(rgba(81, 40, 136, 0.45), rgba(81, 40, 136, 0.5));
-    outline: none;
-  }
-  &:focus {
-    background: linear-gradient(rgba(81, 40, 136, 0.45), rgba(81, 40, 136, 0.5));
-    outline: none;
-  }
-}
 
 .desktop-menu {
   font-size: 1rem;

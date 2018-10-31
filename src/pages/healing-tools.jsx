@@ -12,7 +12,7 @@ const HealingTools = () => (
     <div className="healing-tools-section">
       <article className="container container--pad-top light-purple section--work-with-me white">
         <div className="container--max-width">
-          <h1 className="title purple">Life Long Healing Tools</h1>
+          <h1 className="title white">Life Long Healing Tools</h1>
           <p className="hero-text">Have you ever longed for tools that would never dull, and instead sharpen with use?</p>
           <p style={{ marginBottom: "0.25rem"}}>If YES, then allow your journey to begin. These healing tools when used and practiced can be applied to all of life’s challenges.</p>
         </div>
