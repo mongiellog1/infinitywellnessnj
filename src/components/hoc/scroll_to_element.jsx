@@ -9,7 +9,6 @@ class ScrollToElement extends React.Component {
     }
   }
 
-
   componentDidMount() {
     this.scroll();
   }

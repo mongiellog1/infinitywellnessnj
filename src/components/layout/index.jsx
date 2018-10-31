@@ -25,7 +25,7 @@ const Layout = ({ children }) => (
       `}
       render={({ site: { siteMetadata: { title }}}) => (
         <>
-        {/* <ScrollToElement /> */}
+        <ScrollToElement />
         <Helmet
           title={title}
           meta={[

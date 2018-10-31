@@ -12,15 +12,11 @@ const MandalaSlideshow = () => (
         love: file(relativePath: { eq: "mandalas/landscape/love.jpg" }) {
           ...fluidImage
         }
-        gratitude: file(relativePath: { eq: "mandalas/landscape/gratitude.jpg" }) {
-          ...fluidImage
-        }
       }
     `}
-    render={({ burstingly_interwoven, love, gratitude }) => {
+    render={({ burstingly_interwoven, love }) => {
       const fluidBurstinglyWoven = burstingly_interwoven.childImageSharp.fluid;
       const fluidLove = love.childImageSharp.fluid;
-      const fluidGratitude = gratitude.childImageSharp.fluid;
       return (
         <div className="mandalas-banner">
           <div />
