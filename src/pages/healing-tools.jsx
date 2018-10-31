@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import Button from "../components/button";
 import scrollToElement from "scroll-to-element";
 import Divider from "../components/page_divider";
-
+import { Testimonial4 } from "../components/testimonial";
 import "./healing-tools.css";
 
 const HealingTools = () => (
@@ -21,7 +21,7 @@ const HealingTools = () => (
       <div className="slanted-section-decorator slanted-section-decorator--green"/>
       <div className="container container--max-width">
         <article className="section">
-          <h1 className="light-green">My Chosen Tools</h1>
+          <h1 className="light-green">Gina's Chosen Tools</h1>
           <p>
             I have chosen tools that are incredibly effective at dealing with life,
             consistently, day-in and day-out, so that when something comes up we have
@@ -136,7 +136,9 @@ const HealingTools = () => (
             <Link to="sound-therapy"><Button text="Sound Therapy & Gratitude"/></Link>
           </div>
         </article>
-        <Divider />
+      </div>
+        <Testimonial4 />
+      <div className="container container--max-width">
         <article className="section ">
           <h1 className="title purple">Business Programs</h1>
           <p>

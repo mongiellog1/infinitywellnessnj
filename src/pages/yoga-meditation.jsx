@@ -13,7 +13,9 @@ const YogaMeditation = () => (
       cssHeroType="yoga-meditation"
       subtitle="THE GREAT LIBERATOR"
       paragraphs={["Find the common thread."]}
-    />
+    >
+      <div className="background--yoga-meditation-hero background-cover-parent" />
+    </HeroSection>
     <div className="container container--max-width">
       <Section
         title="Equanimity of Mind is Yoga ~ Bhagavad Gita"

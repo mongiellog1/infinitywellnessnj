@@ -4,15 +4,14 @@ import Banner from "../components/banner";
 import Divider from "../components/page_divider";
 import ContactCta from "../components/contact_gina_cta";
 import Section from "../components/section";
-import scrollToElement from "scroll-to-element";
 
 class PackagesPage extends React.Component {
-  componentDidMount() {
-    const { hash } = this.props.location;
-    if (hash) {
-      scrollToElement(hash, { duration: 100 } )
-    }
-  }
+  // componentDidMount() {
+  //   const { hash } = this.props.location;
+  //   if (hash) {
+  //     scrollToElement(hash, { duration: 100 } )
+  //   }
+  // }
 
   render = () => (
     <Layout>
@@ -29,7 +28,9 @@ class PackagesPage extends React.Component {
           <div id="basic-package" className="page-anchor__anchor"/>
           <h2>Basic Series: Beginner Package</h2>
           <h3 className="green">Taste Freedom!</h3>
-          <p className="light-green">Session Intervals: 6 session hours over three consecutive weeks (3 meetings)</p>
+          <p className="light-green"><b>Start here</b> if you are in the beginnings of wanting to grow your relationship with your inner self!</p>
+          <p><b>Session Intervals:</b> 6 session hours over three consecutive weeks (3 meetings)</p>
+
           <p>
             This program is for those wanting to experience a deepening within themselves, to reveal what’s really going on with a current issue or feelings inside.
           </p>
@@ -69,8 +70,7 @@ class PackagesPage extends React.Component {
             </ul>
           </div>
 
-          <p className="light-green">Start here if you are in the beginnings of wanting to grow your relationship with your inner self!</p>
-          <ContactCta />
+          <button className="button">Buy Now<span>Buy Now</span></button>
         </div>
 
         <Divider showLogo={false} />
@@ -78,7 +78,8 @@ class PackagesPage extends React.Component {
           <div id="transformation-package" className="page-anchor__anchor"/>
           <h2>Transformation Package</h2>
           <h3 className="green">Release, Reset, Renew!</h3>
-          <p className="light-green">Session Intervals:10 session hours over ten consecutive weeks (10 meetings)</p>
+          <p className="light-green"><b>Start here</b> if you have been deepening for a while and are now ready for a big shift!</p>
+          <p><b>Session Intervals:</b> 10 session hours over ten consecutive weeks (10 meetings)</p>
 
           <p>
             Experience Greater Health and Wellness; An Opportunity to Transform!
@@ -131,9 +132,6 @@ class PackagesPage extends React.Component {
             intention for what’s to come and the last session helps us reflect
             on all that has come, as well as it sets the tone for lasting wellness.
           </p>
-          <p className="light-green">
-            Start here  if you are ready for major change, deep work, healing from childhood wounds, and all the benefits that come from taking full responsibility for your life's creations!
-          </p>
           <ContactCta />
         </div>
 
@@ -142,7 +140,10 @@ class PackagesPage extends React.Component {
           <div id="inner-divine-mothering-package" className="page-anchor__anchor"/>
           <h2>Divine Inner Mothering Package: Loving Our Inner Child</h2>
           <h3 className="green">Shadow and Light Unite!</h3>
-          <p className="light-green">Session Intervals: 27 session hours over twelve consecutive weeks (15 meetings)</p>
+          <p className="light-green">
+            <b>Start here</b> if you are ready for major change, deep work, healing from childhood wounds, and all the benefits that come from taking full responsibility for your life's creations!
+          </p>
+          <p><b>Session Intervals:</b> 27 session hours over twelve consecutive weeks (15 meetings)</p>
           <p>In this series, we connect with the parts of us that have been repressed, left behind, hurt and hidden. What uprises is our inner child, an innocent, sweet-hearted being who got lost in the ups and downs of life and life’s situations.</p>
           <p>With our own hand at being divine mother, we nurture the inner child into a place of love and acceptance as we integrate all the fragmented pieces of our life back into the whole of who we are. Acting as a divine mother we care, love, provide, teach, nurture, and celebrate ourselves with infinite and powerful energy our whole lives through.</p>
           <p>Our birth mothers and fathers provided this care when we were young, and acted as the physical manifestation of the unseen mother aspect. Whether our caregivers filled this role with mild, medium, or intense enthusiasm, likely there were parts of us that went unseen or unheard, or parts that felt frightened, hurt, misunderstood, or traumatized. There is so much that goes on inside a child’s mind and heart that is inexpressible with that child’s intelligence, vocabulary, and emotional maturity.</p>

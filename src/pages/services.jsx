@@ -6,6 +6,7 @@ import { Testimonial1, Testimonial2 } from "../components/testimonial";
 import Banner from "../components/banner";
 
 const PayPage = () => (
+
   <Layout>
     <Banner flag="services" />
     <div className="container container--max-width">

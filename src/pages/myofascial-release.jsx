@@ -14,7 +14,9 @@ export default () => (
       title="Myofascial Release"
       subtitle="THE WEB UNTANGLER"
       paragraphs={["Create a new balance of space and harmony deep within your tissue"]}
-    />
+    >
+      <div className="background--mfr-hero background-cover-parent" />
+    </HeroSection>
     <div className="container container--max-width">
       <Section
         title="Unwind into a new space."

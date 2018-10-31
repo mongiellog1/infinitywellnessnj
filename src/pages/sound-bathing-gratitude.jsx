@@ -13,7 +13,9 @@ const SoundHealing = () => (
       cssHeroType="sound-healing"
       subtitle="THE PEACE AND JOY IGNITER"
       paragraphs={["Lay your head to rest while I play sounds that dance with your soul"]}
-    />
+    >
+      <div className="background--sound-bathing-gratitude-hero background-cover-parent" />
+    </HeroSection>
     <div className="container container--max-width">
       <Section
         title="The Sound of Angels."

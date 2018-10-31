@@ -15,11 +15,11 @@ const MandalaPage = () => (
       title="Mandalas"
       subtitle="Unleash your inner creative."
     >
-      <div className="background-cover-parent">
-        <MandalaBanner />
+      <div className="background-cover-parent bg-darken">
+          <MandalaBanner />
       </div>
-      <div className="background-cover-parent bg-darken" />
     </HeroSection>
+
     <div className="container container--max-width">
       <Section
         title="Mandalas"
