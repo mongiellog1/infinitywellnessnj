@@ -8,7 +8,7 @@
   --green1: #59e45ffa;
   --green-gray: #0c6a4b;
   --light-green: #56bb96;
-  --light-green0x33: #56bb9633;
+  --light-green0x33: #ddf1ea;
   --light-green-11: #56bb9611;
   --light-green2: #94d5c0;
   --light-purple: #7c5ea6;
@@ -551,6 +551,8 @@ li {
     transform-origin: left;
     content: "";
     z-index: 0;
+    background: none !important;
+    background-color: var(--purple) !important;
   }
 }
 
