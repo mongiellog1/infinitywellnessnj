@@ -23,23 +23,23 @@ const AboutPage = () => (
           </div>
           <div>
             <p>
-              I'm Gina Mongiello. I am so glad that you have found me. I am here
-              to offer my services to the world, because I experience the deepest
-              sense of fulfillment and purpose when helping others move through
-              their most challenging times. I have personally been through years
-              of struggle and pain, and have gone up and down through many cycles
-              of seeking answers with the hope of finding something to help me feel
-              whole and complete. Throughout this journey, I have been introduced
-              to lots of systems and methods out there in the alternative world
-              ranging from things that work momentarily or not at all, to things
-              that have been incredibly life changing and monumental for myself
-              and others around me.  I believe that the modalities and tools that
-              I have found, learned, developed and work with are true gems that
-              open up the doorway to <strong>live a life on purpose</strong> which we can create
-              rather than just passing through as a by-stander. I offer the gift
-              of service to those who feel unwell and to those who truly seek
-              out answers from a deep place within themselves. It is my honor
-              be here now and to create a space of infinite wellness.
+              Welcome! I am so glad you landed here and are interested in my services.
+              It is my greatest pleasure to serve and guide you through your most
+              challenging times.  Having been through years of my own struggle and
+              pain, having gone up and down through many cycles, seeking answers,
+              and wanting desperately to feel whole and complete, I know just how
+              challenging it can be.
+
+              Having been introduced to lots of systems and methods in the
+              alternative world I have gathered some incredibly life changing
+              and monumental practices to share with you. The modalities and
+              tools that I work with are true gems that have the ability to
+              open up a doorway to <strong>live a life on purpose.</strong> This way we have a
+              creative hand in our life rather than just passing through as a
+              by-stander. I sincerely offer my services to those who feel unwell
+              and to those who truly seek out answers from a deep place within themselves.
+              It is my honor be here now and to create a space of infinite wellness
+              for me, you, and the world.
             </p>
             <p>
               Be. Feel. Love,

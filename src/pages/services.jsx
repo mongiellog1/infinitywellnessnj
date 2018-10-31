@@ -6,7 +6,6 @@ import { Testimonial1, Testimonial2 } from "../components/testimonial";
 import Banner from "../components/banner";
 
 const PayPage = () => (
-
   <Layout>
     <Banner flag="services" />
     <div className="container container--max-width">
@@ -30,6 +29,9 @@ const PayPage = () => (
     </div>
     <Testimonial2 />
     <div className="container container--max-width">
+      <div className="page-anchor__container">
+        <div id="basic-package" className="page-anchor__anchor"/>
+      </div>
       <div className="section">
         <h2>Basic Series: Beginner Package</h2>
         <p>
@@ -49,6 +51,9 @@ const PayPage = () => (
         </form>
       </div>
       <PageDivider showLogo={false} />
+      <div className="page-anchor__container">
+        <div id="transformation-package" className="page-anchor__anchor"/>
+      </div>
       <div className="section">
         <h2>Transformation Package</h2>
         <p>
@@ -69,6 +74,9 @@ const PayPage = () => (
         </form>
       </div>
       <PageDivider showLogo={false} />
+      <div className="page-anchor__container">
+        <div id="divine-inner-child-package" className="page-anchor__anchor"/>
+      </div>
       <div className="section">
         <h2>Divine Inner Mothering Package</h2>
         <p>
