@@ -6,17 +6,18 @@ import scrollToElement from "scroll-to-element";
 import Divider from "../components/page_divider";
 import { Testimonial4 } from "../components/testimonial";
 import "./healing-tools.css";
+import HeroSection from "../components/hero_section";
 
 const HealingTools = () => (
   <Layout>
     <div className="healing-tools-section">
-      <article className="container container--pad-top light-purple section--work-with-me white">
-        <div className="container--max-width">
-          <h1 className="title white">Life Long Healing Tools</h1>
-          <p className="hero-text">Have you ever longed for tools that would never dull, and instead sharpen with use?</p>
-          <p style={{ marginBottom: "0.25rem"}}>If YES, then allow your journey to begin. These healing tools when used and practiced can be applied to all of life’s challenges.</p>
-        </div>
-      </article>
+      <HeroSection
+        title="Life Long Healing Tools"
+        subtitle="Have you ever longed for tools that would never dull, and instead sharpen with use?"
+        paragraphs={["If YES, then allow your journey to begin. These healing tools when used and practiced can be applied to all of life’s challenges."]}
+      >
+        <div className="background--healing-tools-hero background-cover-parent" />
+      </HeroSection>
 
       <div className="slanted-section-decorator slanted-section-decorator--green"/>
       <div className="container container--max-width">

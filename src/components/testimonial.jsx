@@ -31,13 +31,19 @@ const testimonial4 = {
   author: "A.Y.",
 };
 
-const quote1 = "If the only prayer you said was thank you, that would be enough.";
-const quote2 = "Gratitude is not only the greatest of virtues, but the parent of all others.";
+const quote1 = {
+  quote: "If the only prayer you said was thank you, that would be enough.",
+  author: "Meister Eckhart"
+};
+const quote2 = {
+  quote: "Gratitude is not only the greatest of virtues, but the parent of all others.",
+  author: "Marcus Tullius Cicero"
+};
 
 export const Testimonial1 = QuoteFactory(testimonial1);
 export const Testimonial2 = QuoteFactory(testimonial2);
 export const Testimonial3 = QuoteFactory(testimonial3);
 export const Testimonial4 = QuoteFactory(testimonial4);
 
-export const Quote1 = QuoteFactory(quote1, "Meister Eckhart");
-export const Quote2 = QuoteFactory(quote2, "Marcus Tullius Cicero");
+export const Quote1 = QuoteFactory(quote1);
+export const Quote2 = QuoteFactory(quote2);
