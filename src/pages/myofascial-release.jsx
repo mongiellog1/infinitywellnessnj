@@ -17,6 +17,7 @@ export default () => (
     >
       <div className="background--mfr-hero background-cover-parent" />
     </HeroSection>
+    <div className="slanted-section-decorator slanted-section-decorator--mfr"/>
     <div className="container container--max-width">
       <Section
         title="Unwind into a new space."
@@ -29,7 +30,7 @@ export default () => (
 
       <Divider showLogo={false} />
 
-      <article className="section purple2">
+      <article className="section overflow-hidden purple2">
         <h2 className="purple shadow">Incredibly Versatile</h2>
         <p>While Myofascial Release can indeed address this level of pain and dysfunction in the body, it has many other extraordinary benefits for humans. It helps with emotions, trapped feelings, past traumas, relationship patterns, and can provide insights and a deepening of awareness which leads to greater and greater levels of choice in life. </p>
         <p style={{ marginBottom: "1rem" }}>MFR has been known to help many who suffer with:</p>

@@ -16,6 +16,7 @@ const YogaMeditation = () => (
     >
       <div className="background--yoga-meditation-hero background-cover-parent" />
     </HeroSection>
+    <div className="slanted-section-decorator slanted-section-decorator--yoga-meditation"/>
     <div className="container container--max-width">
       <Section
         title="Equanimity of Mind is Yoga ~ Bhagavad Gita"

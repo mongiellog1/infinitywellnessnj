@@ -20,7 +20,7 @@ const IndexPage = ({ data}) => (
 
     <div className="slanted-section-decorator slanted-section-decorator--purple"/>
     <div className="container container--max-width">
-      <div className="section">
+      <div className="section overflow-hidden">
         <h2>Wellness Is A State Of Mind</h2>
         <p>
           A lot of us feel victim to our circumstances. We enjoy the good times in
@@ -36,7 +36,7 @@ const IndexPage = ({ data}) => (
         <p>Welcome to wellness. A state of being, out of which, all things flow. Wellness is a state that we can tap into at any given time. Infinity Wellness is a phrase to help us remember that Wellness is of the Infinite Realm, and is not dependent upon current conditions or situations. When we live from this infinite well, happiness, that is not dependent on anything follows. </p>
       </div>
       <Divider />
-      <div className="section">
+      <div className="section overflow-hidden">
         <h2 className="">Gina's Integrated Approach</h2>
         <p>
           I use MyoFascial Release, Emotional Freedom Techniques, Sound Baths, and Yoga & Meditation as a multi-pronged approach, creating a balanced harmonious space for health and wellness to rebirth itself and thrive.
@@ -55,7 +55,7 @@ const IndexPage = ({ data}) => (
     </div>
       <Testimonial3 />
     <div className="container container--max-width">
-      <div className="section">
+      <div className="section overflow-hidden">
         <h2>A Seasoned Professional</h2>
         <p>
           Feeling so unwell in my teen years is what began my search for health and wellness. Over the next fifteen years I accumulated a lot of information and experienced a lot of healing modalities. While all that I learned and experienced over this time period was an incredibly valuable and necessary part of what I use and offer today, the healing modalities I learned in my early thirties are what took me to the places I was looking to go.

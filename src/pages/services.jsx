@@ -3,13 +3,19 @@ import { Link } from "gatsby";
 import Layout from "../components/layout/index";
 import PageDivider from "../components/page_divider";
 import { Testimonial1, Testimonial2 } from "../components/testimonial";
-import Banner from "../components/banner";
+import HeroSection from "../components/hero_section";
 
 const PayPage = () => (
   <Layout>
-    <Banner flag="services" />
+    <HeroSection
+      title="Services"
+    >
+      <div className="background-cover-parent background--services-hero" />
+    </HeroSection>
+
+    <div className="slanted-section-decorator slanted-section-decorator--eft"/>
     <div className="container container--max-width">
-      <div className="section">
+      <div className="section overflow-hidden">
         <h2 className="purple">Single Sessions</h2>
         <ul style={{ fontSize: "20px", listStyleType: "disc", marginLeft: "1.5rem" }}>
           <li style={{ marginBottom: 0, lineHeight: "24px"}}>Myofascial Release</li>
@@ -32,7 +38,7 @@ const PayPage = () => (
       <div className="page-anchor__container">
         <div id="basic-package" className="page-anchor__anchor"/>
       </div>
-      <div className="section">
+      <div className="section overflow-hidden">
         <h2>Basic Series: Beginner Package</h2>
         <p>
           If you’re curious or just starting to see how underlying aspects are
@@ -40,7 +46,7 @@ const PayPage = () => (
           like to be the driver instead, then this basic series is for you.
         </p>
         <p>
-          For more information on the Basic Series Package <Link className="inline-anchor" to="/packages#basic-series">click here</Link>
+          For more information on the Basic Series Package <Link className="inline-anchor" to="/packages#basic-package">click here</Link>
         </p>
         <h3>Price - <span className="green">$560</span></h3>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -54,7 +60,7 @@ const PayPage = () => (
       <div className="page-anchor__container">
         <div id="transformation-package" className="page-anchor__anchor"/>
       </div>
-      <div className="section">
+      <div className="section overflow-hidden">
         <h2>Transformation Package</h2>
         <p>
           Go deep with this 10 session package to transform your current
@@ -63,7 +69,7 @@ const PayPage = () => (
           of old habits and usher in each day anew like never before.
         </p>
         <p>
-          For more information on the Transformation Package <Link className="inline-anchor" to="/packages#transformation-series">click here</Link>
+          For more information on the Transformation Package <Link className="inline-anchor" to="/packages#transformation-package">click here</Link>
         </p>
         <h3>Price - <span className="green">$1080</span></h3>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -77,7 +83,7 @@ const PayPage = () => (
       <div className="page-anchor__container">
         <div id="divine-inner-child-package" className="page-anchor__anchor"/>
       </div>
-      <div className="section">
+      <div className="section overflow-hidden">
         <h2>Divine Inner Mothering Package</h2>
         <p>
           Three months of coaching and mentorship through an amazing discovery of
@@ -87,7 +93,7 @@ const PayPage = () => (
           tools to see ourselves through any situation.
         </p>
         <p>
-          For more information on this revolutionary, life-changing package <Link className="inline-anchor" to="/packages#divine-mothering-series">click here</Link>
+          For more information on this revolutionary, life-changing package <Link className="inline-anchor" to="/packages#inner-divine-mothering-package">click here</Link>
         </p>
         <h3>Price - <span className="green">$3240</span></h3>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
