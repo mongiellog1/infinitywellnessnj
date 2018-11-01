@@ -34,7 +34,8 @@ const AboutPage = () => (
               pain, having gone up and down through many cycles, seeking answers,
               and wanting desperately to feel whole and complete, I know just how
               challenging it can be.
-
+            </p>
+            <p>
               Having been introduced to lots of systems and methods in the
               alternative world I have gathered some incredibly life changing
               and monumental practices to share with you. The modalities and
@@ -43,7 +44,7 @@ const AboutPage = () => (
               creative hand in our life rather than just passing through as a
               by-stander. I sincerely offer my services to those who feel unwell
               and to those who truly seek out answers from a deep place within themselves.
-              It is my honor be here now and to create a space of infinite wellness
+              It is my honor to be here now and to create a space of infinite wellness
               for me, you, and the world.
             </p>
             <p>
