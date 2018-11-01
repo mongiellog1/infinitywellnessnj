@@ -1,4 +1,6 @@
 const path = require("path");
+const shopPath = "shop";
+require("dotenv").config();
 
 module.exports = {
   siteMetadata: {
@@ -10,6 +12,9 @@ module.exports = {
       youtube: "https://www.youtube.com/channel/UCtfOsb9dwrGnOaRvdJv52UA",
     },
     contactFormUrl: "https://ginas-form-server.herokuapp.com/api/emailForm",
+    SNIPCART_SANDBOX_API_KEY: process.env.SNIPCART_SANDBOX_API_KEY,
+    IWNJ_ADDRESS: process.env.IWNJ_ADDRESS,
+    SHOP_ADDRESS: path.join(process.env.IWNJ_ADDRESS, shopPath),
     internalRoutes: {
       healingTools: "/healing-tools",
       myofascialRelease: "/myofascial-release",

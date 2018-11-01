@@ -8,7 +8,7 @@ import Img from "gatsby-image";
 import { Testimonial3 } from "../components/testimonial";
 import "./index.css";
 
-const IndexPage = ({ data}) => (
+const IndexPage = ({ data }) => (
   <Layout>
     <HeroSection
       title="Reclaim Wellness."
