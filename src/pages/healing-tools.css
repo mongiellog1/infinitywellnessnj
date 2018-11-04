@@ -30,6 +30,3 @@
 .healing-tools-teaser > ul > li {
   margin-bottom: 0.25rem;
 }
-.background--healing-tools-hero {
-  background: linear-gradient(135deg, var(--green), var(--light-green));
-}

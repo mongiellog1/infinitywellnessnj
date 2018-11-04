@@ -1,6 +1,7 @@
 const path = require("path");
 const shopPath = "shop";
 require("dotenv").config();
+const isProd = process.env.IS_PROD === "true";
 
 module.exports = {
   siteMetadata: {
@@ -12,9 +13,6 @@ module.exports = {
       youtube: "https://www.youtube.com/channel/UCtfOsb9dwrGnOaRvdJv52UA",
     },
     contactFormUrl: "https://ginas-form-server.herokuapp.com/api/emailForm",
-    SNIPCART_SANDBOX_API_KEY: process.env.SNIPCART_SANDBOX_API_KEY,
-    IWNJ_ADDRESS: process.env.IWNJ_ADDRESS,
-    SHOP_ADDRESS: path.join(process.env.IWNJ_ADDRESS, shopPath),
     internalRoutes: {
       healingTools: "/healing-tools",
       myofascialRelease: "/myofascial-release",
@@ -28,7 +26,10 @@ module.exports = {
       services: "/services",
       mandalas: "/mandalas",
       about: "/about"
-    }
+    },
+    IWNJ_ADDRESS: isProd ? process.env.IWNJ_ADDRESS : process.env.__DEV__IWNJ_ADDRESS,
+    SHOP_ADDRESS: isProd ? process.env.SHOP_ADDRESS : process.env.__DEV__SHOP_ADDRESS,
+    SNIPCART_API_KEY: isProd ? process.env.SNIPCART_API_KEY : process.env.__DEV__SNIPCART_API_KEY
   },
   plugins: [
     "gatsby-plugin-sass",

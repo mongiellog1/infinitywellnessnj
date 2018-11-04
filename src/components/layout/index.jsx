@@ -18,12 +18,12 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title,
-            SNIPCART_SANDBOX_API_KEY
+            SNIPCART_API_KEY
           }
         }
       }
     `}
-    render={({ site: { siteMetadata: { title, SNIPCART_SANDBOX_API_KEY }}}) => (
+    render={({ site: { siteMetadata: { title, SNIPCART_API_KEY }}}) => (
       <>
       <ScrollToElement />
         <Helmet
@@ -34,7 +34,7 @@ const Layout = ({ children }) => (
           ]}
         >
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js" />
-          <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key={SNIPCART_SANDBOX_API_KEY} />
+          <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key={SNIPCART_API_KEY} />
           <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
           <html lang="en" />
         </Helmet>
