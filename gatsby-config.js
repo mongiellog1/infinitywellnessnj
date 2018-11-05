@@ -1,4 +1,6 @@
 const path = require("path");
+require("dotenv").config();
+const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
   siteMetadata: {
@@ -22,8 +24,12 @@ module.exports = {
       innerDivineMotheringPackage: "/packages#inner-divine-mothering-package",
       services: "/services",
       mandalas: "/mandalas",
-      about: "/about"
-    }
+      about: "/about",
+      shop: "/shop"
+    },
+    IWNJ_ADDRESS: isProd ? process.env.IWNJ_ADDRESS : process.env.__DEV__IWNJ_ADDRESS,
+    SHOP_ADDRESS: isProd ? process.env.SHOP_ADDRESS : process.env.__DEV__SHOP_ADDRESS,
+    SNIPCART_API_KEY: isProd ? process.env.SNIPCART_API_KEY : process.env.__DEV__SNIPCART_API_KEY
   },
   plugins: [
     "gatsby-plugin-sass",

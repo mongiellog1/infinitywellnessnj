@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "gatsby";
 import Layout from "../components/layout/index";
 import Divider from "../components/page_divider";
-import Section from "../components/section";
 import HeroSection from "../components/hero_section";
 
 const PackagesPage = () => (

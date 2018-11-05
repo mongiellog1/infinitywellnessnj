@@ -308,6 +308,7 @@ li {
 .purple2 { color: var(--purple2);}
 .green { color: var(--green);}
 .light-green { color: var(--light-green);}
+.light-green-11 { color: var(--light-green-11);}
 .light-green2 { color: var(--light-green2);}
 .light-purple { color: var(--light-purple);}
 .light-purple2 { color: var(--light-purple2);}
@@ -382,6 +383,9 @@ li {
 }
 .background--mandala-hero, .background--packages-hero {
   background: linear-gradient(135deg, rgb(25, 161, 110) 0%, rgb(165, 147, 194) 100%);
+}
+.background--healing-tools-hero {
+  background: linear-gradient(135deg, var(--green), var(--light-green));
 }
 
 .bg-darken {
@@ -553,35 +557,8 @@ li {
     z-index: 0;
     background: none !important;
     background-color: var(--purple) !important;
+    opacity: 0.95;
   }
-}
-
-.slanted-section-decorator--purple:after {
-  background-color: var(--purple);
-}
-
-.slanted-section-decorator--green:after {
-  background-color: var(--light-green);
-}
-.slanted-section-decorator--mfr:after {
-  background: linear-gradient(172deg, var(--light-purple), var(--light-green));
-  opacity: 0.8;
-}
-.slanted-section-decorator--eft:after {
-  background: linear-gradient(172deg, #583785, #bf7dfe);
-  opacity: 0.8;
-}
-.slanted-section-decorator--yoga-meditation:after {
-  background: linear-gradient(172deg, #512888, #f4cac9);
-  opacity: 0.8;
-}
-.slanted-section-decorator--sound-bathing-gratitude:after {
-  background: linear-gradient(172deg, #008d84, #9bd59e);
-  opacity: 0.8;
-}
-.slanted-section-decorator--packages:after {
-  background: linear-gradient(172deg, #19a16e, #a593c2);
-  opacity: 0.8;
 }
 
 /* CTA buttons */
@@ -599,9 +576,7 @@ li {
     position: relative;
     display: inline-block;
     margin-bottom: 0;
-    &:last-child, & > a {
-      padding: 0 1rem;
-    }
+    padding: 0 1rem;
     &:hover::after {
       background-color: var(--purple);
     }
@@ -652,6 +627,64 @@ li {
   }
 }
 
+// Shop
+.shop-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-card {
+  flex: 1 400px;
+  max-width: 400px;
+  padding: 0.5rem 1rem 1.5rem 1rem;
+  margin-bottom: 0.25rem;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.085);
+  transition: box-shadow 300ms;
+  &:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.085);
+  }
+}
+
+.product-card__footer {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & input {
+    margin-bottom: 0 !important;
+  }
+  > h2 {
+    margin: 0;
+  }
+  > button {
+    margin: 0;
+  }
+}
+.number-input {
+  display: inline-block;
+  > * {
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+    max-width: 2.5rem;
+  }
+  > span {
+    width: 10px;
+    height: 10px;
+    border: 1px solid gray;
+    border-radius: 50%;
+  }
+}
+
+.header-nav--mobile-only {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media screen and (min-width: 480px) {
   html {
     font-size: 15px;
@@ -666,7 +699,10 @@ li {
   }
 }
 
-@media screen and (min-width: 976px) {
+@media screen and (min-width: 1000px) {
+  .shop-products {
+    justify-content: space-between;
+  }
   .mandalas-banner {
     > *:nth-child(3) {
       display: inherit;
@@ -675,7 +711,7 @@ li {
   .mandala-gallery {
     float: right;
   }
-  .mobile-only {
+  .mobile-only, .header-nav--mobile-only {
     display: none;
   }
   .mobile-hidden {
@@ -683,7 +719,7 @@ li {
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1160px) {
   html {
     font-size: 16px;
   }

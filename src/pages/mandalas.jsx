@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "gatsby";
 import Layout from "../components/layout/index";
 import HeroSection from "../components/hero_section";
 import Section from "../components/section";
 import ContactGinaCta from "../components/contact_gina_cta";
-
+import MandalaImages from "../components/hoc/mandala_images";
 import MandalaGallery from "../components/mandala_gallery";
 import MandalaBanner from "../components/mandala_banner";
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -37,7 +38,9 @@ const MandalaPage = () => (
       />
       <div className="section overflow-hidden">
         <div className="mandala-gallery">
-          <MandalaGallery />
+          <MandalaImages>
+            <MandalaGallery />
+          </MandalaImages>
         </div>
         <h2>Pure, Simple Beauty</h2>
         <p>
@@ -63,6 +66,7 @@ const MandalaPage = () => (
         </p>
       </div>
       <ContactGinaCta />
+      <div className="section"><Link to="/shop">Buy Mandalas!</Link></div>
     </div>
   </Layout>
 );
