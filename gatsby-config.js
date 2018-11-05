@@ -1,5 +1,4 @@
 const path = require("path");
-const shopPath = "shop";
 require("dotenv").config();
 const isProd = process.env.IS_PROD === "true";
 
