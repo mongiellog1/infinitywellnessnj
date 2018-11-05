@@ -76,8 +76,9 @@ class ProductCard extends React.Component {
 
 const Products = ({ products, SHOP_ADDRESS, mandalaImages }) => (
   <div className="container container--pad-top">
-    <h2>Shop</h2>
+    <h1>Shop</h1>
     <p style={{color: "#777", marginBottom: "2rem" }}>NOTE: Minimum purchase of $20 is required!!</p>
+    <h2>Mandala Cards</h2>
     <div className="shop-products">
       {
         products.map((product, idx) => (

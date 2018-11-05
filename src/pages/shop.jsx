@@ -16,14 +16,13 @@ const BuyMandalas = ({ data: { site: { siteMetadata: { SHOP_ADDRESS } } } }) => 
     <div className="slanted-section-decorator slanted-section-decorator--green"/>
 
     {
-      // setTimeout(() => {
-      //   console.log("SNIPCART!??! ", window && window.Snipcart);
-      //   window && window.Snipcart.subscribe('page.validating', function(ev, data) {
-      //     if(ev.type === 'cart-content') {
-      //       ev.addError('uniqueId', '...Testing...');
-      //     }
-      //   });
-      // }, 1000) && undefined
+      setTimeout(() => {
+        typeof window !== "undefined" && window.Snipcart.subscribe('page.validating', function(ev, data) {
+          if(ev.type === 'order-confirm' && data.itemsTotal < 20) {
+            ev.addError('uniqueId', 'Cart must be over $20!');
+          }
+        });
+      }, 1000) && undefined
     }
     <div className="container container--max-width">
       <MandalaImages>

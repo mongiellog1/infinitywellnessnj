@@ -32,9 +32,6 @@ const MandalaImages = (props) => (
         soul_dance: file(relativePath: { eq: "mandalas/soul_dance.jpg" }) {
           ...fluidImage
         }
-        unresolved_matter: file(relativePath: { eq: "mandalas/unresolved_matter.jpg" }) {
-          ...fluidImage
-        }
         vibrations_abound: file(relativePath: { eq: "mandalas/vibrations_abound.jpg" }) {
           ...fluidImage
         }

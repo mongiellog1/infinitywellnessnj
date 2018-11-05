@@ -575,9 +575,7 @@ li {
     position: relative;
     display: inline-block;
     margin-bottom: 0;
-    &:last-child, & > a {
-      padding: 0 1rem;
-    }
+    padding: 0 1rem;
     &:hover::after {
       background-color: var(--purple);
     }
@@ -680,6 +678,12 @@ li {
   }
 }
 
+.header-nav--mobile-only {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media screen and (min-width: 480px) {
   html {
     font-size: 15px;
@@ -694,7 +698,7 @@ li {
   }
 }
 
-@media screen and (min-width: 976px) {
+@media screen and (min-width: 1000px) {
   .mandalas-banner {
     > *:nth-child(3) {
       display: inherit;
@@ -703,7 +707,7 @@ li {
   .mandala-gallery {
     float: right;
   }
-  .mobile-only {
+  .mobile-only, .header-nav--mobile-only {
     display: none;
   }
   .mobile-hidden {
@@ -711,7 +715,7 @@ li {
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1160px) {
   html {
     font-size: 16px;
   }

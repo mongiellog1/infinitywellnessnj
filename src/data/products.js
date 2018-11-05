@@ -8,7 +8,6 @@ const mandalas = [
   "lavallette",
   "love",
   "soul_dance",
-  "unresolved_matter",
   "vibrations_abound"
 ];
 

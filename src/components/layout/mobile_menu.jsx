@@ -9,6 +9,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import Collapse from '@material-ui/core/Collapse';
 import scrollToElement from "scroll-to-element";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const StyledListItemText = withStyles({
   primary: {
@@ -22,12 +23,21 @@ const tools = [
   "Yoga & Meditation",
   "Sound Bathing & Gratitude"
 ];
+const packages = [
+  "Basic",
+  "Transformation",
+  "Inner Divine Mothering"
+];
+
+const kebabCase = (str) => str.toLowerCase()
+  .replace(/&/g, "")
+  .replace(/ +/g, "-");
 
 class MobileMenu extends Component {
-  state = { menuOpen: false, toolsOpen: true };
+  state = { menuOpen: false };
 
-  toggleDrawer = (prop) => {
-    this.setState({ [prop]: !this.state[prop] });
+  toggleDrawer = () => {
+    this.setState({ menuOpen: !this.state.menuOpen });
   }
 
   smoothScroll = () => {
@@ -38,8 +48,11 @@ class MobileMenu extends Component {
 
     return (
       <>
-        <img className="sm-img mobile-only" src={hamburger} alt="hamburger menu" onClick={() => this.toggleDrawer("menuOpen")}/>
-        <Drawer onClick={() => this.toggleDrawer("menuOpen")} open={this.state.menuOpen} onClose={() => this.toggleDrawer("menuOpen")}>
+      <div className="mobile-only header-nav--mobile-only">
+        <FontAwesomeIcon className="inline-anchor snipcart-checkout" style={{ height: "18px", marginRight: "2rem"}} icon={["fas", "shopping-cart"]} />
+        <img className="sm-img inline-anchor" src={hamburger} alt="hamburger menu" onClick={this.toggleDrawer}/>
+      </div>
+        <Drawer onClick={this.toggleDrawer} open={this.state.menuOpen} onClose={this.toggleDrawer}>
           <div style={{ width: "100vw", maxWidth: "18rem" }}>
             <List component="nav">
               <Link to="/">
@@ -52,17 +65,16 @@ class MobileMenu extends Component {
                   <StyledListItemText primary="Services" />
                 </ListItem>
               </Link>
-              <ListItem button>
-                <StyledListItemText onClick={() => navigate("/healing-tools")} primary="Healing Tools" />
-              </ListItem>
+              <Link to="/healing-tools">
+                <ListItem button>
+                  <StyledListItemText primary="Healing Tools" />
+                </ListItem>
+              </Link>
 
-              <Collapse in={this.state.toolsOpen} timeout="auto" unmountOnExit>
+              <Collapse in={true} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
                   {tools.map((tool, i) => (
-                    <Link key={`tool-${i}`} to={`/${tool
-                        .toLowerCase()
-                        .replace(/&/g, "")
-                        .replace(/ +/g, "-")}`}>
+                    <Link key={`tool-${i}`} to={`/${kebabCase(tool)}`}>
                       <ListItem button >
                         <StyledListItemText style={{paddingLeft: "3em"}} primary={tool} />
                       </ListItem>
@@ -76,6 +88,19 @@ class MobileMenu extends Component {
                   <StyledListItemText  primary="Package Series" />
                 </ListItem>
               </Link>
+              <Collapse in={true} timeout="auto" unmountOnExit>
+                <List component="div" disablePadding>
+                    {
+                      packages.map((_package, i) => (
+                        <Link key={`package-${i}`} to={`/packages#${kebabCase(_package)}-package`}>
+                          <ListItem button >
+                            <StyledListItemText style={{paddingLeft: "3em"}} primary={`${_package} Package`} />
+                          </ListItem>
+                        </Link>
+                      ))
+                    }
+                </List>
+              </Collapse>
               <Link to="mandalas">
                 <ListItem button>
                   <StyledListItemText  primary="Mandalas" />
