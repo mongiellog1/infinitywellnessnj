@@ -112,11 +112,16 @@ class MobileMenu extends Component {
                   <StyledListItemText  primary="About" />
                 </ListItem>
               </Link>
-              <div onClick={this.smoothScroll}>
+              <Link to="shop">
+                <ListItem button >
+                  <StyledListItemText  primary="Shop" />
+                </ListItem>
+              </Link>
+              {/* <div onClick={this.smoothScroll}>
                 <ListItem button>
                   <StyledListItemText  primary="Connect" />
                 </ListItem>
-              </div>
+              </div> */}
             </List>
           </div>
         </Drawer>

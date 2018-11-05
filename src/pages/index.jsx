@@ -6,6 +6,8 @@ import Divider from "../components/page_divider";
 import HeroSection from "../components/hero_section";
 import Img from "gatsby-image";
 import { Testimonial3 } from "../components/testimonial";
+import ContactGinaCta from "../components/contact_gina_cta";
+
 import "./index.css";
 
 const IndexPage = ({ data }) => (
@@ -34,6 +36,7 @@ const IndexPage = ({ data }) => (
           Instead of living in this cycle of powerlessness and wondering when our day will come we can choose goodness and growth in all situations regardless of the external circumstances! And with this choosing there are no more cycles, no more repeats. We consciously choose our response to life’s events and become the master of our life.
         </p>
         <p>Welcome to wellness. A state of being, out of which, all things flow. Wellness is a state that we can tap into at any given time. Infinity Wellness is a phrase to help us remember that Wellness is of the Infinite Realm, and is not dependent upon current conditions or situations. When we live from this infinite well, happiness, that is not dependent on anything follows. </p>
+        <ContactGinaCta />
       </div>
       <Divider />
       <div className="section overflow-hidden">

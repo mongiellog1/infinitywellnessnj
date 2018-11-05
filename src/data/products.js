@@ -27,7 +27,7 @@ const makeId = (baseId, id) => (`${fourDigitId(baseId)}${fourDigitId(id)}`)
 const mandalaBaseId = 1
     , mandalaPrice = 4
     , mandalaCategory = "card"
-    , mandalaDescription = "A mandala card!";
+    , mandalaDescription = "A mandala card.";
 
 mandalas.forEach((mandala, idx) => products.push({
     id: makeId(mandalaBaseId, idx),

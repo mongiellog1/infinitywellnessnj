@@ -308,6 +308,7 @@ li {
 .purple2 { color: var(--purple2);}
 .green { color: var(--green);}
 .light-green { color: var(--light-green);}
+.light-green-11 { color: var(--light-green-11);}
 .light-green2 { color: var(--light-green2);}
 .light-purple { color: var(--light-purple);}
 .light-purple2 { color: var(--light-purple2);}
@@ -630,7 +631,7 @@ li {
 .shop-products {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .product-card {
@@ -699,6 +700,9 @@ li {
 }
 
 @media screen and (min-width: 1000px) {
+  .shop-products {
+    justify-content: space-between;
+  }
   .mandalas-banner {
     > *:nth-child(3) {
       display: inherit;

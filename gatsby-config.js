@@ -25,7 +25,8 @@ module.exports = {
       innerDivineMotheringPackage: "/packages#inner-divine-mothering-package",
       services: "/services",
       mandalas: "/mandalas",
-      about: "/about"
+      about: "/about",
+      shop: "/shop"
     },
     IWNJ_ADDRESS: isProd ? process.env.IWNJ_ADDRESS : process.env.__DEV__IWNJ_ADDRESS,
     SHOP_ADDRESS: isProd ? process.env.SHOP_ADDRESS : process.env.__DEV__SHOP_ADDRESS,
