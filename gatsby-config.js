@@ -1,7 +1,7 @@
 const path = require("path");
 require("dotenv").config();
 const isProd = process.env.IS_PROD === "true";
-
+console.log("PROCESS>ENV:: ", process.env)
 module.exports = {
   siteMetadata: {
     title: "Infinity Wellness",
