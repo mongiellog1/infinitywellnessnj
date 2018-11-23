@@ -18,7 +18,7 @@ class ScrollToElement extends React.Component {
       const { hash } = this.props.location;
       if (hash && this.state.hash !== hash) {
         this.setState({ hash }, () => {
-          scrollToElement(hash, { duration: 100 } )
+          scrollToElement(hash, { duration: 100 } );
         })
       }
     }

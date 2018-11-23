@@ -74,7 +74,6 @@ const HealingTools = () => (
         </article>
         <Divider  />
         <article className="section">
-          <h1 className="title">Healing Tools</h1>
           <div className="healing-tools-teaser">
             <h2>Myofascial Release</h2>
             <p>
@@ -94,7 +93,8 @@ const HealingTools = () => (
           <div className="healing-tools-teaser">
             <h2>Emotional Freedom Techniques</h2>
             <p>
-              For letting go of the past, strengthening empowering beliefs, and opening up the doors for creativity, vitality, and overall wellness.
+              For letting go of the past, strengthening empowering beliefs, and
+              opening up the doors for creativity, vitality, and overall wellness.
             </p>
             <ul>
               <li>An integration of the lessons from past events</li>
@@ -125,12 +125,15 @@ const HealingTools = () => (
           <div className="healing-tools-teaser">
             <h2>Sound Healing & Gratitude</h2>
             <p>
-              For a pleasure beyond delight and taking a dive into the most serene places of your mind where your most harmonious self resides.
+              For a pleasure beyond delight and taking a dive into the most serene
+              places of your mind where your most harmonious self resides.
             </p>
             <ul>
               <li>A pleasure beyond delight</li>
               <li>Takes us into the most serene of places where our most harmonious self resides</li>
-              <li>It spikes nitric oxide levels which balances the autonomic nervous system and signals a natural release of anti-bacterial and anti-virals on a microcellular level</li>
+              <li>It spikes nitric oxide levels which balances the autonomic nervous
+                system and signals a natural release of anti-bacterial and anti-virals
+                on a microcellular level</li>
               <li>Gratitude is strongly linked to mental health and life satisfaction</li>
 
             </ul>
@@ -143,7 +146,15 @@ const HealingTools = () => (
         <article className="section ">
           <h1 className="title purple">Business Programs</h1>
           <p>
-            My skills are diverse and I have a broad range of experiences that allow me to work well with multiple communities. I have been an environmental educator since 2005, and a yoga teacher since 2009. I have worked with and taught people ages 2-90+, worked in affluent and low-income neighborhoods, taught in rural and urban settings, corporate and park atmospheres, worked with those in recovery, and have worked with all ranges of special needs including autistic, behaviorally challenged, and cerebral palsy populations. I have used my skills in many settings to reach and inspire those present.
+            My skills are diverse, and I have a broad range of experiences that allow
+            me to work well with multiple communities. I have been an environmental
+            educator since 2005, and a yoga teacher since 2009. I have worked with
+            and taught people ages 2-90+, worked in affluent and low-income neighborhoods,
+            taught in rural and urban settings, corporate and park atmospheres,
+            worked with those in recovery, and have worked with all ranges of
+            special needs including autistic, behaviorally challenged, and cerebral
+            palsy populations. I have used my skills in many settings to reach
+            and inspire those present.
           </p>
           <p>
             Because of my ability and effectiveness to reach and help a large range of people and communities,
