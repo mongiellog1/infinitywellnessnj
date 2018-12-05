@@ -1,22 +1,24 @@
 import React from "react";
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
 import Layout from "../components/layout/index";
 import HeroSection from "../components/hero_section";
 import Section from "../components/section";
 import ContactGinaCta from "../components/contact_gina_cta";
 import Divider from "../components/page_divider";
+import { Testimonial5 } from "../components/testimonial";
 
 import "./healing-tools.css";
 
-export default () => (
+export default ({ data }) => (
   <Layout>
     <HeroSection
       cssHeroType="mfr"
       title="Myofascial Release"
       subtitle="THE WEB UNTANGLER"
       paragraphs={["Create a new balance of space and harmony deep within your tissue"]}
-    >
-      <div className="background--mfr-hero background-cover-parent" />
-    </HeroSection>
+      Background={<Img className="background-cover-parent" fluid={data.cover.childImageSharp.fluid} />}
+    />
     <div className="slanted-section-decorator slanted-section-decorator--mfr"/>
     <div className="container container--max-width">
       <Section
@@ -30,8 +32,8 @@ export default () => (
 
       <Divider showLogo={false} />
 
-      <article className="section overflow-hidden purple2">
-        <h2 className="purple shadow">Incredibly Versatile</h2>
+      <article className="section purple2">
+        <h1 className="purple shadow">Incredibly Versatile</h1>
         <p>While Myofascial Release can indeed address this level of pain and dysfunction in the body, it has many other extraordinary benefits for humans. It helps with emotions, trapped feelings, past traumas, relationship patterns, and can provide insights and a deepening of awareness which leads to greater and greater levels of choice in life. </p>
         <p style={{ marginBottom: "1rem" }}>MFR has been known to help many who suffer with:</p>
         <div className="mfr-symptoms purple0">
@@ -75,5 +77,18 @@ export default () => (
       </p>
       <ContactGinaCta />
     </div>
+    <Testimonial5 />
   </Layout>
 );
+
+export const pageQuery = graphql`
+  query {
+    cover: file(relativePath: { eq: "gina/075.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

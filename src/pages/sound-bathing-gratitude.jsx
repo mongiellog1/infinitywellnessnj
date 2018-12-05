@@ -1,4 +1,6 @@
 import React from "react";
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
 import Layout from "../components/layout/index";
 import HeroSection from "../components/hero_section";
 import Section from "../components/section";
@@ -6,16 +8,15 @@ import ContactGinaCta from "../components/contact_gina_cta";
 import "./healing-tools.css";
 import { Quote1, Quote2 } from "../components/testimonial";
 
-const SoundHealing = () => (
+const SoundHealing = ({ data }) => (
   <Layout>
     <HeroSection
       title="Sound Bathing & Gratitude"
       cssHeroType="sound-healing"
       subtitle="THE PEACE AND JOY IGNITER"
       paragraphs={["Lay your head to rest while I play sounds that dance with your soul"]}
-    >
-      <div className="background--sound-bathing-gratitude-hero background-cover-parent" />
-    </HeroSection>
+      Background={<Img className="background-cover-parent" fluid={data.cover.childImageSharp.fluid} />}
+    />
     <div className="slanted-section-decorator slanted-section-decorator--sound-bathing-gratitude"/>
     <div className="container container--max-width">
       <Section
@@ -55,3 +56,15 @@ const SoundHealing = () => (
 );
 
 export default SoundHealing;
+
+export const pageQuery = graphql`
+  query {
+    cover: file(relativePath: { eq: "gina/076.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

@@ -1,7 +1,3 @@
-.section-background {
-  background-image: url("../images/flowers2.jpg");
-}
-
 .blur {
   filter: blur(3px);
 }

@@ -1,19 +1,21 @@
 import React from "react";
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
 import Layout from "../components/layout/index";
 import HeroSection from "../components/hero_section";
 import Section from "../components/section";
 import ContactGinaCta from "../components/contact_gina_cta";
 import Divider from "../components/page_divider";
+import { Testimonial6 } from "../components/testimonial";
 
-export default () => (
+export default ({ data }) => (
   <Layout>
     <HeroSection
       title="Emotional Freedom Techniques"
       subtitle="THE ENERGY ELEVATOR"
       paragraphs={[`Tapping into roots that exist for a reason.`]}
-    >
-      <div className="background--eft-hero background-cover-parent" />
-    </HeroSection>
+      Background={<Img className="background-cover-parent" fluid={data.cover.childImageSharp.fluid} />}
+    />
     <div className="slanted-section-decorator slanted-section-decorator--eft"/>
     <div className="container container--max-width">
       <Section
@@ -27,10 +29,10 @@ export default () => (
         ]}
       />
 
-      <Divider showLogo={false} />
+      <Divider />
 
-      <article className="section overflow-hidden purple2">
-        <h2 className="purple shadow">Open Your Energy Highways</h2>
+      <article className="section purple2">
+        <h1 className="purple shadow">Open Your Energy Highways</h1>
         <p style={{ marginBottom: "1rem" }}>EFT has helped many people with various problems, including:</p>
         <div className="mfr-symptoms purple0">
           <ul className="mfr-symptoms__list">
@@ -69,7 +71,7 @@ export default () => (
         </p>
       </article>
 
-      <Divider showLogo={false} />
+      <Divider />
       <Section
         title="Peer Reviewed Studies"
         subsections={[
@@ -99,6 +101,18 @@ export default () => (
 
       <ContactGinaCta />
     </div>
-
+    <Testimonial6 />
   </Layout>
 );
+
+export const pageQuery = graphql`
+  query {
+    cover: file(relativePath: { eq: "gina/078.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

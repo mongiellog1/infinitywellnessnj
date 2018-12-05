@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link, navigate } from "gatsby";
+import { Link } from "gatsby";
 import hamburger from "../../images/hamburger.png";
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';

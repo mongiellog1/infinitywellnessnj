@@ -20,7 +20,7 @@ const Footer = () => (
 
       <div  style={{ paddingBottom: "1rem"}}>
         <div style={{ textAlign: "center" }}>
-          <h2>Let's Connect.</h2>
+          <h1>Let's Connect.</h1>
           <p className="form-container">
             Whether you're in the middle of a personal struggle, curious about
             inner transformation and expansion, or stressing about a business

@@ -1,28 +1,28 @@
 import React from "react";
 import Layout from "../components/layout/index"
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
+import Img from "gatsby-image";
 import Button from "../components/button";
 import scrollToElement from "scroll-to-element";
 import Divider from "../components/page_divider";
-import { Testimonial4 } from "../components/testimonial";
+import { Testimonial0, Testimonial3 } from "../components/testimonial";
 import "./healing-tools.css";
 import HeroSection from "../components/hero_section";
 
-const HealingTools = () => (
+const HealingTools = ({ data }) => (
   <Layout>
     <div className="healing-tools-section">
       <HeroSection
         title="Life Long Healing Tools"
         subtitle="Have you ever longed for tools that would never dull, and instead sharpen with use?"
         paragraphs={["If YES, then allow your journey to begin. These healing tools when used and practiced can be applied to all of life’s challenges."]}
-      >
-        <div className="background--healing-tools-hero background-cover-parent" />
-      </HeroSection>
+        Background={<Img style={{ background: "fff"}} className="background-cover-parent" fluid={data.image.childImageSharp.fluid} />}
+      />
 
       <div className="slanted-section-decorator slanted-section-decorator--green"/>
       <div className="container container--max-width">
         <article className="section">
-          <h1>Gina's Chosen Tools</h1>
+          <h2>Gina's Chosen Tools</h2>
           <p>
             I have chosen tools that are incredibly effective at dealing with life,
             consistently, day-in and day-out, so that when something comes up we have
@@ -72,9 +72,11 @@ const HealingTools = () => (
           </p>
           <Button text="Work with Gina" onClick={() => scrollToElement("#contact", { duration: "750" })} />
         </article>
-        <Divider  />
-        <article className="section">
-          <div className="healing-tools-teaser">
+      </div>
+      <Testimonial0 />
+      <div className="container container--max-width">
+        <article>
+          <div className="section healing-tools-teaser">
             <h2>Myofascial Release</h2>
             <p>
               For deep body healing, resolving of chronic pains, releasing of tension.
@@ -89,8 +91,8 @@ const HealingTools = () => (
             </ul>
             <Link to="myofascial-release"><Button text="Myofascial Release" /></Link>
           </div>
-          <Divider showLogo={false} />
-          <div className="healing-tools-teaser">
+          <Divider />
+          <div className="section healing-tools-teaser">
             <h2>Emotional Freedom Techniques</h2>
             <p>
               For letting go of the past, strengthening empowering beliefs, and
@@ -105,8 +107,8 @@ const HealingTools = () => (
             </ul>
             <Link to="emotional-freedom-techniques"><Button text="Emotional Freedom Techniques"/></Link>
           </div>
-          <Divider showLogo={false} />
-          <div className="healing-tools-teaser">
+          <Divider />
+          <div className="section healing-tools-teaser">
             <h2>Yoga & Meditation</h2>
             <p>
               Reconnecting with the rhythym of life, increasing your capacity to breathe in each moment and take all there is in life.
@@ -121,8 +123,8 @@ const HealingTools = () => (
             <Link to="yoga-meditation"><Button text="Yoga & Meditation" /></Link>
           </div>
 
-          <Divider showLogo={false} />
-          <div className="healing-tools-teaser">
+          <Divider />
+          <div className="section healing-tools-teaser">
             <h2>Sound Healing & Gratitude</h2>
             <p>
               For a pleasure beyond delight and taking a dive into the most serene
@@ -141,10 +143,10 @@ const HealingTools = () => (
           </div>
         </article>
       </div>
-        <Testimonial4 />
+        <Testimonial3 />
       <div className="container container--max-width">
         <article className="section ">
-          <h1 className="title purple">Business Programs</h1>
+          <h2 className="title purple">Business Programs</h2>
           <p>
             My skills are diverse, and I have a broad range of experiences that allow
             me to work well with multiple communities. I have been an environmental
@@ -172,3 +174,15 @@ const HealingTools = () => (
 );
 
 export default HealingTools;
+
+export const pageQuery = graphql`
+  query {
+    image: file(relativePath: { eq: "gina/067.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

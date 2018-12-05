@@ -6,8 +6,9 @@
 .bio__portrait {
   box-sizing: border-box;
   padding-right: 1rem;
-  max-height: 10rem;
   margin: 0;
+  width: 15rem;
+  height: 20rem;
 }
 
 .training ul {

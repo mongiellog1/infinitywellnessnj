@@ -1,18 +1,18 @@
 import React from "react";
 import Layout from "../components/layout/index";
+import Img from "gatsby-image";
 import { graphql } from "gatsby";
 import products from "../data/products.js";
 import Products from "../components/products";
 import MandalaImages from "../components/hoc/mandala_images";
 import HeroSection from "../components/hero_section";
 
-const BuyMandalas = ({ data: { site: { siteMetadata: { SHOP_ADDRESS } } } }) => (
+const BuyMandalas = ({ data: { image, site: { siteMetadata: { SHOP_ADDRESS } } } }) => (
   <Layout>
     <HeroSection
       title="Shop"
-    >
-      <div className="background--healing-tools-hero background-cover-parent" />
-    </HeroSection>
+      Background={<Img className="background-cover-parent" fluid={image.childImageSharp.fluid} />}
+    />
     <div className="slanted-section-decorator slanted-section-decorator--green"/>
 
     {
@@ -42,6 +42,13 @@ export const addressQuery = graphql`
     site {
       siteMetadata {
         SHOP_ADDRESS
+      }
+    }
+    image: file(relativePath: { eq: "mandala_workshop.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
   }

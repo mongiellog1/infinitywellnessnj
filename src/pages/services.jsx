@@ -9,13 +9,12 @@ const PayPage = () => (
   <Layout>
     <HeroSection
       title="Services"
-    >
-      <div className="background-cover-parent background--services-hero" />
-    </HeroSection>
+      Background={<div className="background-cover-parent background--services-hero" />}
+    />
 
     <div className="slanted-section-decorator slanted-section-decorator--eft"/>
     <div className="container container--max-width">
-      <div className="section overflow-hidden">
+      <div className="section">
         <h2 className="purple">Single Sessions</h2>
         <ul style={{ fontSize: "20px", listStyleType: "disc", marginLeft: "1.5rem" }}>
           <li style={{ marginBottom: 0, lineHeight: "24px"}}>Myofascial Release</li>
@@ -38,7 +37,7 @@ const PayPage = () => (
       <div className="page-anchor__container">
         <div id="basic-package" className="page-anchor__anchor"/>
       </div>
-      <div className="section overflow-hidden">
+      <div className="section">
         <h2>Basic Series: Beginner Package</h2>
         <p>
           If you’re curious or just starting to see how underlying aspects are
@@ -60,7 +59,7 @@ const PayPage = () => (
       <div className="page-anchor__container">
         <div id="transformation-package" className="page-anchor__anchor"/>
       </div>
-      <div className="section overflow-hidden">
+      <div className="section">
         <h2>Transformation Package</h2>
         <p>
           Go deep with this 10 session package to transform your current
@@ -83,7 +82,7 @@ const PayPage = () => (
       <div className="page-anchor__container">
         <div id="divine-inner-child-package" className="page-anchor__anchor"/>
       </div>
-      <div className="section overflow-hidden">
+      <div className="section">
         <h2>Divine Inner Mothering Package</h2>
         <p>
           Three months of coaching and mentorship through an amazing discovery of

@@ -1,21 +1,24 @@
 import React from "react";
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
 import Layout from "../components/layout/index";
 import ContactGinaCta from "../components/contact_gina_cta";
 import HeroSection from "../components/hero_section";
 import Section from "../components/section";
+import Divider from "../components/page_divider";
+import { Testimonial7 } from "../components/testimonial";
 
 import "./healing-tools.css";
 
-const YogaMeditation = () => (
+const YogaMeditation = ({ data }) => (
   <Layout>
     <HeroSection
       title="Yoga & Meditation"
       cssHeroType="yoga-meditation"
       subtitle="THE GREAT LIBERATOR"
       paragraphs={["Find the common thread."]}
-    >
-      <div className="background--yoga-meditation-hero background-cover-parent" />
-    </HeroSection>
+      Background={<Img className="background-cover-parent" fluid={data.cover.childImageSharp.fluid} />}
+    />
     <div className="slanted-section-decorator slanted-section-decorator--yoga-meditation"/>
     <div className="container container--max-width">
       <Section
@@ -38,6 +41,7 @@ const YogaMeditation = () => (
           in Love, our truest state.`,
         ]}
       />
+      <Divider />
       <Section
         title={"Passed on Through Lineage"}
         subsections={[
@@ -66,6 +70,7 @@ const YogaMeditation = () => (
           sick. This is where happiness comes from”<br/>~Sri Guruji Reverend Jaganath Carrera</>
         ]}
       />
+      <Divider />
       <Section
         title="Movement; More Than Physical"
         subsections={[
@@ -82,7 +87,20 @@ const YogaMeditation = () => (
       />
       <ContactGinaCta />
     </div>
+    <Testimonial7 />
   </Layout>
 );
 
 export default YogaMeditation;
+
+export const pageQuery = graphql`
+  query {
+    cover: file(relativePath: { eq: "gina/030.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

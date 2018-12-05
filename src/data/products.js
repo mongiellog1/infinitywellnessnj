@@ -21,7 +21,7 @@ const fourDigitId = (number) => {
 const products = [];
 
 // Use category for different types of items
-// i.e. cards = category 0001, books = 0002, etc.
+// i.e. cards = 0001, books = 0002, etc.
 const makeId = (baseId, id) => (`${fourDigitId(baseId)}${fourDigitId(id)}`)
 
 const mandalaBaseId = 1
