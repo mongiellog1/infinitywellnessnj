@@ -20,11 +20,10 @@ html {
   font-size: 14px;
 }
 
-a {
-  &[href^="/"] {
-    text-decoration: none;
-  }
+a[href^="/"] {
+  text-decoration: none;
 }
+
 .hidden {
   display: none;
 }
@@ -38,28 +37,20 @@ a {
   height: 0px;
 }
 
-.hero-content__title {
-  text-shadow: 0px 3px 3px black;
-}
-
-.hero-content__subtitle {
-  font-size: 1.2rem;
-  text-shadow: 2px 2px rgba(0,0,0,0.2);
-}
-
 .button {
   position: relative;
   cursor: pointer;
-  background-color: var(--light-green0x33);
+  background-color: var(--green);
   padding: 0.5rem 1rem;
   overflow: hidden;
+  border: none;
   border-radius: 10px;
   color: transparent;
   font-family: helvetica, sans-serif;
   margin-top: 2rem;
   transition: box-shadow 100ms;
   span {
-    color: black;
+    color: white;
     position: absolute;
     display: block;
     width: 100%;
@@ -70,7 +61,7 @@ a {
     padding: 0.5rem 1rem;
     transition: 100ms;
     &:hover {
-      color: white;
+      color: var(--purple);
     }
   }
   &:before {
@@ -78,13 +69,14 @@ a {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: var(--green);
     top: 100%;
     left: 0;
     transition: 100ms;
+    background-color: var(--light-green0x33);
+
   }
   &:hover {
-    box-shadow: 0 0 50px rgba(0,0,0,.085);
+    box-shadow: 0 0 20px rgba(0,0,0,.285);
     &:before {
       transition: 300ms;
       top: 0;
@@ -123,19 +115,24 @@ img {
   margin: 0;
 }
 
-blockquote {
+blockquote, .quote {
   font-family: "Alegreya";
-  position: relative;
-  width: 100%;
   font-weight: 300;
   font-size: 20px;
-  min-height: 47px;
-  max-width: 1000px;
-  margin: 0.5rem auto;
   padding: 2rem;
-  color: white;
-  text-indent: 2.5rem;
+  p:first-child {
+    text-indent: 2.5rem;
+  }
   line-height: 22px;
+}
+
+blockquote {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 47px;
+  color: white;
+  margin: 0.5rem auto;
   &:before {
     content: "";
     background: url("../../images/quote.png") top left no-repeat;
@@ -257,8 +254,6 @@ li {
 }
 
 .app-container {
-  padding-top: 5.5rem;
-  padding-bottom: 5.5rem;
   background-color: white;
   overflow: hidden;
 }
@@ -268,7 +263,7 @@ li {
 }
 
 .container {
-  padding: 0 2rem 2rem 2rem;
+  padding: 0 2rem 4rem 2rem;
   position: relative;
   z-index: 0;
   box-sizing: content-box;
@@ -278,9 +273,6 @@ li {
   max-width: 1000px;
   margin: 0 auto;
 }
-.container--pad-bottom {
-  padding-bottom: 3rem;
-}
 .container--pad-small {
   padding: 0.75rem;
   padding-top: 0;
@@ -289,13 +281,43 @@ li {
   padding-top: 2rem;
 }
 .container--hero {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  box-sizing: border-box;
+  padding-top: 10rem;
+  position:relative;
+  height: calc(100vh - 88px);
+}
+
+.hero-content__title {
+  text-shadow: 0px 3px 3px black;
+}
+.hero-content__subtitle {
+  font-size: 1.2rem;
+  text-shadow: 2px 2px rgba(0,0,0,0.2);
+}
+.hero-cta {
+  max-width: 20rem;
+}
+
+.fixed-scroll-bg {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.fixed-scroll-bg__absolute-container {
+  position: absolute;
+  clip: rect(auto, auto, auto, auto);
+  clip-path: inset(0 0 0 0);
+}
+.fixed-scroll-bg__fixed-container {
+  position: fixed;
 }
 
 .section {
   position: relative;
-  padding-top: 2rem;
+  padding-top: 3rem;
   z-index: 0;
 }
 .overflow-hidden {
@@ -316,6 +338,7 @@ li {
 .white { color: white;}
 .bg--white { background-color: white;}
 .bg--purple { background-color: var(--purple);}
+.bg--purple1 { background-color: var(--purple1);}
 .bg--green { background-color: var(--green);}
 .bg--green1 { background-color: var(--green1);}
 .bg--light-green { background-color: var(--light-green);}
@@ -433,18 +456,6 @@ li {
   background-repeat: no-repeat;
 }
 
-.page-banner--services {
-  background-image: url("../../images/flowers2.jpg");
-}
-
-.page-banner--packages {
-  background-image: url("../../images/flowers4_big.jpg");
-}
-
-.page-banner--about {
-  background-image: url("../../images/flowers7.jpg");
-}
-
 .package-series-list > {
   h3 {
     margin-bottom: 0.5rem;
@@ -468,21 +479,18 @@ li {
 /* header */
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 100;
   margin-bottom: 0;
   background-color: white;
-  padding: 0 1rem;
+  padding: 0;
   -webkit-box-shadow: 0px -3px 21px 3px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px -3px 21px 3px rgba(0, 0, 0, 0.5);
   box-shadow: 0px -3px 21px 3px rgba(0, 0, 0, 0.5);
 }
 
 .header__inner_container {
-  padding: 0 2rem;
+  padding: 0 1rem;
   max-width: 1172px;
   align-items: center;
   display: flex;
@@ -513,9 +521,10 @@ li {
   flex-wrap: wrap;
 }
 
-.footer {
+#footer {
   position: relative;
   padding: 1em;
+  padding-bottom: 2rem;
   background-color: var(--gray-bg);
   z-index: 0;
   background: linear-gradient(#dbdbff, rgba(27, 127, 37, 0.68));
@@ -541,6 +550,14 @@ li {
   font-size: 24px;
 }
 
+.hero-content__panel {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 500px;
+  background-color: rgba(47,25,52, 0.6);
+}
+
 .slanted-section-decorator {
   height: 70px;
   overflow: hidden;
@@ -561,6 +578,10 @@ li {
   }
 }
 
+ul > li:nth-child(n + 2) > .button {
+  margin-top: 0.25rem;
+}
+
 /* CTA buttons */
 
 .desktop-menu {
@@ -576,9 +597,12 @@ li {
     position: relative;
     display: inline-block;
     margin-bottom: 0;
-    padding: 0 1rem;
     &:hover::after {
       background-color: var(--purple);
+    }
+    > * {
+      padding: 0 1rem;
+
     }
     &::after {
       content: "";
@@ -692,6 +716,9 @@ li {
 }
 
 @media screen and (min-width: 667px) {
+  .header__inner_container {
+    padding: 0 3rem;
+  }
   .mandalas-banner {
     > *:nth-child(2) {
       display: inherit;

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link, navigate } from "gatsby";
+import { Link } from "gatsby";
 import hamburger from "../../images/hamburger.png";
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
@@ -41,7 +41,7 @@ class MobileMenu extends Component {
   }
 
   smoothScroll = () => {
-    scrollToElement("#contact", { duration: 750 });
+    scrollToElement("#footer", { duration: 750 });
   }
 
   render() {

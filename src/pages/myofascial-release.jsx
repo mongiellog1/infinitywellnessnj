@@ -1,26 +1,28 @@
 import React from "react";
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
 import Layout from "../components/layout/index";
 import HeroSection from "../components/hero_section";
 import Section from "../components/section";
 import ContactGinaCta from "../components/contact_gina_cta";
 import Divider from "../components/page_divider";
+import { Testimonial5 } from "../components/testimonial";
 
 import "./healing-tools.css";
 
-export default () => (
+export default ({ data }) => (
   <Layout>
     <HeroSection
       cssHeroType="mfr"
       title="Myofascial Release"
       subtitle="THE WEB UNTANGLER"
       paragraphs={["Create a new balance of space and harmony deep within your tissue"]}
-    >
-      <div className="background--mfr-hero background-cover-parent" />
-    </HeroSection>
+      Background={<Img className="background-cover-parent" fluid={data.cover.childImageSharp.fluid} />}
+    />
     <div className="slanted-section-decorator slanted-section-decorator--mfr"/>
     <div className="container container--max-width">
       <Section
-        title="Unwind into a new space."
+        title="Unwind into a new space"
         subsections={[
           "Myofascial Release was developed and is taught by John Barnes, PT, and has been used to heal for decades by thousands of trained practitioners from across the world. John Barnes had a traditional physical therapy practice for years before creating the myofascial release theories and practices, due to his own crippling back pain that was in need of healing. He brought this healing modality to the world after he used it successfully on himself and his patients. He is still actively teaching and practicing myofascial release countrywide, now in his mid seventies.",
           "Myofascial Release works on the premise that the body has an interconnected web of fascia that runs throughout. It circles every muscle, bone, nerve, blood vessel, and cell. When healthy and unrestricted, we move freely and energy and information flows through us freely. When this web is restricted in any one spot, it can cause tremendous pain and dysfunction as well as pull on other areas of the web. One restriction or ‘tangle’ affects the entire web and the body systems that are woven throughout. ",
@@ -30,7 +32,7 @@ export default () => (
 
       <Divider showLogo={false} />
 
-      <article className="section overflow-hidden purple2">
+      <article className="section purple2">
         <h2 className="purple shadow">Incredibly Versatile</h2>
         <p>While Myofascial Release can indeed address this level of pain and dysfunction in the body, it has many other extraordinary benefits for humans. It helps with emotions, trapped feelings, past traumas, relationship patterns, and can provide insights and a deepening of awareness which leads to greater and greater levels of choice in life. </p>
         <p style={{ marginBottom: "1rem" }}>MFR has been known to help many who suffer with:</p>
@@ -75,5 +77,18 @@ export default () => (
       </p>
       <ContactGinaCta />
     </div>
+    <Testimonial5 />
   </Layout>
 );
+
+export const pageQuery = graphql`
+  query {
+    cover: file(relativePath: { eq: "gina/075.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

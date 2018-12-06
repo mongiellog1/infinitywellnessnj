@@ -1,28 +1,49 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, graphql, navigate } from "gatsby"
 
 import Layout from "../components/layout/index"
 import Divider from "../components/page_divider";
 import HeroSection from "../components/hero_section";
 import Img from "gatsby-image";
-import { Testimonial3 } from "../components/testimonial";
+import { Testimonial2 } from "../components/testimonial";
 import ContactGinaCta from "../components/contact_gina_cta";
+import Button from "../components/button";
 
 import "./index.css";
 
 const IndexPage = ({ data }) => (
   <Layout>
     <HeroSection
-      title="Reclaim Wellness."
+      title="Reclaim Wellness"
       titleClass="home-page"
       subtitle="Start living in a way that is true to your core. A life where you know who you are and your actions follow in alignment."
+      Background={<Img className="background-cover-parent" fluid={data.imageOne.childImageSharp.fluid} />}
     >
-      <Img className="background-cover-parent" fluid={data.imageOne.childImageSharp.fluid} />
+      <ul className="hero-cta">
+        <li>
+          <Button
+            text="Healing Tools"
+            onClick={() => navigate("/healing-tools")}
+          />
+        </li>
+        <li>
+          <Button
+            text="Services"
+            onClick={() => navigate("/services")}
+          />
+        </li>
+        <li>
+          <Button
+            text="Shop Mandalas"
+            onClick={() => navigate("/shop")}
+          />
+        </li>
+      </ul>
     </HeroSection>
 
     <div className="slanted-section-decorator slanted-section-decorator--purple"/>
     <div className="container container--max-width">
-      <div className="section overflow-hidden">
+      <div className="section">
         <h2>Wellness Is A State Of Mind</h2>
         <p>
           A lot of us feel victim to our circumstances. We enjoy the good times in
@@ -39,7 +60,7 @@ const IndexPage = ({ data }) => (
         <ContactGinaCta />
       </div>
       <Divider />
-      <div className="section overflow-hidden">
+      <div className="section">
         <h2 className="">Gina's Integrated Approach</h2>
         <p>
           I use MyoFascial Release, Emotional Freedom Techniques, Sound Baths, and Yoga & Meditation as a multi-pronged approach, creating a balanced harmonious space for health and wellness to rebirth itself and thrive.
@@ -53,12 +74,12 @@ const IndexPage = ({ data }) => (
         <p>
           The realm of  intuitive, imaginative wellness can help us form beneficial and appropriate questions, and the appropriate questions will give us the best answers. Whether it be a question about life path, past trauma, career change, new business proposal, or personal achievements, things come together when we begin with the right question. The key is that we stop searching for questions and answers of the mind, and instead unblock and lift the floodgates to what is beyond the mind.
         </p>
-        <p>Check out how I create a healing space with my <Link className="inline-anchor" to="/healing-tools">healing tools</Link></p>
+        <p>Check out how I create a healing space with my <Link className="inline-anchor" to="/healing-tools">healing tools.</Link></p>
       </div>
     </div>
-      <Testimonial3 />
-    <div className="container container--max-width">
-      <div className="section overflow-hidden">
+      <Testimonial2 />
+    <div className="container container--max-width container--pad-bottom">
+      <div className="section">
         <h2>A Seasoned Professional</h2>
         <p>
           Feeling so unwell in my teen years is what began my search for health and wellness. Over the next fifteen years I accumulated a lot of information and experienced a lot of healing modalities. While all that I learned and experienced over this time period was an incredibly valuable and necessary part of what I use and offer today, the healing modalities I learned in my early thirties are what took me to the places I was looking to go.
@@ -81,15 +102,15 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    imageOne: file(relativePath: { eq: "flowers2.jpg" }) {
+    imageOne: file(relativePath: { eq: "gina/052.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
+        fluid {
           ...GatsbyImageSharpFluid
         }
       }
     }
   }
-`
+`;
 
 export const fluidImage = graphql`
   fragment fluidImage on File {

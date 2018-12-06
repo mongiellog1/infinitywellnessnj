@@ -2,6 +2,11 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
+const imgProps = {
+  imgStyle: { objectFit: "contain" },
+  style: { height: "100%", width: "auto" },
+};
+
 const MandalaSlideshow = () => (
   <StaticQuery
     query={graphql`
@@ -22,13 +27,11 @@ const MandalaSlideshow = () => (
           <div />
           <Img
             fluid={fluidLove}
-            style={{height: "100%", width: "auto"}}
-            imgStyle={{ objectFit: "contain" }}
+            {...imgProps}
           />
           <Img
             fluid={fluidBurstinglyWoven}
-            style={{height: "100%", width: "auto"}}
-            imgStyle={{ objectFit: "contain" }}
+            {...imgProps}
           />
         </div>
       );

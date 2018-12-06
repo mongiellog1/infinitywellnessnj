@@ -1,29 +1,29 @@
 import React from "react"
-import GinaPortrait from "../images/gina2.jpg";
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
 import "./about.css";
 import ContactGinaCta from "../components/contact_gina_cta";
 import Layout from "../components/layout/index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import HeroSection from "../components/hero_section";
 
-const AboutPage = () => (
+const AboutPage = ({ data }) => (
   <Layout>
     <HeroSection
       title="About"
-    >
-      <div className="background-cover-parent background--about-hero" />
-    </HeroSection>
+      Background={<Img className="background-cover-parent" fluid={data.coverImage.childImageSharp.fluid} />}
+    />
     <div className="slanted-section-decorator slanted-section-decorator--mfr"/>
     <div className="container container--max-width">
-      <div className="section overflow-hidden">
+      <div className="section">
         <article className="bio">
           <div>
+            <div>
+              <h2 style={{ fontSize: 24, marginBottom: "0.5rem" }}>Gina Mongiello, MA, LMT</h2>
+              <h4 style={{ fontStyle: "italic", fontWeight: "200" }}>Founder of Infinity Wellness</h4>
+            </div>
             <div className="bio-header">
-              <img className="bio__portrait" src={GinaPortrait} alt="Gina Mongiello" />
-              <div>
-                <h2 style={{ fontSize: 24, marginBottom: "0.5rem" }}>Gina Mongiello, MA, LMT</h2>
-                <h4 style={{ fontStyle: "italic", fontWeight: "200" }}>Founder of Infinity Wellness</h4>
-              </div>
+              <Img className="bio__portrait" fluid={data.image.childImageSharp.fluid} alt="Gina Mongiello" />
             </div>
           </div>
           <div>
@@ -104,3 +104,22 @@ const AboutPage = () => (
 );
 
 export default AboutPage;
+
+export const pageQuery = graphql`
+  query {
+    image: file(relativePath: { eq: "gina/014.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    coverImage: file(relativePath: { eq: "gina/034.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

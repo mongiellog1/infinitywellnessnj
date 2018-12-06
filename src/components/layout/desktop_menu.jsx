@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql, Link, StaticQuery } from "gatsby";
-import scrollToElement from "scroll-to-element";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const DesktopMenu = () => (
@@ -66,7 +65,7 @@ const DesktopMenu = () => (
         <li><Link className="inline-anchor" to={services}>Services</Link></li>
         <li><Link className="inline-anchor" to={about}>About</Link></li>
         <li><Link className="inline-anchor" to={shop}>Shop</Link></li>
-        <li className="inline-anchor snipcart-checkout"><FontAwesomeIcon icon={["fas", "shopping-cart"]} /></li>
+        <li className="inline-anchor snipcart-checkout"><span><FontAwesomeIcon icon={["fas", "shopping-cart"]} /></span></li>
       </ul>
     )}
   />

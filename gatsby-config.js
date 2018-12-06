@@ -4,6 +4,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
   siteMetadata: {
+    siteUrl: "https://www.infinitywellnessnj.com",
     title: "Infinity Wellness",
     subTitle: "Everything. Connects. Together.",
     socialMediaLinks: {

@@ -7,8 +7,7 @@ const styles = {
     height: "3rem",
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-between",
-    marginTop: "3rem"
+    justifyContent: "space-between"
   },
   lines: {
     width: "calc(50% - 5rem)",
@@ -26,10 +25,12 @@ const PageDivider = ({ showLines=true, showLogo=true }) => {
   const lineElement = <div className={linesClass} style={styles.lines} />
 
   return (
-    <div style={styles.container}>
-      {lineElement}
-      {logoElement}
-      {lineElement}
+    <div className="section">
+      <div style={styles.container}>
+        {lineElement}
+        {logoElement}
+        {lineElement}
+      </div>
     </div>
   );
 };

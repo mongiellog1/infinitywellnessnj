@@ -3,18 +3,18 @@ import { Link } from "gatsby";
 import Layout from "../components/layout/index";
 import Divider from "../components/page_divider";
 import HeroSection from "../components/hero_section";
+import { Testimonial4, Testimonial9 } from "../components/testimonial";
 
 const PackagesPage = () => (
   <Layout>
     <HeroSection
       title="Packages"
       subtitle="The quickest way to transform your life is to commit to something beneficial and then see it through. By choosing one of these packages and committing to it, you are increasing your chances exponentially to realize life-changing breakthroughs and the results you desire."
-    >
-      <div className="background-cover-parent background--packages-hero" />
-    </HeroSection>
+      Background={<div className="background-cover-parent background--packages-hero" />}
+    />
     <div className="slanted-section-decorator slanted-section-decorator--packages"/>
     <div className="container container--max-width">
-      <div className="section overflow-hidden page-anchor__container">
+      <div className="section page-anchor__container">
         <div id="basic-package" className="page-anchor__anchor"/>
         <h2>Basic Series: Beginner Package</h2>
         <h3 className="green">Taste Freedom!</h3>
@@ -62,9 +62,10 @@ const PackagesPage = () => (
 
         <Link to="/services#basic-package"><button className="button">Book Now<span>Book Now</span></button></Link>
       </div>
-
-      <Divider showLogo={false} />
-      <div className="section overflow-hidden page-anchor__container">
+    </div>
+    <Testimonial4 />
+    <div className="container container--max-width">
+      <div className="section page-anchor__container">
         <div id="transformation-package" className="page-anchor__anchor"/>
         <h2>Transformation Package</h2>
         <h3 className="green">Release, Reset, Renew!</h3>
@@ -126,7 +127,7 @@ const PackagesPage = () => (
       </div>
 
       <Divider showLogo={false} />
-      <div className="section overflow-hidden page-anchor__container">
+      <div className="section page-anchor__container">
         <div id="inner-divine-mothering-package" className="page-anchor__anchor"/>
         <h2>Divine Inner Mothering Package: Loving Our Inner Child</h2>
         <h3 className="green">Shadow and Light Unite!</h3>
@@ -182,6 +183,7 @@ const PackagesPage = () => (
       </div>
       <Link to="/services#divine-inner-child-package"><button className="button">Book Now<span>Book Now</span></button></Link>
     </div>
+    <Testimonial9 />
   </Layout>
 );
 

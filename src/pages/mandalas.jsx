@@ -15,11 +15,11 @@ const MandalaPage = () => (
       cssHeroType="mandalas-page"
       title="Mandalas"
       subtitle="Unleash your inner creative."
-    >
-      <div className="background-cover-parent bg-darken">
+      Background={
+        <div className="background-cover-parent bg-darken">
           <MandalaBanner />
-      </div>
-    </HeroSection>
+      </div>}
+    />
     <div className="slanted-section-decorator slanted-section-decorator--packages"/>
 
     <div className="container container--max-width">
@@ -36,7 +36,7 @@ const MandalaPage = () => (
           our inner being.`
         ]}
       />
-      <div className="section overflow-hidden">
+      <div className="section">
         <div className="mandala-gallery">
           <MandalaImages>
             <MandalaGallery />

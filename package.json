@@ -26,6 +26,7 @@
     "node-sass": "^4.9.4",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
+    "react-headroom": "2.2.2",
     "react-helmet": "^5.2.0",
     "react-image-gallery": "^0.8.12",
     "react-load-script": "0.0.6",

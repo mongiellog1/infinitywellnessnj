@@ -37,6 +37,11 @@ const Layout = ({ children }) => (
           <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key={SNIPCART_API_KEY} />
           <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
           <html lang="en" />
+
+          {/* <meta property="og:url" content={siteUrl} />
+          <meta property="og:type" content="website" />
+          <meta property="og:locale" content="en" />
+          <meta property="og:site_name" content={title} /> */}
         </Helmet>
         <Header />
         <div className="app-background" />
