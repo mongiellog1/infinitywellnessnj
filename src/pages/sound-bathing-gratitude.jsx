@@ -6,7 +6,7 @@ import HeroSection from "../components/hero_section";
 import Section from "../components/section";
 import ContactGinaCta from "../components/contact_gina_cta";
 import "./healing-tools.css";
-import { Quote1, Quote2 } from "../components/testimonial";
+import { Quote1, Quote2, Testimonial10 } from "../components/testimonial";
 
 const SoundHealing = ({ data }) => (
   <Layout>
@@ -20,7 +20,7 @@ const SoundHealing = ({ data }) => (
     <div className="slanted-section-decorator slanted-section-decorator--sound-bathing-gratitude"/>
     <div className="container container--max-width">
       <Section
-        title="The Sound of Angels."
+        title="The Sound of Angels"
         classes="big-lines"
         subsections={[
           `My sound healing training has come from Dr. John Beaulieu, a brilliant musician, sound healer, and naturopath. In 1974 while working at Bellevue Psychiatric Hospital in New York City, Dr. Beaulieu discovered that tuning forks could be used to tune the human nervous system. He began sounding them for his patients at Bellevue, and because they had such profound effects, Dr. Beaulieu began running scientific experiments on the tuning forks and their effects. After many decades of experience, success, and science, he teaches sound healing around the world and has composed music based on tuning forks as well as written books about human tuning.`,
@@ -52,6 +52,7 @@ const SoundHealing = ({ data }) => (
       <ContactGinaCta />
     </div>
     <Quote2 />
+    <Testimonial10 />
   </Layout>
 );
 
@@ -61,7 +62,7 @@ export const pageQuery = graphql`
   query {
     cover: file(relativePath: { eq: "gina/076.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
+        fluid {
           ...GatsbyImageSharpFluid
         }
       }

@@ -22,7 +22,7 @@ export default ({ data }) => (
     <div className="slanted-section-decorator slanted-section-decorator--mfr"/>
     <div className="container container--max-width">
       <Section
-        title="Unwind into a new space."
+        title="Unwind into a new space"
         subsections={[
           "Myofascial Release was developed and is taught by John Barnes, PT, and has been used to heal for decades by thousands of trained practitioners from across the world. John Barnes had a traditional physical therapy practice for years before creating the myofascial release theories and practices, due to his own crippling back pain that was in need of healing. He brought this healing modality to the world after he used it successfully on himself and his patients. He is still actively teaching and practicing myofascial release countrywide, now in his mid seventies.",
           "Myofascial Release works on the premise that the body has an interconnected web of fascia that runs throughout. It circles every muscle, bone, nerve, blood vessel, and cell. When healthy and unrestricted, we move freely and energy and information flows through us freely. When this web is restricted in any one spot, it can cause tremendous pain and dysfunction as well as pull on other areas of the web. One restriction or ‘tangle’ affects the entire web and the body systems that are woven throughout. ",
@@ -33,7 +33,7 @@ export default ({ data }) => (
       <Divider showLogo={false} />
 
       <article className="section purple2">
-        <h1 className="purple shadow">Incredibly Versatile</h1>
+        <h2 className="purple shadow">Incredibly Versatile</h2>
         <p>While Myofascial Release can indeed address this level of pain and dysfunction in the body, it has many other extraordinary benefits for humans. It helps with emotions, trapped feelings, past traumas, relationship patterns, and can provide insights and a deepening of awareness which leads to greater and greater levels of choice in life. </p>
         <p style={{ marginBottom: "1rem" }}>MFR has been known to help many who suffer with:</p>
         <div className="mfr-symptoms purple0">
@@ -85,7 +85,7 @@ export const pageQuery = graphql`
   query {
     cover: file(relativePath: { eq: "gina/075.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
+        fluid {
           ...GatsbyImageSharpFluid
         }
       }

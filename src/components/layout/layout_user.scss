@@ -115,19 +115,24 @@ img {
   margin: 0;
 }
 
-blockquote {
+blockquote, .quote {
   font-family: "Alegreya";
-  position: relative;
-  width: 100%;
   font-weight: 300;
   font-size: 20px;
-  min-height: 47px;
-  max-width: 1000px;
-  margin: 0.5rem auto;
   padding: 2rem;
-  color: white;
-  text-indent: 2.5rem;
+  p:first-child {
+    text-indent: 2.5rem;
+  }
   line-height: 22px;
+}
+
+blockquote {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 47px;
+  color: white;
+  margin: 0.5rem auto;
   &:before {
     content: "";
     background: url("../../images/quote.png") top left no-repeat;
@@ -333,6 +338,7 @@ li {
 .white { color: white;}
 .bg--white { background-color: white;}
 .bg--purple { background-color: var(--purple);}
+.bg--purple1 { background-color: var(--purple1);}
 .bg--green { background-color: var(--green);}
 .bg--green1 { background-color: var(--green1);}
 .bg--light-green { background-color: var(--light-green);}
@@ -515,9 +521,10 @@ li {
   flex-wrap: wrap;
 }
 
-.footer {
+#footer {
   position: relative;
   padding: 1em;
+  padding-bottom: 2rem;
   background-color: var(--gray-bg);
   z-index: 0;
   background: linear-gradient(#dbdbff, rgba(27, 127, 37, 0.68));
@@ -545,6 +552,7 @@ li {
 
 .hero-content__panel {
   display: inline-block;
+  border-radius: 10px;
   padding: 1.5rem;
   max-width: 500px;
   background-color: rgba(47,25,52, 0.6);

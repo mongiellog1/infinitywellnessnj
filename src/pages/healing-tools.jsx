@@ -70,7 +70,7 @@ const HealingTools = ({ data }) => (
             Below is an outline of the tools that I use, and the packages I offer
             to give you the best balance of depth, insight, and clarity into your life.
           </p>
-          <Button text="Work with Gina" onClick={() => scrollToElement("#contact", { duration: "750" })} />
+          <Button text="Work with Gina" onClick={() => scrollToElement("#footer", { duration: "750" })} />
         </article>
       </div>
       <Testimonial0 />
@@ -165,7 +165,7 @@ const HealingTools = ({ data }) => (
             atmospheres, to giving employees a reason to enjoy work.
           </p>
           <p>
-            <span className="inline-anchor" onClick={() => scrollToElement("#contact", { duration: "750" })}>Connect with me</span> to customize your program.
+            <span className="inline-anchor" onClick={() => scrollToElement("#footer", { duration: "750" })}>Connect with me</span> to customize your program.
           </p>
         </article>
       </div>

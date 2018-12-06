@@ -5,7 +5,7 @@ import SiteLogo from "./site_logo";
 import Form from "./footer_form";
 
 const Footer = () => (
-  <div id="contact" className="footer">
+  <div  id="footer">
     <div className="container--max-width">
       <div className="footer-grid">
         <div className="grid__element grid-one">
@@ -34,25 +34,14 @@ const Footer = () => (
 
         <Form />
       </div>
-      <div>
-        <ul className="purple" style={{ marginBottom: "0.25rem", display: "flex", justifyContent: "space-around" }}>
-          <li>
-            <Link to="about">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="healing-tools">
-              Healing Tools
-            </Link>
-          </li>
-          <li>
-            <Link to="packages">
-              Packages
-            </Link>
-          </li>
-        </ul>
-      </div>
+      <ul className="white" style={{ marginBottom: "0.25rem", display: "flex", justifyContent: "space-around" }}>
+        <li>
+          Copyright {new Date().getFullYear()} Gina Mongiello
+        </li>
+        <li>
+          <a style={{ color: "white", textDecoration: "none"}} href="https://www.instagram.com/photographybyasiya/">@photographybyasiya</a>
+        </li>
+      </ul>
     </div>
   </div>
 );

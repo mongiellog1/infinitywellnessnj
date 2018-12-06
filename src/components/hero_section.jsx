@@ -2,8 +2,8 @@ import React from "react";
 
 const HeroContent = ({ titleClass, title, subtitle, paragraphs, children }) => (
   <>
+  <div className={subtitle || paragraphs[0] || children ? "hero-content__panel" : ""}>
     <h1 className="hero-content__title white">{title}</h1>
-    <div className={subtitle || paragraphs[0] || children ? "hero-content__panel" : ""}>
       <p className="hero-content__subtitle">{subtitle}</p>
       {paragraphs.map((paragraph, i) => (
         <p key={`hero-content__paragraph-${i}`}>{paragraph}</p>)

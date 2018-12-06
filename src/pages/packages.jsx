@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import Layout from "../components/layout/index";
 import Divider from "../components/page_divider";
 import HeroSection from "../components/hero_section";
-import { Testimonial8, Testimonial9 } from "../components/testimonial";
+import { Testimonial4, Testimonial9 } from "../components/testimonial";
 
 const PackagesPage = () => (
   <Layout>
@@ -63,7 +63,7 @@ const PackagesPage = () => (
         <Link to="/services#basic-package"><button className="button">Book Now<span>Book Now</span></button></Link>
       </div>
     </div>
-    <Testimonial8 />
+    <Testimonial4 />
     <div className="container container--max-width">
       <div className="section page-anchor__container">
         <div id="transformation-package" className="page-anchor__anchor"/>

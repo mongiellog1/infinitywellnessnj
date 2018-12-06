@@ -41,7 +41,7 @@ class MobileMenu extends Component {
   }
 
   smoothScroll = () => {
-    scrollToElement("#contact", { duration: 750 });
+    scrollToElement("#footer", { duration: 750 });
   }
 
   render() {

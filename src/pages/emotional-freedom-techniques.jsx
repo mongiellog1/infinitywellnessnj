@@ -6,7 +6,7 @@ import HeroSection from "../components/hero_section";
 import Section from "../components/section";
 import ContactGinaCta from "../components/contact_gina_cta";
 import Divider from "../components/page_divider";
-import { Testimonial6 } from "../components/testimonial";
+import { Testimonial7, Testimonial8 } from "../components/testimonial";
 
 export default ({ data }) => (
   <Layout>
@@ -32,7 +32,7 @@ export default ({ data }) => (
       <Divider />
 
       <article className="section purple2">
-        <h1 className="purple shadow">Open Your Energy Highways</h1>
+        <h2 className="purple shadow">Open Your Energy Highways</h2>
         <p style={{ marginBottom: "1rem" }}>EFT has helped many people with various problems, including:</p>
         <div className="mfr-symptoms purple0">
           <ul className="mfr-symptoms__list">
@@ -70,8 +70,9 @@ export default ({ data }) => (
           Most individuals experience stress in one or more areas of their life. Relationships, work, health, spirituality, and finances are common life situations that contribute to stress. Regardless of the cause, stress has serious effects on the body and reducing it can lead to a healthier happier experience of life. When applying EFT to a stress that is triggered by a certain situation, it works to reduce or eliminate the stress around the situation. When we think about or physically return to an event or situation that caused us stress in the past without the accompanied stress, not only do we have a neutral feeling toward it, but the situation itself often changes.
         </p>
       </article>
-
-      <Divider />
+    </div>
+    <Testimonial7 />
+    <div className="container container--max-width">
       <Section
         title="Peer Reviewed Studies"
         subsections={[
@@ -101,7 +102,7 @@ export default ({ data }) => (
 
       <ContactGinaCta />
     </div>
-    <Testimonial6 />
+    <Testimonial8 />
   </Layout>
 );
 
@@ -109,7 +110,7 @@ export const pageQuery = graphql`
   query {
     cover: file(relativePath: { eq: "gina/078.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
+        fluid {
           ...GatsbyImageSharpFluid
         }
       }
