@@ -34,7 +34,7 @@ const AboutPage = ({ data }) => (
               its presence and integrate its gifts.
             </p>
             <p>
-              We all have a deep center within, this is Wellness.
+              We all have a deep center within; this is Wellness.
             </p>
             <p>
               In Love,
