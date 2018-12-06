@@ -6,7 +6,6 @@ import ContactGinaCta from "../components/contact_gina_cta";
 import HeroSection from "../components/hero_section";
 import Section from "../components/section";
 import Divider from "../components/page_divider";
-import { Testimonial7 } from "../components/testimonial";
 
 import "./healing-tools.css";
 
@@ -87,7 +86,6 @@ const YogaMeditation = ({ data }) => (
       />
       <ContactGinaCta />
     </div>
-    <Testimonial7 />
   </Layout>
 );
 

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import Layout from "../components/layout/index";
 import PageDivider from "../components/page_divider";
-import { Testimonial1, Testimonial2 } from "../components/testimonial";
+import { Testimonial1 } from "../components/testimonial";
 import HeroSection from "../components/hero_section";
 
 const PayPage = () => (
@@ -32,7 +32,6 @@ const PayPage = () => (
         </form>
       </div>
     </div>
-    <Testimonial2 />
     <div className="container container--max-width">
       <div className="page-anchor__container">
         <div id="basic-package" className="page-anchor__anchor"/>
