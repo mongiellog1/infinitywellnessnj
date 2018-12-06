@@ -28,27 +28,16 @@ const AboutPage = ({ data }) => (
           </div>
           <div>
             <p>
-              Welcome! I am so glad you landed here and are interested in my services.
-              It is my greatest pleasure to serve and guide you through your most
-              challenging times.  Having been through years of my own struggle and
-              pain, having gone up and down through many cycles, seeking answers,
-              and wanting desperately to feel whole and complete, I know just how
-              challenging it can be.
+              My life is devoted to helping us all live in a place of Infinite
+              Wellness. Whatever the current situation, we can address it
+              together. No challenge is too big or small. Together we decode
+              its presence and integrate its gifts.
             </p>
             <p>
-              Having been introduced to lots of systems and methods in the
-              alternative world I have gathered some incredibly life changing
-              and monumental practices to share with you. The modalities and
-              tools that I work with are true gems that have the ability to
-              open up a doorway to <strong>live a life on purpose.</strong> This way we have a
-              creative hand in our life rather than just passing through as a
-              by-stander. I sincerely offer my services to those who feel unwell
-              and to those who truly seek out answers from a deep place within themselves.
-              It is my honor to be here now and to create a space of infinite wellness
-              for me, you, and the world.
+              We all have a deep center within, this is Wellness.
             </p>
             <p>
-              Be. Feel. Love,
+              In Love,
             </p>
             <p>
               Gina <FontAwesomeIcon icon={["fas", "heart"]} style={{ color: "red"}} />
