@@ -54,7 +54,7 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
-    "gatsby-plugin-offline",
+    // "gatsby-plugin-offline",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
   ],

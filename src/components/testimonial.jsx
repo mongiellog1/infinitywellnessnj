@@ -14,7 +14,6 @@ const TestimonialFactory = ({ quote, author }, bgColor = "bg--green-fade") => ()
 const QuoteFactory = ({ quote, author }) => () => (
   <div className="quote" style={{
     textAlign: "center",
-    color: "white",
     color: "var(--purple)",
     padding: "0 0 2rem",
     fontSize: "18px"
