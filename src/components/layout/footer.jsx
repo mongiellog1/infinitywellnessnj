@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import { FacebookButtonRound, InstagramButtonRound, YoutubeButtonRound } from "./social_buttons";
 import SiteLogo from "./site_logo";
 import Form from "./footer_form";
