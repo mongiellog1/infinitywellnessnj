@@ -77,10 +77,10 @@ export default ({ data }) => (
       <Section
         title="Group EFT Classes"
         subsections={[
-          "Group EFT classes are fun, beneficial, and uplifting. We tap on collective group issues, or interweave individual challenges to be useful for everyone present. The class is tailored to the group’s goal.",
-          "I have led EFT classes for many different populations including fibromyalgia, addiction recovery, yoga participants, intimate gatherings, high school enrichment programs, administrators and board members, and more.",
-          "Some examples of themed intention classes are to increase cooperation, decrease animosity, relax more, increase efficiency, team build, reach a certain goal, break through limitations. We craft the theme together. ",
-          "Another options is to have no specific goal in my mind, but to come together to tap into greater states of insights, relaxation, and stress release. ",
+          "Group EFT classes are fun, beneficial, and uplifting. We tap on collective group issues, or interweave individual challenges to be useful for everyone present. We create the class according to the group’s goal.",
+          "I have led EFT classes for many different populations including fibromyalgia, addiction recovery, yoga participants, intimate gatherings, high school enrichment programs, administrators, board members, and more.",
+          "Some examples of themed intention classes are to increase cooperation, decrease animosity, relax more, increase efficiency, team build, clear obstacles around a certain goal, and soar beyond our current limitations. ",
+          "Another option is to have no specific goal, but instead come together to tap into greater states of insights, relaxation, and stress release.",
           <Button
             text="Buy Group EFT Class"
             onClick={() => navigate("/services#group-eft")}
