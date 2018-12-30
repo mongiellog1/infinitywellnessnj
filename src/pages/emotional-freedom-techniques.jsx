@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, navigate } from "gatsby";
 import Img from "gatsby-image";
 import Layout from "../components/layout/index";
 import HeroSection from "../components/hero_section";
@@ -7,6 +7,7 @@ import Section from "../components/section";
 import ContactGinaCta from "../components/contact_gina_cta";
 import Divider from "../components/page_divider";
 import { Testimonial7, Testimonial8 } from "../components/testimonial";
+import Button from "../components/button";
 
 export default ({ data }) => (
   <Layout>
@@ -70,6 +71,22 @@ export default ({ data }) => (
           Most individuals experience stress in one or more areas of their life. Relationships, work, health, spirituality, and finances are common life situations that contribute to stress. Regardless of the cause, stress has serious effects on the body and reducing it can lead to a healthier happier experience of life. When applying EFT to a stress that is triggered by a certain situation, it works to reduce or eliminate the stress around the situation. When we think about or physically return to an event or situation that caused us stress in the past without the accompanied stress, not only do we have a neutral feeling toward it, but the situation itself often changes.
         </p>
       </article>
+      <div className="page-anchor__container">
+        <div id="group-eft" className="page-anchor__anchor"/>
+      </div>
+      <Section
+        title="Group EFT Classes"
+        subsections={[
+          "Group EFT classes are fun, beneficial, and uplifting. We tap on collective group issues, or interweave individual challenges to be useful for everyone present. We create the class according to the group’s goal.",
+          "I have led EFT classes for many different populations including fibromyalgia, addiction recovery, yoga participants, intimate gatherings, high school enrichment programs, administrators, board members, and more.",
+          "Some examples of themed intention classes are to increase cooperation, decrease animosity, relax more, increase efficiency, team build, clear obstacles around a certain goal, and soar beyond our current limitations. ",
+          "Another option is to have no specific goal, but instead come together to tap into greater states of insights, relaxation, and stress release.",
+          <Button
+            text="Buy Group EFT Class"
+            onClick={() => navigate("/services#group-eft")}
+          />
+        ]}
+      />
     </div>
     <Testimonial7 />
     <div className="container container--max-width">
@@ -92,13 +109,6 @@ export default ({ data }) => (
           <li><a className="inline-anchor" href="http://www.eftuniverse.com/">Good Information and Current Research in the Field</a></li>
         </ul>
       </div>
-      {/* <Section
-        title="Peer Reviewed Studies"
-        subsections={[
-          "Whether we like it or not, our past is a part of us that exists AND it has a huge impact on everything we do in life until it is seen, felt, and released.",
-          `Everyone comes into this human existence whole. Somehow or other, the dust builds up along the way and starts obscuring the path that once was so clear in front of us. We start to feel unwhole. Confrontations come up, relationships break down, we lose sight of what is important to us while climbing towards our perceived goals. In short, we lose sight of our wholeness. EFT is a quick, open doorway back into our wholeness. With this simple technique we can put down the layers of confusion for long enough to see things for what they really are and get back to our wholeness and back to who we really are. `
-        ]}
-      /> */}
 
       <ContactGinaCta />
     </div>
