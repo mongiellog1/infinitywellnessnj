@@ -1,7 +1,9 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import fetch from "node-fetch";
+import FooterForm from "./footer_form_view";
 
+const GINAS_MAIL_SERVER = "https://ginas-form-server.herokuapp.com/api/emailForm";
 const initState = {
   firstName: "",
   lastName: "",
@@ -18,10 +20,28 @@ class Form extends React.Component {
     });
   }
 
-  onSubmit = (e, api) => {
+  onSubmit = (api) => (e) => {
     e.preventDefault();
     e.stopPropagation();
 
+    this.setSending();
+
+    fetch(GINAS_MAIL_SERVER, {
+      method: "POST",
+      body: JSON.stringify(this.formatPostRequest()),
+      headers: { 'Content-Type': 'application/json' }
+    })
+      .then(res => {
+        if (res.status !== 200) {
+          throw Error(res.statusText);
+        }
+
+        this.setSuccess();
+      })
+      .catch(this.setError)
+  }
+
+  formatPostRequest = () => {
     const { firstName, lastName, email, message } = this.state;
     const fullName = `${firstName} ${lastName}`;
     const body = `Name:
@@ -33,30 +53,30 @@ class Form extends React.Component {
     Message
     ${message}`;
 
-    fetch("https://ginas-form-server.herokuapp.com/api/emailForm", {
-      method: "POST",
-      body: JSON.stringify({
-        body,
-        subject: `${fullName} sent you a message from your website, InfinityWellnessNJ!`
-      }),
-      headers: { 'Content-Type': 'application/json' }
-    })
-      .then(res => {
-        if (res.status !== 200) {
-          throw Error(res.statusText);
-        }
-        this.setState({
-          ...initState,
-          isErrors: false,
-          fetchMessage: "Success! Gina will be in touch within 24 hours. "
-        });
-      })
-      .catch((error) => {
-        this.setState({
-          isErrors: true,
-          fetchMessage: "There was an error in sending your email.  Please check your info & try again."
-        });
-      })
+    const subject = `${fullName} sent you a message from your website, InfinityWellnessNJ!`;
+
+    return { body, subject };
+  }
+
+  setSending = () => {
+    this.setState({ isSending: true });
+  }
+
+  setSuccess = () => {
+    this.setState({
+      ...initState,
+      isErrors: false,
+      isSending: false,
+      fetchMessage: "Success! Gina will be in touch within 24 hours. ",
+    });
+  }
+
+  setError = () => {
+    this.setState({
+      isErrors: true,
+      isSending: false,
+      fetchMessage: "There was an error in sending your email.  Please check your info & try again."
+    });
   }
 
   closeMessage = () => {
@@ -64,8 +84,16 @@ class Form extends React.Component {
   }
 
   render = () => {
-    const { firstName, lastName, email, message, isErrors, fetchMessage } = this.state;
-    const { onSubmit, closeMessage } = this;
+    const {
+      firstName,
+      lastName,
+      email,
+      message,
+      fetchMessage,
+      isErrors,
+      isSending,
+    } = this.state;
+    const { onSubmit, closeMessage, updateField } = this;
     const messageFlag = (isErrors)
       ? "form-message--error"
       : (fetchMessage)
@@ -84,59 +112,18 @@ class Form extends React.Component {
           }
         `}
         render={({ site }) => (
-          <div className="form-container">
-            <div className={`form-message ${messageFlag}` }>
-              <p>{fetchMessage}</p>
-              <div onClick={closeMessage} className="form-message__close">X</div>
-            </div>
-
-            <form onSubmit={(e) => onSubmit(e, site.siteMetadata.contactFormUrl)} className="footer-form">
-              <label>First Name</label>
-              <input
-                id="firstName"
-                name="firstName"
-                value={firstName}
-                onChange={this.updateField}
-                placeholder="First Name*"
-                maxLength="255"
-                type="text"
-              />
-
-              <label>Last Name</label>
-              <input
-                id="lastName"
-                name="lastName"
-                value={lastName}
-                onChange={this.updateField}
-                placeholder="Last Name*"
-                maxLength="255"
-                type="text"
-              />
-
-              <label>Email</label>
-              <input
-                id="email"
-                name="email"
-                value={email}
-                onChange={this.updateField}
-                placeholder="Email*"
-                type="email"
-              />
-
-              <label>How Can I Help?</label>
-              <textarea
-                id="how_can_i_help"
-                name="message"
-                value={message}
-                onChange={this.updateField}
-                type="textarea"
-                placeholder="How Can I Help?"
-                rows="5"
-              />
-
-              <button className="button form__submit" type="submit" value="Send Message to Gina">Connect With Gina<span>Connect With Gina</span></button>
-            </form>
-          </div>
+          <FooterForm
+            onSubmit={onSubmit(site.siteMetadata.contactFormUrl)}
+            fetchMessage={fetchMessage}
+            messageFlag={messageFlag}
+            updateField={updateField}
+            firstName={firstName}
+            lastName={lastName}
+            message={message}
+            email={email}
+            isSending={isSending}
+            closeMessage={closeMessage}
+          />
         )}
       />
     );

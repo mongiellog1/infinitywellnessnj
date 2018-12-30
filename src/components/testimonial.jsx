@@ -5,7 +5,7 @@ import quotes from "../data/quotes.yml";
 const TestimonialFactory = ({ quote, author }, bgColor = "bg--green-fade") => () => (
   <div className={`blockquote-wrapper box-shadow ${bgColor}`}>
     <blockquote>
-      {quote.split("\n").map((par) => (<p>{par}</p>))}
+      {quote.split("\n").map((par, i) => (<p key={`p-${i}`}>{par}</p>))}
       {author && <p style={{ fontStyle: "italic", marginTop: "0.5rem", textIndent: "1rem" }}>~ {author}</p>}
     </blockquote>
   </div>
