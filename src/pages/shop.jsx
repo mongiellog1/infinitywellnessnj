@@ -27,7 +27,7 @@ const BuyMandalas = ({ data: { image, site: { siteMetadata: { SHOP_ADDRESS } } }
     <div className="container container--max-width">
       <MandalaImages>
         <Products
-          products={products.sort((a, b) => console.log("a: ", a) || (
+          products={products.sort((a, b) => (
             a.title > b.title ? 1 : -1
           ))}
           SHOP_ADDRESS={SHOP_ADDRESS}

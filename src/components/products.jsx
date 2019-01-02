@@ -40,12 +40,12 @@ class ProductCard extends React.Component {
   }
 
   render() {
-    const { id, name, category, price, description, mandala, SHOP_ADDRESS} = this.props;
+    const { id, name, title, category, price, description, mandala, SHOP_ADDRESS} = this.props;
     const { quantity } = this.state;
 
     return (
       <div className="product-card">
-        <h2 style={{ margin: "1rem 0 0.5rem 0" }}>{titleize(name)}</h2>
+        <h2 style={{ margin: "1rem 0 0.5rem 0" }}>{title}</h2>
         <Img fluid={mandala.childImageSharp.fluid} />
         <div className="product-card__footer">
             <NumberInput
@@ -58,7 +58,7 @@ class ProductCard extends React.Component {
             key={id}
             className="snipcart-add-item button"
             data-item-id={id}
-            data-item-name={titleize(name)}
+            data-item-name={title}
             data-item-price={price}
             data-item-url={SHOP_ADDRESS}
             data-item-categories={category}

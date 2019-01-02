@@ -40,8 +40,8 @@ const products = [];
 // Use category for different types of items
 // i.e. cards = 0001, books = 0002, etc.
 const makeId = (baseId, id) => (`${fourDigitId(baseId)}${fourDigitId(id)}`)
-const getName = (title) => (
-  title
+const getName = (rawTitle) => (
+  rawTitle
     .replace(
       /(?=\S*['-])([a-zA-Z'-]+)|([a-zA-Z]*)/g,
       (word) => word.toLowerCase().replace(/[-_']*/g, "")
@@ -61,6 +61,6 @@ mandalas.forEach((mandala, idx) => products.push({
     category: mandalaCategory,
     description: mandalaDescription,
   }
-))
+));
 
 export default products;
