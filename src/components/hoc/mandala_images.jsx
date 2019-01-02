@@ -11,7 +11,7 @@ const MandalaImages = (props) => (
         divine_order: file(relativePath: { eq: "mandalas/Divine_Order.jpg" }) {
           ...fluidImage
         }
-        gratitude: file(relativePath: { eq: "mandalas/Gratitude.jpg" }) {
+        gratitude: file(relativePath: { eq: "mandalas/Gratitude.jpeg" }) {
           ...fluidImage
         }
         grief_to_gold: file(relativePath: { eq: "mandalas/Grief_to_Gold.jpg" }) {
@@ -23,10 +23,10 @@ const MandalaImages = (props) => (
         inner_calling: file(relativePath: { eq: "mandalas/Inner_Calling.jpg" }) {
           ...fluidImage
         }
-        lavallette: file(relativePath: { eq: "mandalas/Lavallette.jpg" }) {
+        lavallette: file(relativePath: { eq: "mandalas/Lavallette.jpeg" }) {
           ...fluidImage
         }
-        love: file(relativePath: { eq: "mandalas/Love.jpg" }) {
+        love: file(relativePath: { eq: "mandalas/Love.jpeg" }) {
           ...fluidImage
         }
         soul_dance: file(relativePath: { eq: "mandalas/Soul_Dance.jpg" }) {
