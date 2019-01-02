@@ -40,29 +40,30 @@ class ProductCard extends React.Component {
   }
 
   render() {
-    const { id, name, category, price, description, mandalaImages, SHOP_ADDRESS} = this.props;
+    const { id, name, title, category, price, description, mandala, SHOP_ADDRESS} = this.props;
+    const { quantity } = this.state;
 
     return (
       <div className="product-card">
-        <h2 style={{ margin: "1rem 0 0.5rem 0" }}>{titleize(name)}</h2>
-        <Img fluid={mandalaImages[name].childImageSharp.fluid} />
+        <h2 style={{ margin: "1rem 0 0.5rem 0" }}>{title}</h2>
+        <Img fluid={mandala.childImageSharp.fluid} />
         <div className="product-card__footer">
             <NumberInput
               increment={this.increment}
               decrement={this.decrement}
               onChange={this.onChange}
-              quantity={this.state.quantity}
+              quantity={quantity}
             />
           <button
             key={id}
             className="snipcart-add-item button"
             data-item-id={id}
-            data-item-name={titleize(name)}
+            data-item-name={title}
             data-item-price={price}
             data-item-url={SHOP_ADDRESS}
             data-item-categories={category}
             data-item-description={description}
-            data-item-quantity={this.state.quantity}
+            data-item-quantity={quantity}
           >
             Add To Cart
             <span>Add To Cart</span>
@@ -76,9 +77,18 @@ class ProductCard extends React.Component {
 
 const Products = ({ products, SHOP_ADDRESS, mandalaImages }) => (
   <div className="container container--pad-top">
-    <h1 style={{ marginBottom: "1rem"}}>Shop</h1>
-    <p className="light-green" style={{ marginBottom: "2rem"}}><i>A minimum purchase of $20 is required.</i></p>
-    <h2>Mandala Cards</h2>
+    <h1 style={{ marginBottom: "1rem"}}>Mandala Cards</h1>
+    <p className="light-green" style={{ marginBottom: "2.5rem" }}>All the mandala images are created by hand.</p>
+    <p className="light-green" style={{
+      marginBottom: "2rem",
+      textDecoration: "underline",
+      fontSize: "1.1em",
+      textAlign: "center"
+    }}>
+      <b>
+        A minimum purchase of $20 is required. All packages have a $5 shipping and handling fee.
+      </b>
+  </p>
     <div className="shop-products">
       {
         products.map((product, idx) => (
@@ -86,11 +96,13 @@ const Products = ({ products, SHOP_ADDRESS, mandalaImages }) => (
             key={idx}
             {...product}
             SHOP_ADDRESS={SHOP_ADDRESS}
-            mandalaImages={mandalaImages}
+            mandala={mandalaImages[product.name]}
           />
         ))
       }
     </div>
+    <p className="light-green" style={{marginTop: "2rem" }}>All mandala cards are 4 ½ by 6 inches when folded, or 9 x 6 inches when open. Mandala art is on the front side of the card, and the mandala title and a message is on the back of the card. The insides are left blank for you to write in, as you like. </p>
+    <p className="light-green">All cards are printed on 30% recycled paper, envelopes are 30% recycled. Mail order packaging is made from recycled material as well. </p>
   </div>
 );
 
