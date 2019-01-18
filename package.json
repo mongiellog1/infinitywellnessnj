@@ -30,6 +30,7 @@
     "react-helmet": "^5.2.0",
     "react-image-gallery": "^0.8.12",
     "react-load-script": "0.0.6",
+    "react-modal": "^3.8.1",
     "scroll-to-element": "^2.0.2",
     "typeface-alegreya": "0.0.54"
   },

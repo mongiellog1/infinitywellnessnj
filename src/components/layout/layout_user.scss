@@ -709,6 +709,10 @@ ul > li:nth-child(n + 2) > .button {
   align-items: center;
 }
 
+.signup-modal {
+  display: inline-block;
+}
+
 @media screen and (min-width: 480px) {
   html {
     font-size: 15px;
