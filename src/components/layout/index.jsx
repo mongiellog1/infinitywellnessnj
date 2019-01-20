@@ -33,13 +33,6 @@ const Layout = ({ children }) => (
             { name: 'keywords', content: 'Health, Wellness, Emotional Freedom Techniques, EFT, MFR, Myofascial Release, Mandalas' },
           ]}
         >
-          {/* Mail Chimp signup modal */}
-          <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false" />
-          <script type="text/javascript">{`
-              setTimeout(function () {
-                window.dojoRequire && window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"f433ad20a7bc026c33b8ca614","lid":"55c671849b","uniqueMethods":true}) })
-              }, 1000)
-            `}</script>
           {/* Snip Cart */}
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js" />
           <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key={SNIPCART_API_KEY} />

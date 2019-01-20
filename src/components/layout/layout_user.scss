@@ -282,7 +282,7 @@ li {
 }
 .container--hero {
   box-sizing: border-box;
-  padding-top: 10rem;
+  padding-top: 4rem;
   position:relative;
   height: calc(100vh - 88px);
 }
@@ -500,7 +500,7 @@ li {
 
 .site-logo {
   height: 3.5rem;
-  margin: 1rem 0;
+  margin: 1rem;
   img {
     height: 100%;
   }
@@ -720,6 +720,9 @@ ul > li:nth-child(n + 2) > .button {
 }
 
 @media screen and (min-width: 667px) {
+  .container--hero {
+    padding-top: 6rem;
+  }
   .header__inner_container {
     padding: 0 3rem;
   }
@@ -730,7 +733,10 @@ ul > li:nth-child(n + 2) > .button {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
+  .container--hero {
+    padding-top: 10rem;
+  }
   .shop-products {
     justify-content: space-between;
   }

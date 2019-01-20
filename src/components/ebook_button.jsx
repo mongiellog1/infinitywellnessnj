@@ -29,7 +29,7 @@ class SignupModal extends React.Component {
       <Button
         text="Join Mailing List and Receive Free Ebook on Soul Direction"
         onClick={this.openModal}
-        className="bg-purple"
+        className="bg--purple"
       />
       <ReactModal
         isOpen={this.state.open}
@@ -70,7 +70,7 @@ class SignupModal extends React.Component {
               </div>
               <div class="mc-field-group">
               	<label for="mce-LNAME">Last Name </label>
-              	<input type="text" name="LNAME" class="" id="mce-LNAME" />
+              	<input type="text" name="LNAME" id="mce-LNAME" />
               </div>
               <div id="mce-responses" className="clear">
                 <div className="response" id="mce-error-response" style={{ display: "none"}}></div>

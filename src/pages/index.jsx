@@ -7,7 +7,7 @@ import Img from "gatsby-image";
 import { Testimonial2 } from "../components/testimonial";
 import ContactGinaCta from "../components/contact_gina_cta";
 import Button from "../components/button";
-import EbookButton from "../components/signup_modal";
+import EbookButton from "../components/ebook_button";
 
 import "./index.css";
 
