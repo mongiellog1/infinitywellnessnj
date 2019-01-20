@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, graphql, navigate } from "gatsby"
-
 import Layout from "../components/layout/index"
 import Divider from "../components/page_divider";
 import HeroSection from "../components/hero_section";
@@ -8,6 +7,7 @@ import Img from "gatsby-image";
 import { Testimonial2 } from "../components/testimonial";
 import ContactGinaCta from "../components/contact_gina_cta";
 import Button from "../components/button";
+import EbookButton from "../components/ebook_button";
 
 import "./index.css";
 
@@ -37,6 +37,9 @@ const IndexPage = ({ data }) => (
             text="Shop Mandalas"
             onClick={() => navigate("/shop")}
           />
+        </li>
+        <li>
+          <EbookButton />
         </li>
       </ul>
     </HeroSection>

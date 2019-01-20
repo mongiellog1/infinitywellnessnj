@@ -42,7 +42,7 @@ const DesktopMenu = () => (
       transformationPackage,
       innerDivineMotheringPackage,
     } } } }) => (
-      <ul className="desktop-menu mobile-hidden">
+      <ul className="menu desktop-menu mobile-hidden">
         <li><Link className="inline-anchor" to="/">Home</Link></li>
         <li>
           <Link className="inline-anchor" to={healingTools}>Healing Tools</Link>

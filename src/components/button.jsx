@@ -1,7 +1,9 @@
 import React from "react";
 
-const Button = ({ text, onClick }) => (
-  <button className="button" onClick={onClick}>
+const noop = function() {};
+
+const Button = ({ text, onClick = noop, className = "" }) => (
+  <button className={`button ${ className}`} onClick={onClick}>
     {text}
     <span>{text}</span>
   </button>
