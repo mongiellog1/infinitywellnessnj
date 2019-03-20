@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import Layout from "../components/layout/index";
 import Divider from "../components/page_divider";
 import HeroSection from "../components/hero_section";
-import { Testimonial4, Testimonial9 } from "../components/testimonial";
+import { Testimonial4, Testimonial9, Testimonial11 } from "../components/testimonial";
 
 const PackagesPage = () => (
   <Layout>
@@ -125,8 +125,9 @@ const PackagesPage = () => (
         </p>
         <Link to="/services#transformation-package"><button className="button">Book Now<span>Book Now</span></button></Link>
       </div>
-
-      <Divider showLogo={false} />
+    </div>
+    <Testimonial11 />
+    <div className="container container--max-width">
       <div className="section page-anchor__container">
         <div id="inner-divine-mothering-package" className="page-anchor__anchor"/>
         <h2>Divine Inner Mothering Package: Loving Our Inner Child</h2>

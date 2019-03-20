@@ -34,6 +34,7 @@ export const Testimonial7 = TestimonialFactory(testimonials[7]);
 export const Testimonial8 = TestimonialFactory(testimonials[8]);
 export const Testimonial9 = TestimonialFactory(testimonials[9]);
 export const Testimonial10 = TestimonialFactory(testimonials[10]);
+export const Testimonial11 = TestimonialFactory(testimonials[11]);
 
 export const Quote1 = QuoteFactory(quotes[0]);
 export const Quote2 = QuoteFactory(quotes[1]);
