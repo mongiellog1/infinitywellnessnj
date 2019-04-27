@@ -1,12 +1,11 @@
 import React from "react"
-import { Link, graphql, navigate } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Layout from "../components/layout/index"
 import Divider from "../components/page_divider";
 import HeroSection from "../components/hero_section";
 import Img from "gatsby-image";
 import { Testimonial2 } from "../components/testimonial";
 import ContactGinaCta from "../components/contact_gina_cta";
-import Button from "../components/button";
 import EbookButton from "../components/ebook_button";
 
 import "./index.css";
@@ -14,30 +13,12 @@ import "./index.css";
 const IndexPage = ({ data }) => (
   <Layout>
     <HeroSection
-      title="Reclaim Wellness"
+      title="Reclaim Your Inherent Wellness"
       titleClass="home-page"
       subtitle="Start living in a way that is true to your core. A life where you know who you are and your actions follow in alignment."
       Background={<Img className="background-cover-parent" fluid={data.imageOne.childImageSharp.fluid} />}
     >
       <ul className="hero-cta">
-        <li>
-          <Button
-            text="Healing Tools"
-            onClick={() => navigate("/healing-tools")}
-          />
-        </li>
-        <li>
-          <Button
-            text="Services"
-            onClick={() => navigate("/services")}
-          />
-        </li>
-        <li>
-          <Button
-            text="Shop Mandalas"
-            onClick={() => navigate("/shop")}
-          />
-        </li>
         <li>
           <EbookButton />
         </li>

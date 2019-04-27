@@ -8,9 +8,10 @@ module.exports = {
     title: "Infinity Wellness",
     subTitle: "Everything. Connects. Together.",
     socialMediaLinks: {
-      instagram: "https://www.instagram.com/ginamongiello/",
+      instagram: "https://www.instagram.com/infinitywellnessnj/",
       facebook: "https://www.facebook.com/infinitywellnessnj/",
       youtube: "https://www.youtube.com/channel/UCtfOsb9dwrGnOaRvdJv52UA",
+      soundcloud: "https://soundcloud.com/nuggets-that-move",
     },
     contactFormUrl: "https://ginas-form-server.herokuapp.com/api/emailForm",
     internalRoutes: {

@@ -29,7 +29,7 @@ class SignupModal extends React.Component {
       <Button
         text="Join Mailing List and Receive Free Ebook on Soul Direction"
         onClick={this.openModal}
-        className="bg--purple"
+        // className="bg--purple"
       />
       <ReactModal
         isOpen={this.state.open}

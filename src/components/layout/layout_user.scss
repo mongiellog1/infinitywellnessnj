@@ -713,6 +713,10 @@ ul > li:nth-child(n + 2) > .button {
   display: inline-block;
 }
 
+.svg-inline--fa.fa-w-18 {
+    width: 1.125em;
+}
+
 @media screen and (min-width: 480px) {
   html {
     font-size: 15px;
