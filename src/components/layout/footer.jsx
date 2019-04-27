@@ -1,5 +1,5 @@
 import React from "react";
-import { FacebookButtonRound, InstagramButtonRound, YoutubeButtonRound } from "./social_buttons";
+import { FacebookButtonRound, InstagramButtonRound, YoutubeButtonRound, SoundcloudButtonRound } from "./social_buttons";
 import SiteLogo from "./site_logo";
 import Form from "./footer_form";
 import FooterLinks from "./footer_links";
@@ -15,6 +15,7 @@ const Footer = () => (
           <FacebookButtonRound />
           <InstagramButtonRound />
           <YoutubeButtonRound />
+          <SoundcloudButtonRound />
         </div>
       </div>
 

@@ -19,6 +19,7 @@ const buttonFactory = (style, iconType, address) => () => (
               facebook
               youtube
               instagram
+              soundcloud
             }
           }
         }
@@ -37,3 +38,4 @@ const buttonFactory = (style, iconType, address) => () => (
 export const FacebookButtonRound = buttonFactory({ backgroundColor: "blue" }, "facebook-f", "facebook");
 export const InstagramButtonRound = buttonFactory({ backgroundColor: "gray" }, "instagram", "instagram");
 export const YoutubeButtonRound = buttonFactory({ backgroundColor: "red" }, "youtube", "youtube");
+export const SoundcloudButtonRound = buttonFactory({ backgroundColor: "orange" }, "soundcloud", "soundcloud");

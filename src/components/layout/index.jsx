@@ -10,7 +10,6 @@ import Footer from './footer'
 import "typeface-alegreya";
 import ScrollToElement from "../hoc/scroll_to_element";
 
-
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
