@@ -37,7 +37,7 @@ const PayPage = () => (
         <p></p>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick" />
-          <input type="hidden" name="hosted_button_id" value="9J9BD37J8PGZY" />
+          <input type="hidden" name="hosted_button_id" value="U725SCTJ85UU8" />
           <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
           <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
         </form>
@@ -61,7 +61,7 @@ const PayPage = () => (
         <p></p>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick" />
-          <input type="hidden" name="hosted_button_id" value="UWSBZU482BKQW" />
+          <input type="hidden" name="hosted_button_id" value="5XKGP3FDA755N" />
           <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
           <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
         </form>
@@ -85,7 +85,7 @@ const PayPage = () => (
         <h3>Price - <span className="green">$560</span></h3>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick" />
-          <input type="hidden" name="hosted_button_id" value="E3XS8KYQPGF7W" />
+          <input type="hidden" name="hosted_button_id" value="CBD8YGPVW2QJC" />
           <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
           <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
         </form>
@@ -109,7 +109,7 @@ const PayPage = () => (
         <h3>Price - <span className="green">$1080</span></h3>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick" />
-          <input type="hidden" name="hosted_button_id" value="PTJLKQWVJNVUG" />
+          <input type="hidden" name="hosted_button_id" value="QWUD3SQHB7Q84" />
           <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
           <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
         </form>
@@ -134,7 +134,7 @@ const PayPage = () => (
         <h3>Price - <span className="green">$3240</span></h3>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick" />
-          <input type="hidden" name="hosted_button_id" value="DZEA8B4Z6VASW" />
+          <input type="hidden" name="hosted_button_id" value="5J8EF4ME8JY3C" />
           <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
           <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
         </form>
