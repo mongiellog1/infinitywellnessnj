@@ -120,7 +120,7 @@ export const pageQuery = graphql`
   query {
     cover: file(relativePath: { eq: "gina/078.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1500) {
           ...GatsbyImageSharpFluid
         }
       }

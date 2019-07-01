@@ -48,7 +48,7 @@ export const addressQuery = graphql`
     }
     image: file(relativePath: { eq: "mandala_workshop.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1500) {
           ...GatsbyImageSharpFluid
         }
       }

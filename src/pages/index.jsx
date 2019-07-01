@@ -88,7 +88,7 @@ export const pageQuery = graphql`
   query {
     imageOne: file(relativePath: { eq: "gina/052.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1800) {
           ...GatsbyImageSharpFluid
         }
       }
