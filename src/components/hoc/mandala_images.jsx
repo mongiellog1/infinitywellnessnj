@@ -86,6 +86,39 @@ const MandalaImages = (props) => (
         winter_blanket: file(relativePath: { eq: "mandalas/Winter_Blanket.jpg" }) {
           ...fluidImage
         }
+        wisdom_wheel: file(relativePath: { eq: "mandalas/Wisdom_Wheel.jpg" }) {
+          ...fluidImage
+        }
+        essence: file(relativePath: { eq: "mandalas/Essence.jpg" }) {
+          ...fluidImage
+        }
+        fearless: file(relativePath: { eq: "mandalas/Fearless.jpg" }) {
+          ...fluidImage
+        }
+        fullness_of_life: file(relativePath: { eq: "mandalas/Fullness_of_Life.jpg" }) {
+          ...fluidImage
+        }
+        here_now: file(relativePath: { eq: "mandalas/Here_Now.jpg" }) {
+          ...fluidImage
+        }
+        integral_purity: file(relativePath: { eq: "mandalas/Integral_Purity.jpg" }) {
+          ...fluidImage
+        }
+        my_heart_to_yours: file(relativePath: { eq: "mandalas/My_Heart_to_Yours.jpg" }) {
+          ...fluidImage
+        }
+        servant_of_love: file(relativePath: { eq: "mandalas/Servant_of_Love.jpg" }) {
+          ...fluidImage
+        }
+        space: file(relativePath: { eq: "mandalas/Space.jpg" }) {
+          ...fluidImage
+        }
+        together: file(relativePath: { eq: "mandalas/Together.jpg" }) {
+          ...fluidImage
+        }
+        true_to_us: file(relativePath: { eq: "mandalas/True_to_Us.jpg" }) {
+          ...fluidImage
+        }
       }
     `}
     render={(mandalaImages) => (
