@@ -28,9 +28,11 @@ const Footer = () => (
             challenge, together we can create a space that will bring insight,
             clarity, wellness, and next steps.
           </p>
-          <div>
+          <div style={{ marginBottom: '2rem' }}>
             <span style={{ fontSize: "1.2rem" }}>201.396.0909</span>
           </div>
+          <div>Gina sees clients at the Yoga Life Center, 256 Bergen Boulevard, Woodland Park, NJ 07424.</div>
+          <div>Skype and phone sessions available too.</div>
         </div>
 
         <Form />
