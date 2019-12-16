@@ -27,7 +27,7 @@ class SignupModal extends React.Component {
           `}</script>
       </Helmet>
       <Button
-        text="Join Mailing List and Receive Free Ebook on Soul Direction"
+        text="Join Email List and Receive Free Ebook on Soul Direction"
         onClick={this.openModal}
         // className="bg--purple"
       />
@@ -57,7 +57,7 @@ class SignupModal extends React.Component {
             noValidate
           >
             <div id="mc_embed_signup_scroll" style={{ color: "black" }}>
-              <h2>Subscribe to the Infinity Wellness mailing list!</h2>
+              <h2>Subscribe to the Infinity Wellness email list!</h2>
               <div className="indicates-required"><span className="asterisk">*</span> indicates required</div>
               <div className="mc-field-group">
                 <label htmlFor="mce-EMAIL">Email Address  <span className="asterisk">*</span></label>
