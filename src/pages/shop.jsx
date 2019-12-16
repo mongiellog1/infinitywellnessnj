@@ -6,15 +6,16 @@ import products from "../data/products.js";
 import Products from "../components/products";
 import MandalaImages from "../components/hoc/mandala_images";
 import HeroSection from "../components/hero_section";
+import MandalaCardDeckProduct from '../components/mandala_card_deck_product';
 
-const BuyMandalas = ({ data: { image, site: { siteMetadata: { SHOP_ADDRESS } } } }) => (
+const BuyMandalas = ({ data: { image, image2, site: { siteMetadata: { SHOP_ADDRESS } } } }) => (
   <Layout>
     <HeroSection
       title="Shop"
       Background={<Img className="background-cover-parent" fluid={image.childImageSharp.fluid} />}
     />
     <div className="slanted-section-decorator slanted-section-decorator--green"/>
-
+    
     {
       setTimeout(() => {
         typeof window !== "undefined" && window.Snipcart.subscribe('page.validating', function(ev, data) {
@@ -25,6 +26,12 @@ const BuyMandalas = ({ data: { image, site: { siteMetadata: { SHOP_ADDRESS } } }
       }, 1000) && undefined
     }
     <div className="container container--max-width">
+      <div className='container container--pad-top'>
+        <MandalaCardDeckProduct
+          SHOP_ADDRESS={SHOP_ADDRESS}
+          image={image2}
+        />
+      </div>
       <MandalaImages>
         <Products
           products={products.sort((a, b) => (
@@ -49,6 +56,13 @@ export const addressQuery = graphql`
     image: file(relativePath: { eq: "mandala_workshop.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    image2: file(relativePath: { eq: "CardDeck-Small-121519/IMG_5885-DeckSpread-WoodBg.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
