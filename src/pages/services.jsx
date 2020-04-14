@@ -33,7 +33,7 @@ const PayPage = () => (
           <li style={styles.li}>Yoga & Meditation</li>
           <li style={styles.li}>Sound Healing & Gratitude</li>
         </ul>
-        <h3>Any Single Session - <span className="green">$120</span></h3>
+        <h3>Any Single Session - <span className="green">$147</span></h3>
         <p></p>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick" />
@@ -57,7 +57,7 @@ const PayPage = () => (
         <p>
           For more information, visit the <Link className="inline-anchor"to="/emotional-freedom-techniques#group-eft">EFT page!</Link>
         </p>
-        <h3>Price - <span className="green">$153</span></h3>
+        <h3>Price - <span className="green">$197</span></h3>
         <p></p>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick" />
